@@ -5,14 +5,14 @@
 Get the [latest CI release](https://github.com/NoName-exe/revanced-extended/releases/latest).
 
 ## Features
- * Updated with the latest versions patches.
+ * Updated with the latest versions of patches.
  * Cleans APKs from unneeded libs to make them smaller.
  * Fully open-source, every binary or APK is compiled without human intervention.
  * Modules:
      * Recompile invalidated odex for YouTube and YouTube-Music for a better user experience.
      * Receive updates from Magisk app.
      * Should not break safetynet or trigger root detections used by certain apps.
-     * Handle installation of the correct version of the stock app and all that
+     * Handle installation of the correct version of the stock app and all that.
  
  ## Notes
 * YouTube Magisk Module is installed as a system app and requires a reboot to install/update.
