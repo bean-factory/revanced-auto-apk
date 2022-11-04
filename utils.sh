@@ -7,7 +7,7 @@ MODULE_SCRIPTS_DIR="scripts"
 TEMP_DIR="temp"
 BUILD_DIR="build"
 
-GITHUB_REPOSITORY=${GITHUB_REPOSITORY:-$"j-hc/revanced-magisk-module"}
+GITHUB_REPOSITORY=${GITHUB_REPOSITORY:-$"NoName-exe/revanced-extended"}
 NEXT_VER_CODE=${NEXT_VER_CODE:-$(date +'%Y%m%d')}
 WGET_HEADER="User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0"
 
@@ -26,13 +26,13 @@ get_prebuilts() {
 	RV_CLI_JAR="${TEMP_DIR}/${RV_CLI_URL##*/}"
 	log "CLI: ${RV_CLI_URL##*/}"
 
-	RV_INTEGRATIONS_URL=$(req https://api.github.com/repos/revanced/revanced-integrations/releases/latest - | json_get 'browser_download_url')
+	RV_INTEGRATIONS_URL=$(req https://api.github.com/repos/inotia00/revanced-integrations/releases/latest - | json_get 'browser_download_url')
 	RV_INTEGRATIONS_APK=${RV_INTEGRATIONS_URL##*/}
 	RV_INTEGRATIONS_APK="${RV_INTEGRATIONS_APK%.apk}-$(cut -d/ -f8 <<<"$RV_INTEGRATIONS_URL").apk"
 	log "Integrations: $RV_INTEGRATIONS_APK"
 	RV_INTEGRATIONS_APK="${TEMP_DIR}/${RV_INTEGRATIONS_APK}"
 
-	RV_PATCHES=$(req https://api.github.com/repos/revanced/revanced-patches/releases/latest -)
+	RV_PATCHES=$(req https://api.github.com/repos/inotia00/revanced-patches/releases/latest -)
 	RV_PATCHES_CHANGELOG=$(echo "$RV_PATCHES" | json_get 'body' | sed 's/\(\\n\)\+/\\n/g')
 	RV_PATCHES_URL=$(echo "$RV_PATCHES" | json_get 'browser_download_url' 'jar')
 	RV_PATCHES_JAR="${TEMP_DIR}/${RV_PATCHES_URL##*/}"
@@ -197,11 +197,11 @@ build_rv() {
 		fi
 
 		local stock_apk="${TEMP_DIR}/${app_name_l}-stock-v${version}-${arch}.apk"
-		local apk_output="${BUILD_DIR}/${app_name_l}-revanced-v${version}-${arch}.apk"
+		local apk_output="${BUILD_DIR}/${app_name_l}-revanced-extended-v${version}-${arch}.apk"
 		if [ "${args[microg_patch]:-}" ]; then
-			local patched_apk="${TEMP_DIR}/${app_name_l}-revanced-v${version}-${arch}-${build_mode}.apk"
+			local patched_apk="${TEMP_DIR}/${app_name_l}-revanced-extended-v${version}-${arch}-${build_mode}.apk"
 		else
-			local patched_apk="${TEMP_DIR}/${app_name_l}-revanced-v${version}-${arch}.apk"
+			local patched_apk="${TEMP_DIR}/${app_name_l}-revanced-extended-v${version}-${arch}.apk"
 		fi
 		if [ ! -f "$stock_apk" ]; then
 			if [ $dl_from = apkmirror ]; then
@@ -251,16 +251,16 @@ build_rv() {
 		if [ "${args[module_prop_name]:-}" ]; then
 			pn=${args[module_prop_name]}
 		else
-			pn=$([ "${arch}" = "all" ] && echo "${app_name_l}-rv-jhc-magisk" || echo "${app_name_l}-${arch}-rv-jhc-magisk")
+			pn=$([ "${arch}" = "all" ] && echo "${app_name_l}-rvx-NoNameEXE-magisk" || echo "${app_name_l}-${arch}-rvx-NoNameEXE-magisk")
 		fi
 		module_prop "$pn" \
-			"${args[app_name]} ReVanced" \
+			"${args[app_name]} ReVanced Extended" \
 			"$version" \
-			"${args[app_name]} ReVanced Magisk module" \
+			"${args[app_name]} ReVanced Extended Magisk Module" \
 			"https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/update/${upj}" \
 			"$base_template"
 
-		local module_output="${app_name_l}-revanced-magisk-v${version}-${arch}.zip"
+		local module_output="${app_name_l}-revanced-extended-magisk-v${version}-${arch}.zip"
 		zip_module "$patched_apk" "$module_output" "$stock_apk" "${args[pkg_name]}" "$base_template"
 		rm -rf "$base_template"
 
@@ -283,7 +283,7 @@ build_youtube() {
 	youtube_args[rip_all_libs]=true
 	youtube_args[apkmirror_dlurl]="google-inc/youtube"
 	youtube_args[regexp]="APK</span>[^@]*@\([^#]*\)"
-	youtube_args[module_prop_name]="ytrv-magisk"
+	youtube_args[module_prop_name]="ytrvx-magisk"
 
 	build_rv youtube_args
 }
@@ -291,7 +291,7 @@ build_youtube() {
 #shellcheck disable=SC2034
 build_music() {
 	declare -A ytmusic_args
-	ytmusic_args[app_name]="Music"
+	ytmusic_args[app_name]="YouTube-Music"
 	ytmusic_args[patcher_args]="$(join_args "${MUSIC_EXCLUDED_PATCHES}" -e) $(join_args "${MUSIC_INCLUDED_PATCHES}" -i)"
 	ytmusic_args[microg_patch]="music-microg-support"
 	ytmusic_args[pkg_name]="com.google.android.apps.youtube.music"
@@ -300,12 +300,12 @@ build_music() {
 
 	for a in arm64-v8a arm-v7a; do
 		if [ $a = arm64-v8a ]; then
-			ytmusic_args[module_prop_name]="ytmusicrv-magisk"
+			ytmusic_args[module_prop_name]="ytmusicrvx-magisk"
 			ytmusic_args[arch]=arm64-v8a
 			ytmusic_args[regexp]='arm64-v8a</div>[^@]*@\([^"]*\)'
 			ytmusic_args[mode]="$MUSIC_ARM64_V8A_MODE"
 		elif [ $a = arm-v7a ]; then
-			ytmusic_args[module_prop_name]="ytmusicrv-arm-magisk"
+			ytmusic_args[module_prop_name]="ytmusicrvx-arm-magisk"
 			ytmusic_args[arch]=arm-v7a
 			ytmusic_args[regexp]='armeabi-v7a</div>[^@]*@\([^"]*\)'
 			ytmusic_args[mode]="$MUSIC_ARM_V7A_MODE"
@@ -386,8 +386,9 @@ module_prop() {
 name=${2}
 version=v${3}
 versionCode=${NEXT_VER_CODE}
-author=j-hc
+author=NoName-exe
 description=${4}" >"${6}/module.prop"
 
 	[ "$ENABLE_MAGISK_UPDATE" = true ] && echo "updateJson=${5}" >>"${6}/module.prop"
 }
+
