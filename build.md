@@ -1,11 +1,21 @@
 CLI: revanced-cli-2.16.0-all.jar  
 Integrations: app-release-unsigned-v0.71.0.apk  
-Patches: revanced-patches-2.111.1.jar  
+Patches: revanced-patches-2.111.2.jar  
 
 YouTube
 ==
-- Fix: `premium-heading` patch is broken in rvx-builder
-- Fix: compilation error occurred due to the typo in the French translation.
+- Fix: Sponsorblock, returnyoutubedislike not added to Settings UI if patch fails or exclued
+- Crowdin Translation Update
+`French`, `Russian`, `Slovak`, `Turkish`
+
+YouTube Music
+==
+- Crowdin Translation Update
+`Chinese Simplified`, `Slovak`
+
+ETC
+==
+- Added Support YouTube v17.45.34
 
 For the full changelog, please refer to the [previous build's changelog](https://github.com/inotia00/revanced-patches/releases/tag/v2.111.0)
 
@@ -15,7 +25,7 @@ For the full changelog, please refer to the [previous build's changelog](https:/
   
 **App Versions:**  
 YouTube-Music (arm64-v8a): 5.33.51  
-YouTube: 17.44.35  
+YouTube: 17.45.34  
 
 Install [Vanced MicroG](https://github.com/inotia00/VancedMicroG/releases/latest) to be able to use non-root YouTube or YouTube-Music  
 
