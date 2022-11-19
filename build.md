@@ -1,23 +1,21 @@
-CLI: revanced-cli-2.16.0-all.jar  
-Integrations: app-release-unsigned-v0.71.0.apk  
-Patches: revanced-patches-2.111.2.jar  
+CLI: revanced-cli-2.16.1-all.jar  
+Integrations: app-release-unsigned-v0.71.1.apk  
+Patches: revanced-patches-2.111.3.jar  
 
 YouTube
 ==
-- Fix: Sponsorblock, returnyoutubedislike not added to Settings UI if patch fails or exclued
-- Crowdin Translation Update
-`French`, `Russian`, `Slovak`, `Turkish`
+- Fix: hide chaptercard not working sometimes
 
 YouTube Music
 ==
 - Crowdin Translation Update
-`Chinese Simplified`, `Slovak`
+`Japanese`
 
 ETC
 ==
-- Added Support YouTube v17.45.34
-
-For the full changelog, please refer to the [previous build's changelog](https://github.com/inotia00/revanced-patches/releases/tag/v2.111.0)
+- Cleanup code
+- bump revanced-patches-2.111.2
+build: bump patcher dependency version
 
 ※ I don't know why, but the Crowdin translation site is dead again 🤷
 ※ If you want to contribute to the translation, refer this [documentations](https://telegra.ph/How-to-contribute-to-Crowdin-translations-via-upload-of-stringsxml-file-11-10)
