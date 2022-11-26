@@ -292,7 +292,7 @@ build_youtube() {
 build_music() {
 	declare -A ytmusic_args
 	ytmusic_args[app_name]="YouTube-Music"
-	ytmusic_args[patcher_args]="$(join_args "${MUSIC_EXCLUDED_PATCHES}" -e) $(join_args "${MUSIC_INCLUDED_PATCHES}" -i)"
+	ytmusic_args[patcher_args]="-m ${RV_INTEGRATIONS_APK} $(join_args "${MUSIC_EXCLUDED_PATCHES}" -e) $(join_args "${MUSIC_INCLUDED_PATCHES}" -i)"
 	ytmusic_args[microg_patch]="music-microg-support"
 	ytmusic_args[pkg_name]="com.google.android.apps.youtube.music"
 	ytmusic_args[rip_all_libs]=false
