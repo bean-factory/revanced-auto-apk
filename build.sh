@@ -68,6 +68,5 @@ if [[ "${YOUTUBE_MODE%/*}" =~ ^(apk|both)$ || "${MUSIC_ARM64_V8A_MODE%/*}" =~ ^(
 fi
 log "\n[Main Repo](https://github.com/NoName-exe/revanced-extended)"
 
-reset_template
 echo "Done"
 

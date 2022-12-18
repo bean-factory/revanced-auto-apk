@@ -61,7 +61,7 @@ set_prebuilts() {
 	[ -z "$RV_CLI_JAR" ] && abort "revanced integrations not found"
 	log "Integrations: ${RV_INTEGRATIONS_APK#"$TEMP_DIR/"}"
 	RV_PATCHES_JAR=$(find "$TEMP_DIR" -maxdepth 1 -name "revanced-patches-*" | tail -n1)
-	[ -z "$RV_CLI_JAR" ] && abort "revanced patches not found"
+	[ -z "$RV_CLI_JAR"  && abort "revanced patches not found"
 	log "Patches: ${RV_PATCHES_JAR#"$TEMP_DIR/"}"
 }
 
@@ -231,12 +231,6 @@ build_rv() {
 		fi
 
 		declare -r base_template=$(mktemp -d -p $TEMP_DIR)
-		cp -a $MODULE_TEMPLATE_DIR/. "$base_template"
-
-		uninstall_sh "${args[pkg_name]}" "$base_template"
-		service_sh "${args[pkg_name]}" "$base_template"
-		postfsdata_sh "${args[pkg_name]}" "$base_template"
-		customize_sh "${args[pkg_name]}" "$base_template"
 
 		local upj pn
 		upj=$([ "${arch}" = "all" ] && echo "${app_name_l}-update.json" || echo "${app_name_l}-${arch}-update.json")
@@ -415,23 +409,5 @@ build_windy() {
 	windy_args[regexp]='APK</span>[^@]*@\([^#]*\)'
 
 	build_rv windy_args
-}
-
-postfsdata_sh() { echo "${POSTFSDATA_SH//__PKGNAME/$1}" >"${2}/post-fs-data.sh"; }
-uninstall_sh() { echo "${UNINSTALL_SH//__PKGNAME/$1}" >"${2}/uninstall.sh"; }
-customize_sh() { echo "${CUSTOMIZE_SH//__PKGNAME/$1}" >"${2}/customize.sh"; }
-service_sh() {
-	s="${SERVICE_SH//__MNTDLY/$MOUNT_DELAY}"
-	echo "${s//__PKGNAME/$1}" >"${2}/service.sh"
-}
-module_prop() {
-	echo "id=${1}
-name=${2}
-version=v${3}
-versionCode=${NEXT_VER_CODE}
-author=NoName-exe
-description=${4}" >"${6}/module.prop"
-
-	if [ "$ENABLE_MAGISK_UPDATE" = true ]; then echo "updateJson=${5}" >>"${6}/module.prop"; fi
 }
 
