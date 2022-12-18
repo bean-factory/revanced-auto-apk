@@ -10,11 +10,6 @@ GITHUB_REPOSITORY=${GITHUB_REPOSITORY:-$"Kryptos-123/revanced-extended"}
 NEXT_VER_CODE=${NEXT_VER_CODE:-$(date +'%Y%m%d')}
 WGET_HEADER="User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:106.0) Gecko/20100101 Firefox/106.0"
 
-SERVICE_SH=$(cat $MODULE_SCRIPTS_DIR/service.sh)
-POSTFSDATA_SH=$(cat $MODULE_SCRIPTS_DIR/post-fs-data.sh)
-CUSTOMIZE_SH=$(cat $MODULE_SCRIPTS_DIR/customize.sh)
-UNINSTALL_SH=$(cat $MODULE_SCRIPTS_DIR/uninstall.sh)
-
 json_get() {
 	grep -o "\"${1}\":[^\"]*\"[^\"]*\"" | sed -E 's/".*".*"(.*)"/\1/' | if [ $# -eq 2 ]; then grep "$2"; else cat; fi || echo ""
 }
@@ -70,15 +65,6 @@ set_prebuilts() {
 	log "Patches: ${RV_PATCHES_JAR#"$TEMP_DIR/"}"
 }
 
-reset_template() {
-	echo "# utils" >"${MODULE_TEMPLATE_DIR}/service.sh"
-	echo "# utils" >"${MODULE_TEMPLATE_DIR}/post-fs-data.sh"
-	echo "# utils" >"${MODULE_TEMPLATE_DIR}/customize.sh"
-	echo "# utils" >"${MODULE_TEMPLATE_DIR}/uninstall.sh"
-	echo "# utils" >"${MODULE_TEMPLATE_DIR}/module.prop"
-	rm -rf ${MODULE_TEMPLATE_DIR}/*.apk
-	mkdir -p ${MODULE_TEMPLATE_DIR}/bin/arm ${MODULE_TEMPLATE_DIR}/bin/arm64
-}
 
 req() { wget -nv -O "$2" --header="$WGET_HEADER" "$1"; }
 log() { echo -e "$1  " >>build.md; }
