@@ -122,7 +122,7 @@ patch_apk() {
 	local stock_input=$1 patched_apk=$2 patcher_args=$3
 	# --rip-lib is only available in my own revanced-cli builds
 	declare -r tdir=$(mktemp -d -p $TEMP_DIR)
-	local cmd="java -jar $RV_CLI_JAR --temp-dir=$tdir --rip-lib x86 --rip-lib x86_64 -c -a $stock_input -o $patched_apk -b $RV_PATCHES_JAR --keystore=ks.keystore $patcher_args"
+	local cmd="java -jar $RV_CLI_JAR --temp-dir=$tdir -c -a $stock_input -o $patched_apk -b $RV_PATCHES_JAR --keystore=ks.keystore $patcher_args"
 	echo "$cmd"
 	eval "$cmd"
 }
@@ -190,9 +190,9 @@ build_rv() {
 			if [ "${args[rip_all_libs]:-}" = true ]; then
 				# --unsigned is only available in my revanced-cli builds
 				# native libraries are already extracted. remove them all to keep apks smol
-				patcher_args="$patcher_args --unsigned --rip-lib arm64-v8a --rip-lib armeabi-v7a"
+				patcher_args="$patcher_args"
 			else
-				patcher_args="$patcher_args --unsigned"
+				patcher_args="$patcher_args"
 			fi
 		fi
 
