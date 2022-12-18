@@ -2,7 +2,6 @@
 
 source semver
 
-MODULE_TEMPLATE_DIR="revanced-magisk"
 MODULE_SCRIPTS_DIR="scripts"
 TEMP_DIR="temp"
 BUILD_DIR="build"
@@ -37,11 +36,18 @@ get_prebuilts() {
 	RV_PATCHES_URL=$(echo "$RV_PATCHES" | json_get 'browser_download_url' 'jar')
 	RV_PATCHES_JAR="${TEMP_DIR}/${RV_PATCHES_URL##*/}"
 	log "Patches: ${RV_PATCHES_URL##*/}"
-	log "\n${RV_PATCHES_CHANGELOG//# [/### [}\n"
+	
+	RVNE_PATCHES=$(req https://api.github.com/repos/revanced/revanced-patches/releases/latest -)
+	RVNE_PATCHES_CHANGELOG=$(echo "$RVNE_PATCHES" | json_get 'body' | sed 's/\(\\n\)\+/\\n/g')
+	RVNE_PATCHES_URL=$(echo "$RVNE_PATCHES" | json_get 'browser_download_url' 'jar')
+	RVNE_PATCHES_JAR="${TEMP_DIR}/${RVNE_PATCHES_URL##*/}"
+	log "Patches: ${RVNE_PATCHES_URL##*/}"
+	log "\n${RVNE_PATCHES_CHANGELOG//# [/### [}\n"
 
 	dl_if_dne "$RV_CLI_JAR" "$RV_CLI_URL"
 	dl_if_dne "$RV_INTEGRATIONS_APK" "$RV_INTEGRATIONS_URL"
 	dl_if_dne "$RV_PATCHES_JAR" "$RV_PATCHES_URL"
+	dl_if_dne "$RVNE_PATCHES_JAR" "$RVNE_PATCHES_URL"
 }
 
 get_cmpr() {
@@ -284,7 +290,9 @@ build_youtube() {
 	youtube_args[apkmirror_dlurl]="google-inc/youtube"
 	youtube_args[regexp]="APK</span>[^@]*@\([^#]*\)"
 	youtube_args[module_prop_name]="ytrvx-magisk"
-
+	RV_PATCHES_JAR_BAK=$RV_PATCHES_JAR
+	RV_PATCHES_JAR=$RVNE_PATCHES_JAR
+	RV_PATCHES_JAR=$RV_PATCHES_JAR_BAK
 	build_rv youtube_args
 }
 
