@@ -261,8 +261,8 @@ build_youtube() {
 	youtube_args[module_prop_name]="ytrvx-magisk"
 	RV_PATCHES_JAR_BAK=$RV_PATCHES_JAR
 	RV_PATCHES_JAR=$RVNE_PATCHES_JAR
-	RV_PATCHES_JAR=$RV_PATCHES_JAR_BAK
 	build_rv youtube_args
+	RV_PATCHES_JAR=$RV_PATCHES_JAR_BAK
 }
 
 #shellcheck disable=SC2034
