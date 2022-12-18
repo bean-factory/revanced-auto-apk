@@ -2,7 +2,7 @@ name: Sync Upstream
 
 env:
   UPSTREAM_URL: "https://github.com/j-hc/revanced-magisk-module.git"
-  WORKFLOW_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
+  WORKFLOW_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   UPSTREAM_BRANCH: "main"
   DOWNSTREAM_BRANCH: "main"
 
