@@ -1,5 +1,6 @@
 CLI: revanced-cli-2.18.2-all.jar  
 Integrations: app-release-unsigned-v0.71.1.apk  
+Integrations: app-release-unsigned-v0.84.0.apk  
 Patches: revanced-patches-2.111.4.jar  
 Patches: revanced-patches-2.145.0.jar  
 
@@ -12,8 +13,8 @@ Patches: revanced-patches-2.145.0.jar
 
   
 **App Versions:**  
-YouTube-Music (arm-v7a): 5.36.51  
 YouTube: 17.45.36  
+YouTube-Music (arm-v7a): 5.36.51  
 
 Install [Vanced MicroG](https://github.com/inotia00/VancedMicroG/releases/latest) to be able to use non-root YouTube or YouTube-Music  
 
