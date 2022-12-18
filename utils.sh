@@ -148,13 +148,6 @@ build_rv() {
 		patcher_args="${args[patcher_args]:-}"
 		printf "Building '%s' (%s) in " "${args[app_name]}" "${arch}"
 		if [ "$build_mode" = module ]; then echo "'module' mode"; else echo "'APK' mode"; fi
-		if [ "${args[microg_patch]:-}" ]; then
-			if [ "$build_mode" = module ]; then
-				patcher_args="$patcher_args -e ${args[microg_patch]}"
-			elif [[ "${args[patcher_args]}" = *"${args[microg_patch]}"* ]]; then
-				abort "UNREACHABLE $LINENO"
-			fi
-		fi
 		local apkmirror_category=${args[apkmirror_dlurl]##*/}
 		if [ "$version_mode" = auto ] && [ $dl_from = apkmirror ]; then
 			version=$(get_patch_last_supported_ver "${args[pkg_name]}")
