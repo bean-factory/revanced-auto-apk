@@ -45,10 +45,6 @@ get_prebuilts() {
 	dl_if_dne "$RVNE_PATCHES_JAR" "$RVNE_PATCHES_URL"
 }
 
-get_cmpr() {
-	dl_if_dne "${MODULE_TEMPLATE_DIR}/bin/arm64/cmpr" "https://github.com/j-hc/cmpr/releases/download/20220811/cmpr-arm64-v8a"
-	dl_if_dne "${MODULE_TEMPLATE_DIR}/bin/arm/cmpr" "https://github.com/j-hc/cmpr/releases/download/20220811/cmpr-armeabi-v7a"
-}
 
 abort() { echo "abort: $1" && exit 1; }
 

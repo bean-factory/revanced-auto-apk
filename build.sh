@@ -30,7 +30,6 @@ fi
 mkdir -p "$BUILD_DIR" "$TEMP_DIR"
 
 if [ "$UPDATE_PREBUILTS" = true ]; then get_prebuilts; else set_prebuilts; fi
-get_cmpr
 
 if ((COMPRESSION_LEVEL > 9)) || ((COMPRESSION_LEVEL < 1)); then
 	abort "COMPRESSION_LEVEL must be between 1 and 9"
