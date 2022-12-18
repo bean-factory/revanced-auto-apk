@@ -25,6 +25,12 @@ get_prebuilts() {
 	RV_INTEGRATIONS_APK="${RV_INTEGRATIONS_APK%.apk}-$(cut -d/ -f8 <<<"$RV_INTEGRATIONS_URL").apk"
 	log "Integrations: $RV_INTEGRATIONS_APK"
 	RV_INTEGRATIONS_APK="${TEMP_DIR}/${RV_INTEGRATIONS_APK}"
+	
+	RVNE_INTEGRATIONS_URL=$(req https://api.github.com/repos/revanced/revanced-integrations/releases/latest - | json_get 'browser_download_url')
+	RVNE_INTEGRATIONS_APK=${RVNE_INTEGRATIONS_URL##*/}
+	RVNE_INTEGRATIONS_APK="${RVNE_INTEGRATIONS_APK%.apk}-$(cut -d/ -f8 <<<"$RVNE_INTEGRATIONS_URL").apk"
+	log "Integrations: $RVNE_INTEGRATIONS_APK"
+	RVNE_INTEGRATIONS_APK="${TEMP_DIR}/${RVNE_INTEGRATIONS_APK}"
 
 	RV_PATCHES=$(req https://api.github.com/repos/inotia00/revanced-patches/releases/latest -)
 	RV_PATCHES_CHANGELOG=$(echo "$RV_PATCHES" | json_get 'body' | sed 's/\(\\n\)\+/\\n/g')
@@ -41,6 +47,7 @@ get_prebuilts() {
 
 	dl_if_dne "$RV_CLI_JAR" "$RV_CLI_URL"
 	dl_if_dne "$RV_INTEGRATIONS_APK" "$RV_INTEGRATIONS_URL"
+	dl_if_dne "$RVNE_INTEGRATIONS_APK" "$RVNE_INTEGRATIONS_URL"
 	dl_if_dne "$RV_PATCHES_JAR" "$RV_PATCHES_URL"
 	dl_if_dne "$RVNE_PATCHES_JAR" "$RVNE_PATCHES_URL"
 }
@@ -251,7 +258,7 @@ join_args() {
 build_youtube() {
 	declare -A youtube_args
 	youtube_args[app_name]="YouTube"
-	youtube_args[patcher_args]="-m ${RV_INTEGRATIONS_APK} $(join_args "${YOUTUBE_EXCLUDED_PATCHES}" -e) $(join_args "${YOUTUBE_INCLUDED_PATCHES}" -i)"
+	youtube_args[patcher_args]="-m ${RVNE_INTEGRATIONS_APK} $(join_args "${YOUTUBE_EXCLUDED_PATCHES}" -e) $(join_args "${YOUTUBE_INCLUDED_PATCHES}" -i)"
 	youtube_args[mode]="$YOUTUBE_MODE"
 	youtube_args[microg_patch]="microg-support"
 	youtube_args[pkg_name]="com.google.android.youtube"
