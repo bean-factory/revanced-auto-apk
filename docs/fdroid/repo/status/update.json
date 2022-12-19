@@ -8,7 +8,7 @@
     "--pretty"
   ],
   "disabled": [],
-  "endTimestamp": 1671475547329,
+  "endTimestamp": 1671476070695,
   "failedBuilds": {},
   "jarsigner": "/usr/bin/jarsigner",
   "keytool": "/usr/bin/keytool",
@@ -21,6 +21,6 @@
   "noUpdateCheck": [
     "app.revanced.android.apps.youtube.music"
   ],
-  "startTimestamp": 1671455741000,
+  "startTimestamp": 1671456264000,
   "subcommand": "update"
 }

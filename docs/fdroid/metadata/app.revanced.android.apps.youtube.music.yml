@@ -1,9 +1,9 @@
-AuthorName: ''
 Categories:
-- fdroid
-CurrentVersionCode: 2147483647
-IssueTracker: ''
+  - fdroid
+License: Unknown
+
 Name: YouTube Music
-SourceCode: ''
-Summary: ''
-WebSite: ''
+
+AutoUpdateMode: None
+UpdateCheckMode: None
+CurrentVersionCode: 2147483647
