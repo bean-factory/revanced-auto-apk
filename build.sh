@@ -49,23 +49,5 @@ build_backdrops &
 build_windy &
 
 wait
-
-if [ "$BUILD_MINDETACH_MODULE" = true ]; then
-	echo "Building mindetach module"
-	cd mindetach-magisk/mindetach/
-	: >detach.txt
-	if [ "${YOUTUBE_MODE%/*}" != apk ]; then echo "com.google.android.youtube" >>detach.txt; fi
-	if [ "${MUSIC_ARM64_V8A_MODE%/*}" != apk ] || [ "${MUSIC_ARM_V7A_MODE%/*}" != apk ]; then
-		echo "com.google.android.apps.youtube.music" >>detach.txt
-	fi
-	zip -r ../../build/mindetach-"$(grep version= module.prop | cut -d= -f2)".zip .
-	cd ../../
-fi
-
-if [[ "${YOUTUBE_MODE%/*}" =~ ^(apk|both)$ || "${MUSIC_ARM64_V8A_MODE%/*}" =~ ^(apk|both)$ || "${MUSIC_ARM_V7A_MODE%/*}" =~ ^(apk|both)$ ]]; then
-	log "\nInstall [Vanced MicroG](https://github.com/inotia00/VancedMicroG/releases/latest) to be able to use non-root YouTube or YouTube-Music"
-fi
-log "\n[Main Repo](https://github.com/NoName-exe/revanced-extended)"
-
 echo "Done"
 

@@ -23,7 +23,7 @@ get_prebuilts() {
 	RV_INTEGRATIONS_URL=$(req https://api.github.com/repos/inotia00/revanced-integrations/releases/latest - | json_get 'browser_download_url')
 	RV_INTEGRATIONS_APK=${RV_INTEGRATIONS_URL##*/}
 	RV_INTEGRATIONS_APK="${RV_INTEGRATIONS_APK%.apk}-$(cut -d/ -f8 <<<"$RV_INTEGRATIONS_URL").apk"
-	log "Integrations: $RV_INTEGRATIONS_APK"
+	log "Integrations (Extended): $RV_INTEGRATIONS_APK"
 	RV_INTEGRATIONS_APK="${TEMP_DIR}/${RV_INTEGRATIONS_APK}"
 	
 	RVNE_INTEGRATIONS_URL=$(req https://api.github.com/repos/revanced/revanced-integrations/releases/latest - | json_get 'browser_download_url')
@@ -37,7 +37,7 @@ get_prebuilts() {
 	RV_PATCHES_CHANGELOG=""
 	RV_PATCHES_URL=$(echo "$RV_PATCHES" | json_get 'browser_download_url' 'jar')
 	RV_PATCHES_JAR="${TEMP_DIR}/${RV_PATCHES_URL##*/}"
-	log "Patches: ${RV_PATCHES_URL##*/}"
+	log "Patches (Extended): ${RV_PATCHES_URL##*/}"
 	
 	RVNE_PATCHES=$(req https://api.github.com/repos/revanced/revanced-patches/releases/latest -)
 	#RVNE_PATCHES_CHANGELOG=$(echo "$RVNE_PATCHES" | json_get 'body' | sed 's/\(\\n\)\+/\\n/g')

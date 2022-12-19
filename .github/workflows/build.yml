@@ -60,7 +60,7 @@ jobs:
       - name: Switch to update branch
         run: git checkout -f update || git switch --discard-changes --orphan update
 
-      - name: Update changelog and Magisk update jsons
+      - name: Update changelog
         id: update_config
         run: |
           cp -f build.tmp build.md
