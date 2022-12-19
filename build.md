@@ -1,19 +1,18 @@
 CLI: revanced-cli-2.18.2-all.jar  
 Integrations: app-release-unsigned-v0.71.1.apk  
-Integrations: app-release-unsigned-v0.84.0.apk  
+Integrations: app-release-unsigned-v0.84.1.apk  
 Patches: revanced-patches-2.111.4.jar  
-Patches: revanced-patches-2.145.0.jar  
+Patches: revanced-patches-2.146.0.jar  
 
-### [2.145.0](https://github.com/revanced/revanced-patches/compare/v2.144.0...v2.145.0) (2022-12-18)
-### Bug Fixes
-* **tiktok/settings:** make compatible with newer versions ([c88740d](https://github.com/revanced/revanced-patches/commit/c88740dc2bf040747d9704d5bed52a7b533c22d6))
+### [2.146.0](https://github.com/revanced/revanced-patches/compare/v2.145.0...v2.146.0) (2022-12-18)
 ### Features
-* **crunchyroll:** remove `enable-downloads` patch ([2ac1546](https://github.com/revanced/revanced-patches/commit/2ac15460f5734fc2c6d2d78d34083a8e6b2f7012))
-* **youtube-music:** bump compatibility to 5.36.51 ([c4a3099](https://github.com/revanced/revanced-patches/commit/c4a3099c1ca39431fba9beb94cc2b43e260561d9))
+* **predictive-back-gesture:** exclude by default ([176d34b](https://github.com/revanced/revanced-patches/commit/176d34b2ff92d0eb627dad86ad87f559df3db815))
+* **twitter/timeline-ads:** add clarifying notice to description ([0eca2af](https://github.com/revanced/revanced-patches/commit/0eca2af1a4a688903c61ff6469ffea90c60f06a6))
+* **youtube:** bump patches compatibility to v17.49.37 ([83ebc73](https://github.com/revanced/revanced-patches/commit/83ebc731130d3d216ac4b815382d8f13548cf665))
 
   
 **App Versions:**  
-YouTube: 17.45.36  
+YouTube: 17.49.37  
 YouTube-Music (arm-v7a): 5.36.51  
 
 Install [Vanced MicroG](https://github.com/inotia00/VancedMicroG/releases/latest) to be able to use non-root YouTube or YouTube-Music  
