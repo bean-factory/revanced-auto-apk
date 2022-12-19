@@ -1,0 +1,8 @@
+{
+  "commandLine": [
+    "/usr/bin/fdroid update",
+    "--create-key"
+  ],
+  "startTimestamp": 1671453237000,
+  "subcommand": "update"
+}
