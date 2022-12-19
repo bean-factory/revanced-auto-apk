@@ -13,7 +13,7 @@ WGET_HEADER="User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:106.0) Gecko/2010010
 json_get() {
 	grep -o "\"${1}\":[^\"]*\"[^\"]*\"" | sed -E 's/".*".*"(.*)"/\1/' | if [ $# -eq 2 ]; then grep "$2"; else cat; fi || echo ""
 }
-
+log "**ReVanced Versions:**"
 get_prebuilts() {
 	echo "Getting prebuilts"
 	RV_CLI_URL=$(req https://api.github.com/repos/revanced/revanced-cli/releases/latest - | json_get 'browser_download_url')
