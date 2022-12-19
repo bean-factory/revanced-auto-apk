@@ -1,0 +1,152 @@
+{
+  "repo": {
+    "timestamp": 1671475541000,
+    "version": 20001,
+    "name": "Custom Repo",
+    "icon": "icon.png",
+    "address": "https://MyFirstFDroidRepo.org/fdroid/repo",
+    "description": "This is a repository of apps to be used with F-Droid. Applications in this repository are either official binaries built by the original application developers, or are binaries built from source by the admin of f-droid.org using the tools on https://gitlab.com/fdroid."
+  },
+  "requests": {
+    "install": [],
+    "uninstall": []
+  },
+  "apps": [
+    {
+      "categories": [
+        "fdroid"
+      ],
+      "suggestedVersionCode": "2147483647",
+      "license": "Unknown",
+      "name": "YouTube Music",
+      "added": 1671473226000,
+      "icon": "app.revanced.android.apps.youtube.music.53651230.png",
+      "packageName": "app.revanced.android.apps.youtube.music",
+      "lastUpdated": 1671473226000
+    }
+  ],
+  "packages": {
+    "app.revanced.android.apps.youtube.music": [
+      {
+        "added": 1671473226000,
+        "apkName": "youtube-music-revanced-extended-v5.36.51-arm-v7a.apk",
+        "features": [
+          "android.hardware.screen.portrait"
+        ],
+        "hash": "2db92df7e5016f762e3cd3d3337d9d9741ee23e7193ebf41367e4c507889f75b",
+        "hashType": "sha256",
+        "minSdkVersion": 21,
+        "nativecode": [
+          "armeabi-v7a"
+        ],
+        "packageName": "app.revanced.android.apps.youtube.music",
+        "sig": "e0127027e06cb7211e4f9696161ec409",
+        "signer": "d671e17856f315a5d094eb59d780ae1c22b44e6639614067771cb7a57198094e",
+        "size": 43752602,
+        "targetSdkVersion": 33,
+        "uses-permission": [
+          [
+            "android.permission.ACCESS_NETWORK_STATE",
+            null
+          ],
+          [
+            "android.permission.ACCESS_WIFI_STATE",
+            null
+          ],
+          [
+            "android.permission.BLUETOOTH",
+            null
+          ],
+          [
+            "android.permission.BLUETOOTH_ADMIN",
+            null
+          ],
+          [
+            "android.permission.INTERNET",
+            null
+          ],
+          [
+            "android.permission.NFC",
+            null
+          ],
+          [
+            "android.permission.READ_MEDIA_AUDIO",
+            null
+          ],
+          [
+            "android.permission.READ_EXTERNAL_STORAGE",
+            32
+          ],
+          [
+            "android.permission.WRITE_EXTERNAL_STORAGE",
+            null
+          ],
+          [
+            "com.google.android.gms.permission.AD_ID",
+            null
+          ],
+          [
+            "android.permission.SYSTEM_ALERT_WINDOW",
+            null
+          ],
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "android.permission.WAKE_LOCK",
+            null
+          ],
+          [
+            "com.mgoogle.android.c2dm.permission.RECEIVE",
+            null
+          ],
+          [
+            "com.google.android.providers.gsf.permission.READ_GSERVICES",
+            null
+          ],
+          [
+            "android.permission.GET_ACCOUNTS",
+            22
+          ],
+          [
+            "android.permission.MANAGE_ACCOUNTS",
+            22
+          ],
+          [
+            "android.permission.USE_CREDENTIALS",
+            22
+          ],
+          [
+            "com.google.android.gms.permission.ACTIVITY_RECOGNITION",
+            null
+          ],
+          [
+            "android.permission.FOREGROUND_SERVICE",
+            null
+          ],
+          [
+            "android.permission.POST_NOTIFICATIONS",
+            null
+          ],
+          [
+            "android.permission.RECEIVE_BOOT_COMPLETED",
+            null
+          ],
+          [
+            "com.android.vending.BILLING",
+            null
+          ]
+        ],
+        "uses-permission-sdk-23": [
+          [
+            "android.permission.RECORD_AUDIO",
+            null
+          ]
+        ],
+        "versionCode": 53651230,
+        "versionName": "5.36.51"
+      }
+    ]
+  }
+}
