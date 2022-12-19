@@ -6,5 +6,5 @@ local_copy_dir: /fdroid
 keystore: keystore.p12
 repo_keyalias: repokey
 
-keystorepass: 160906
-keystorepass: 160906
+keystorepass: "160906"
+keypass: "160906"
