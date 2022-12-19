@@ -33,13 +33,15 @@ get_prebuilts() {
 	RVNE_INTEGRATIONS_APK="${TEMP_DIR}/${RVNE_INTEGRATIONS_APK}"
 
 	RV_PATCHES=$(req https://api.github.com/repos/inotia00/revanced-patches/releases/latest -)
-	RV_PATCHES_CHANGELOG=$(echo "$RV_PATCHES" | json_get 'body' | sed 's/\(\\n\)\+/\\n/g')
+	#RV_PATCHES_CHANGELOG=$(echo "$RV_PATCHES" | json_get 'body' | sed 's/\(\\n\)\+/\\n/g')
+	RV_PATCHES_CHANGELOG=""
 	RV_PATCHES_URL=$(echo "$RV_PATCHES" | json_get 'browser_download_url' 'jar')
 	RV_PATCHES_JAR="${TEMP_DIR}/${RV_PATCHES_URL##*/}"
 	log "Patches: ${RV_PATCHES_URL##*/}"
 	
 	RVNE_PATCHES=$(req https://api.github.com/repos/revanced/revanced-patches/releases/latest -)
-	RVNE_PATCHES_CHANGELOG=$(echo "$RVNE_PATCHES" | json_get 'body' | sed 's/\(\\n\)\+/\\n/g')
+	#RVNE_PATCHES_CHANGELOG=$(echo "$RVNE_PATCHES" | json_get 'body' | sed 's/\(\\n\)\+/\\n/g')
+	RVNE_PATCHES_CHANGELOG=""
 	RVNE_PATCHES_URL=$(echo "$RVNE_PATCHES" | json_get 'browser_download_url' 'jar')
 	RVNE_PATCHES_JAR="${TEMP_DIR}/${RVNE_PATCHES_URL##*/}"
 	log "Patches: ${RVNE_PATCHES_URL##*/}"
