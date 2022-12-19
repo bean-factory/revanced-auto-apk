@@ -147,14 +147,14 @@ keystore: keystore.p12
 # different than the keypass below, it can be OK to store the password in this
 # file for real use. But in general, sensitive passwords should not be stored
 # in text files!
-keystorepass: vu7gGXeoqwYMKdaTMS6q57ykuAagxxnCGdH6wkT0ppc=
+keystorepass: AcP6QFvkVor6q0OoMFLrmxXtZr9gs1vlA7G67s+eK7g=
 
 
 
 # The password for keys - the same is used for each auto-generated key as well
 # as for the repository key. You should not normally store this password in a
 # file since it is a sensitive password.
-keypass: vu7gGXeoqwYMKdaTMS6q57ykuAagxxnCGdH6wkT0ppc=
+keypass: AcP6QFvkVor6q0OoMFLrmxXtZr9gs1vlA7G67s+eK7g=
 
 
 

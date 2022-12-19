@@ -1,1 +1,0 @@
-{"antiFeatures":{},"apksigner":null,"archivePolicy0":[],"commandLine":["/usr/bin/fdroid update","--create-key"],"disabled":[],"endTimestamp":1671473049065,"failedBuilds":{},"jarsigner":"/usr/bin/jarsigner","keytool":"/usr/bin/keytool","needsUpdate":[],"noPackages":[],"noUpdateCheck":[],"startTimestamp":1671453237000,"subcommand":"update"}
