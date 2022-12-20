@@ -18,6 +18,6 @@ jobs:
         run: |
           cd docs/fdroid
           echo "${{ secrets.KEYSTORE }}" | base64 -d >keystore.p12
-          KEYPASS = ${{ secrets.KEYPASS }}
+          export KEYPASS = ${{ secrets.KEYPASS }}
           echo "keystorepass: $KEYPASS"
           echo "keypass: $KEYPASS"
