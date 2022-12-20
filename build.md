@@ -8,5 +8,5 @@ Patches: revanced-patches-2.146.0.jar
 
   
 **App Versions:**  
-YouTube: 17.49.37  
 YouTube-Music (arm-v7a): 5.36.51  
+YouTube: 17.49.37  
