@@ -1,11 +1,11 @@
 {
   "repo": {
-    "timestamp": 1671526485000,
+    "timestamp": 1671533952000,
     "version": 20001,
     "name": "My First F-Droid Archive Demo",
     "icon": "icon.png",
     "description": "These are the apps that have been archived from the main repo.",
-    "address": "https://kryptos-123.github.io/revanced-auto-apk/fdroid/rarchive"
+    "address": "https://kryptos-123.github.io/revanced-auto-archive"
   },
   "requests": {
     "install": [],
