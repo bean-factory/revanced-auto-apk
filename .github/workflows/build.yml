@@ -86,5 +86,5 @@ jobs:
 
   fdroid:
     name: Update F-Droid
-    needs: build
+    needs: run
     uses: ./.github/workflows/fdroid.yml
