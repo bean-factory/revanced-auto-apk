@@ -86,10 +86,11 @@ jobs:
           file_pattern: build.md *.json
           commit_message: Bump version ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}
       
-      - uses: jkaan/git-auto-commit-action@feature/add-support-for-lfs
+      - uses: stefanzweifel/git-auto-commit-action@v3
         with:
           commit_message: Apply automatic changes
-          branch: main 
+          branch: main
+          file_pattern: *.apk
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
