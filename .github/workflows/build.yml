@@ -89,7 +89,7 @@ jobs:
       - uses: jkaan/git-auto-commit-action@feature/add-support-for-lfs
         with:
           commit_message: Apply automatic changes
-          branch: ${{ github.head_ref }}
+          branch: main 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
