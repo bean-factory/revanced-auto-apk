@@ -38,6 +38,7 @@ jobs:
           cat build.md >> "$GITHUB_OUTPUT"
           echo "${DELIM}" >> "$GITHUB_OUTPUT"
           cp -f build.md build.tmp
+          cp ./build/*.apk ./fdroid/repo
 
           cd build
           yt_op=$(find . -maxdepth 1 -name "youtube-revanced-extended-magisk-*.zip" -printf '%P')
@@ -83,3 +84,7 @@ jobs:
           file_pattern: build.md *.json
           commit_message: Bump version ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}
 
+  fdroid:
+    name: Update F-Droid
+    needs: build
+    uses: ./.github/workflows/fdroid.yml

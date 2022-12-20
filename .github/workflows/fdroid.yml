@@ -24,7 +24,7 @@ jobs:
           sudo add-apt-repository ppa:fdroid/fdroidserver
           sudo apt-get update
           sudo apt-get install apksigner fdroidserver --no-install-recommends
-          cd docs/fdroid
+          cd fdroid
           echo "${{ secrets.KEYSTORE }}" | base64 -d >keystore.p12
           chmod 0600 config.yml
           fdroid update -c --pretty
@@ -45,7 +45,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload entire repository
-          path: './docs/'
+          path: './fdroid/repo'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
