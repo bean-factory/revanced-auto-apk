@@ -23,4 +23,4 @@ jobs:
           echo "${{ secrets.KEYSTORE }}" | base64 -d >keystore.p12
           chmod 0600 config.yml
           fdroid update -c --pretty
-          fdroid deploy
+      - uses: stefanzweifel/git-auto-commit-action@v4

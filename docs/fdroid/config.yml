@@ -5,7 +5,7 @@ description: This binary repo is automatically updated with releases from Krypto
 
 archive_older: 2
 
-local_copy_dir: /docs/fdroid
+local_copy_dir: docs/fdroid
 
 keystore: keystore.p12
 repo_keyalias: repokey
