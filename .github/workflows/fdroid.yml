@@ -21,5 +21,6 @@ jobs:
           sudo apt-get install apksigner fdroidserver --no-install-recommends
           cd docs/fdroid
           echo "${{ secrets.KEYSTORE }}" | base64 -d >keystore.p12
+          chmod 0600 config.yml
           fdroid update -c --pretty
           fdroid deploy
