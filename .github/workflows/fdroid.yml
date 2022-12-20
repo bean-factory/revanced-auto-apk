@@ -16,12 +16,7 @@ jobs:
           java-version: 17
       - name: F-Droid
         run: |
-          sudo add-apt-repository ppa:fdroid/fdroidserver
-          sudo apt-get update
-          sudo apt-get install apksigner fdroidserver --no-install-recommends
           cd docs/fdroid
           echo "${{ secrets.KEYSTORE }}" | base64 -d >keystore.p12
-          echo "keystorepass: ${{ secrets.KEYPASS }}" >>config.yml
-          echo "keypass: ${{ secrets.KEYPASS }}" >>config.yml
-          fdroid update -c --pretty
-          fdroid deploy
+          echo "keystorepass: ${{ secrets.KEYPASS }}"
+          echo "keypass: ${{ secrets.KEYPASS }}"
