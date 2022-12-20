@@ -30,6 +30,7 @@ jobs:
           fdroid update -c --pretty
       - uses: stefanzweifel/git-auto-commit-action@v4
   deploy:
+    needs: fdroid
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
