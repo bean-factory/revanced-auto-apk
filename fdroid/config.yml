@@ -1,11 +1,11 @@
 # see https://gitlab.com/fdroid/fdroidserver/-/blob/master/examples/config.yml
 repo_name: ReVanced APKs
-repo_url: https://kryptos-123.github.io/revanced-auto-apk/fdroid/repo/
-description: This binary repo is automatically updated with releases from Kryptos-123/revanced-auto-apk
+repo_url: https://kryptos-123.github.io/revanced-auto-apk/
+description: This binary repo is automatically updated with releases from https://github.com/Kryptos-123/revanced-auto-apk
 
 archive_older: 2
 
-local_copy_dir: docs/fdroid
+local_copy_dir: fdroid
 
 keystore: keystore.p12
 repo_keyalias: repokey
