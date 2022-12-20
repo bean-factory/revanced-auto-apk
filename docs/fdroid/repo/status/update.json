@@ -9,7 +9,7 @@
     "--pretty"
   ],
   "disabled": [],
-  "endTimestamp": 1671523434827,
+  "endTimestamp": 1671523880709,
   "failedBuilds": {},
   "jarsigner": "/opt/hostedtoolcache/Java_Zulu_jdk/17.0.5-8/x64/bin/jarsigner",
   "keytool": "/opt/hostedtoolcache/Java_Zulu_jdk/17.0.5-8/x64/bin/keytool",
@@ -22,6 +22,6 @@
   "noUpdateCheck": [
     "org.fdroid.fdroid"
   ],
-  "startTimestamp": 1671523428000,
+  "startTimestamp": 1671523874000,
   "subcommand": "update"
 }
