@@ -86,16 +86,3 @@ jobs:
           skip_checkout: true
           file_pattern: build.md *.json
           commit_message: Bump version ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}
-      
-      - uses: stefanzweifel/git-auto-commit-action@v3
-        with:
-          commit_message: Apply automatic changes
-          branch: main
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-
-  fdroid:
-    name: Update F-Droid
-    needs: run
-    uses: ./.github/workflows/fdroid.yml
