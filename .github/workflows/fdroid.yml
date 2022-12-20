@@ -3,7 +3,7 @@ name: Update F-Droid
 on: [workflow_call, workflow_dispatch]
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -31,6 +31,7 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@v4
   deploy:
     needs: fdroid
+    name: Deploy to Pages
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

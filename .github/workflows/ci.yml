@@ -6,6 +6,7 @@ on:
 
 jobs:
   check:
+    name: Check if everything is up to date
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -60,6 +61,7 @@ jobs:
       SHOULD_BUILD: ${{ steps.should_build.outputs.SHOULD_BUILD }}
 
   build:
+    name: Build APKs
     needs: check
     uses: ./.github/workflows/build.yml
     if: ${{ needs.check.outputs.SHOULD_BUILD == 1 }}
