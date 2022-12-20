@@ -14,12 +14,6 @@ jobs:
         with:
           distribution: 'zulu'
           java-version: 17
-      - name: Build
-        run: |
-          # use timestamp as Version Code
-          export versionCode=$(date '+%s')
-          sed -i "s,^\(\s*versionCode\)  *[0-9].*,\1 $versionCode," app/build.gradle
-          ./gradlew assembleDebug
       - name: F-Droid
         run: |
           sudo add-apt-repository ppa:fdroid/fdroidserver
