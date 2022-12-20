@@ -85,6 +85,11 @@ jobs:
           skip_checkout: true
           file_pattern: build.md *.json
           commit_message: Bump version ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}
+      
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          branch: main
+          commit_message: Automated upload of APKs
 
   fdroid:
     name: Update F-Droid
