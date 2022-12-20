@@ -6,3 +6,5 @@
 /build
 build.md
 /test
+/docs/fdroid/config.yml
+*.p12
