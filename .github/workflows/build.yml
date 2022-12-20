@@ -90,7 +90,6 @@ jobs:
         with:
           commit_message: Apply automatic changes
           branch: main
-          file_pattern: fdroid/repo/\*.apk
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
