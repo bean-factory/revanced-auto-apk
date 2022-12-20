@@ -67,6 +67,7 @@ jobs:
       - name: Update changelog
         id: update_config
         run: |
+          echo "${{ steps.get_output.outputs.BUILD_LOG }}" > build.tmp
           cp -f build.tmp build.md
           get_update_json() {
             echo "{
@@ -87,6 +88,10 @@ jobs:
           commit_message: Bump version ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}
       
       - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          branch: main
+          skip_checkout: true
+          commit_message: Automated upload of APKs 
 
   fdroid:
     name: Update F-Droid
