@@ -25,7 +25,6 @@ jobs:
           sudo apt-get update
           sudo apt-get install apksigner fdroidserver --no-install-recommends
           cd ./fdroid
-          echo "${{ secrets.KEYSTORE }}" | base64 -d >keystore.p12
           chmod 0600 config.yml
           fdroid update -c --pretty
       - uses: stefanzweifel/git-auto-commit-action@v4
