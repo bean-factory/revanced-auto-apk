@@ -15,9 +15,15 @@ jobs:
           distribution: 'zulu'
           java-version: 17
       - name: F-Droid
+        env:
+          KEYPASS: ${{ secrets.KEYPASS }}
         run: |
+          sudo add-apt-repository ppa:fdroid/fdroidserver
+          sudo apt-get update
+          sudo apt-get install apksigner fdroidserver --no-install-recommends
           cd docs/fdroid
           echo "${{ secrets.KEYSTORE }}" | base64 -d >keystore.p12
-          export KEYPASS = ${{ secrets.KEYPASS }}
-          echo "keystorepass: $KEYPASS"
-          echo "keypass: $KEYPASS"
+          echo "keystorepass: $KEYPASS}" >>config.yml
+          echo "keypass: $KEYPASS" >>config.yml
+          fdroid update -c --pretty
+          fdroid deploy
