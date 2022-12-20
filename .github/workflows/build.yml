@@ -87,6 +87,11 @@ jobs:
           commit_message: Bump version ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}
       
       - uses: jkaan/git-auto-commit-action@feature/add-support-for-lfs
+          with:
+            commit_message: Apply automatic changes
+            branch: ${{ github.head_ref }}
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   fdroid:
     name: Update F-Droid
