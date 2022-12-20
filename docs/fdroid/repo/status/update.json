@@ -1,6 +1,7 @@
 {
+  "/etc/issue.net": "Ubuntu 22.04.1 LTS",
   "antiFeatures": {},
-  "apksigner": null,
+  "apksigner": "/usr/bin/apksigner",
   "archivePolicy0": [],
   "commandLine": [
     "/usr/bin/fdroid update",
@@ -8,13 +9,13 @@
     "--pretty"
   ],
   "disabled": [],
-  "endTimestamp": 1671517633742,
+  "endTimestamp": 1671521445991,
   "failedBuilds": {},
-  "jarsigner": "/usr/bin/jarsigner",
-  "keytool": "/usr/bin/keytool",
+  "jarsigner": "/opt/hostedtoolcache/Java_Zulu_jdk/17.0.5-8/x64/bin/jarsigner",
+  "keytool": "/opt/hostedtoolcache/Java_Zulu_jdk/17.0.5-8/x64/bin/keytool",
   "needsUpdate": [],
   "noPackages": [],
   "noUpdateCheck": [],
-  "startTimestamp": 1671497821000,
+  "startTimestamp": 1671521439000,
   "subcommand": "update"
 }
