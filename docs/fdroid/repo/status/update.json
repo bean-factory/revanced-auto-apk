@@ -9,13 +9,19 @@
     "--pretty"
   ],
   "disabled": [],
-  "endTimestamp": 1671521445991,
+  "endTimestamp": 1671522006799,
   "failedBuilds": {},
   "jarsigner": "/opt/hostedtoolcache/Java_Zulu_jdk/17.0.5-8/x64/bin/jarsigner",
   "keytool": "/opt/hostedtoolcache/Java_Zulu_jdk/17.0.5-8/x64/bin/keytool",
-  "needsUpdate": [],
-  "noPackages": [],
-  "noUpdateCheck": [],
-  "startTimestamp": 1671521439000,
+  "needsUpdate": [
+    "org.fdroid.fdroid"
+  ],
+  "noPackages": [
+    "org.fdroid.fdroid"
+  ],
+  "noUpdateCheck": [
+    "org.fdroid.fdroid"
+  ],
+  "startTimestamp": 1671521998000,
   "subcommand": "update"
 }

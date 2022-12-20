@@ -1,0 +1,112 @@
+{
+  "METADATA_VERSION": 20001,
+  "allow_disabled_algorithms": false,
+  "F-Droid.apk": {
+    "hash": "8c89ce2f42f4a89af8ca6e1ea220f9dfdee220724d8a9cc067d510ac6f3e0d06",
+    "hashType": "sha256",
+    "uses-permission": [
+      [
+        "android.permission.INTERNET",
+        null
+      ],
+      [
+        "android.permission.ACCESS_NETWORK_STATE",
+        null
+      ],
+      [
+        "android.permission.ACCESS_WIFI_STATE",
+        null
+      ],
+      [
+        "android.permission.CHANGE_WIFI_MULTICAST_STATE",
+        null
+      ],
+      [
+        "android.permission.CHANGE_NETWORK_STATE",
+        null
+      ],
+      [
+        "android.permission.CHANGE_WIFI_STATE",
+        null
+      ],
+      [
+        "android.permission.BLUETOOTH",
+        null
+      ],
+      [
+        "android.permission.BLUETOOTH_ADMIN",
+        null
+      ],
+      [
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        null
+      ],
+      [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        null
+      ],
+      [
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        null
+      ],
+      [
+        "android.permission.WRITE_SETTINGS",
+        null
+      ],
+      [
+        "android.permission.NFC",
+        null
+      ],
+      [
+        "android.permission.USB_PERMISSION",
+        22
+      ],
+      [
+        "android.permission.WAKE_LOCK",
+        null
+      ],
+      [
+        "android.permission.FOREGROUND_SERVICE",
+        null
+      ]
+    ],
+    "uses-permission-sdk-23": [
+      [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        null
+      ]
+    ],
+    "features": [],
+    "icons_src": {
+      "240": "res/drawable-hdpi-v4/ic_launcher.png",
+      "120": "res/drawable-ldpi-v4/ic_launcher.png",
+      "160": "res/drawable-mdpi-v4/ic_launcher.png",
+      "320": "res/drawable-xhdpi-v4/ic_launcher.png",
+      "480": "res/drawable-xxhdpi-v4/ic_launcher.png",
+      "640": "res/drawable-xxxhdpi-v4/ic_launcher.png",
+      "-1": "res/drawable-mdpi-v4/ic_launcher.png"
+    },
+    "icons": {
+      "640": "org.fdroid.fdroid.1014050.png",
+      "480": "org.fdroid.fdroid.1014050.png",
+      "320": "org.fdroid.fdroid.1014050.png",
+      "240": "org.fdroid.fdroid.1014050.png",
+      "160": "org.fdroid.fdroid.1014050.png",
+      "120": "org.fdroid.fdroid.1014050.png",
+      "0": "org.fdroid.fdroid.1014050.png"
+    },
+    "antiFeatures": [],
+    "packageName": "org.fdroid.fdroid",
+    "versionCode": 1014050,
+    "name": "F-Droid",
+    "versionName": "1.14",
+    "minSdkVersion": 22,
+    "targetSdkVersion": 25,
+    "sig": "9063aaadfff9cfd811a9c72fb5012f28",
+    "signer": "43238d512c1e5eb2d6569f4a3afbf5523418b82e0a3ed1552770abb9a9c9ccab",
+    "size": 8165518,
+    "apkName": "F-Droid.apk",
+    "icon": "org.fdroid.fdroid.1014050.png",
+    "added": 1671522000.601094
+  }
+}
