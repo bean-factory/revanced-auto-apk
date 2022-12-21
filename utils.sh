@@ -6,7 +6,7 @@ MODULE_SCRIPTS_DIR="scripts"
 TEMP_DIR="temp"
 BUILD_DIR="build"
 
-GITHUB_REPOSITORY=${GITHUB_REPOSITORY:-$"Kryptos-123/revanced-extended"}
+GITHUB_REPOSITORY=${GITHUB_REPOSITORY:-$"beans-321/revanced-auto-apk"}
 NEXT_VER_CODE=${NEXT_VER_CODE:-$(date +'%Y%m%d')}
 WGET_HEADER="User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:106.0) Gecko/20100101 Firefox/106.0"
 
