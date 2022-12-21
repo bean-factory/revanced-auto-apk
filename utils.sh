@@ -306,6 +306,7 @@ build_twitter() {
 	declare -A tw_args
 	tw_args[app_name]="Twitter"
 	tw_args[mode]="$TWITTER_MODE"
+	tw_args[patcher_args]="-m ${RVNE_INTEGRATIONS_APK} $(join_args "${TWITTER_EXCLUDED_PATCHES}" -e) $(join_args "${TWITTER_INCLUDED_PATCHES}" -i)"
 	tw_args[pkg_name]="com.twitter.android"
 	tw_args[apkmirror_dlurl]="twitter-inc/twitter"
 	tw_args[regexp]='APK</span>[^@]*@\([^#]*\)'
@@ -318,6 +319,7 @@ build_reddit() {
 	declare -A reddit_args
 	reddit_args[app_name]="Reddit"
 	reddit_args[mode]="$REDDIT_MODE"
+	reddit_args[patcher_args]="-m ${RVNE_INTEGRATIONS_APK} $(join_args "${REDDIT_EXCLUDED_PATCHES}" -e) $(join_args "${REDDIT_INCLUDED_PATCHES}" -i)"
 	reddit_args[pkg_name]="com.reddit.frontpage"
 	reddit_args[apkmirror_dlurl]="redditinc/reddit"
 	reddit_args[regexp]='APK</span>[^@]*@\([^#]*\)'
