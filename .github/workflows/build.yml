@@ -38,9 +38,6 @@ jobs:
           cat build.md >> "$GITHUB_OUTPUT"
           echo "${DELIM}" >> "$GITHUB_OUTPUT"
           cp -f build.md build.tmp
-          ls ./build
-          ls ./fdroid/repo/
-          cp ./build/*.apk ./fdroid/repo/
 
           cd build
           yt_op=$(find . -maxdepth 1 -name "youtube-revanced-extended-magisk-*.zip" -printf '%P')
