@@ -62,6 +62,14 @@ get_prebuilts() {
 	dl_if_dne "$RVNE_PATCHES_JAR" "$RVNE_PATCHES_URL"
 }
 
+echo "['patch-options']
+'YouTube_AppName' = "Youtube"
+'YouTube_PackageName' = "app.revanced.android.youtube"
+'Music_PackageName' = "app.revanced.android.apps.youtube.music"
+'Custom_Speed_Arrays' = "0.25, 0.5, 0.75, 1.0, 1.25, 1.5, 1.75, 2.0, 2.25, 2.5, 3.0, 5.0"
+'Overlay_Buttons_Icon' = "new"
+darkThemeBackgroundColor = "@android:color/black"
+" > ${TEMP_DIR}/options.toml
 
 abort() { echo "abort: $1" && exit 1; }
 
