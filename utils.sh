@@ -127,7 +127,7 @@ patch_apk() {
 	local stock_input=$1 patched_apk=$2 patcher_args=$3
 	# --rip-lib is only available in my own revanced-cli builds
 	declare -r tdir=$(mktemp -d -p $TEMP_DIR)
-	local cmd="java -jar $RV_CLI_JAR --temp-dir=$tdir -c -a $stock_input -o $patched_apk -b $RV_PATCHES_JAR --keystore=ks.keystore $patcher_args"
+	local cmd="java -jar $RV_CLI_JAR --temp-dir=$tdir -c -a $stock_input -o $patched_apk -b $RV_PATCHES_JAR --keystore=ks.keystore $patcher_args --options=${TEMP_DIR}/options.toml"
 	echo "$cmd"
 	eval "$cmd"
 }
