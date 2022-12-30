@@ -128,15 +128,6 @@ patch_apk() {
 	eval "$cmd"
 }
 
-zip_module() {
-	local patched_apk=$1 module_name=$2 stock_apk=$3 pkg_name=$4 template_dir=$5
-	cp -f "$patched_apk" "${template_dir}/base.apk"
-	cp -f "$stock_apk" "${template_dir}/${pkg_name}.apk"
-	cd "$template_dir" || abort "Module template dir not found"
-	zip -"$COMPRESSION_LEVEL" -FSr "../../${BUILD_DIR}/${module_name}" .
-	cd ../..
-}
-
 build_rv() {
 	local -n args=$1
 	local version patcher_args dl_from build_mode_arr
@@ -146,12 +137,8 @@ build_rv() {
 
 	if [ "$mode_arg" = none ]; then
 		return
-	elif [ "$mode_arg" = module ]; then
-		build_mode_arr=(module)
 	elif [ "$mode_arg" = apk ]; then
 		build_mode_arr=(apk)
-	elif [ "$mode_arg" = both ]; then
-		build_mode_arr=(apk module)
 	else
 		echo "ERROR: undefined build mode for ${args[app_name]}: '${mode_arg}'"
 		return
@@ -160,7 +147,7 @@ build_rv() {
 	for build_mode in "${build_mode_arr[@]}"; do
 		patcher_args="${args[patcher_args]:-}"
 		printf "Building '%s' (%s) in " "${args[app_name]}" "${arch}"
-		if [ "$build_mode" = module ]; then echo "'module' mode"; else echo "'APK' mode"; fi
+		echo "'APK' mode"
 		local apkmirror_category=${args[apkmirror_dlurl]##*/}
 		if [ "$version_mode" = auto ] && [ $dl_from = apkmirror ]; then
 			version=$(get_patch_last_supported_ver "${args[pkg_name]}")
@@ -179,16 +166,6 @@ build_rv() {
 			patcher_args="$patcher_args --experimental"
 		fi
 		echo "Choosing version '${version}'"
-
-		if [ "$build_mode" = module ]; then
-			if [ "${args[rip_all_libs]:-}" = true ]; then
-				# --unsigned is only available in my revanced-cli builds
-				# native libraries are already extracted. remove them all to keep apks smol
-				patcher_args="$patcher_args"
-			else
-				patcher_args="$patcher_args"
-			fi
-		fi
 
 		local stock_apk="${TEMP_DIR}/${app_name_l}-stock-v${version}-${arch}.apk"
 		local apk_output="${BUILD_DIR}/${app_name_l}-v${version}-${arch}.apk"
@@ -231,28 +208,7 @@ build_rv() {
 			echo "Built ${args[app_name]} (${arch}) (non-root): '${apk_output}'"
 			continue
 		fi
-
 		declare -r base_template=$(mktemp -d -p $TEMP_DIR)
-
-		local upj pn
-		upj=$([ "${arch}" = "all" ] && echo "${app_name_l}-update.json" || echo "${app_name_l}-${arch}-update.json")
-		if [ "${args[module_prop_name]:-}" ]; then
-			pn=${args[module_prop_name]}
-		else
-			pn=$([ "${arch}" = "all" ] && echo "${app_name_l}-rvx-NoNameEXE-magisk" || echo "${app_name_l}-${arch}-rvx-NoNameEXE-magisk")
-		fi
-		module_prop "$pn" \
-			"${args[app_name]} ReVanced Extended" \
-			"$version" \
-			"${args[app_name]} ReVanced Extended Magisk Module" \
-			"https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/update/${upj}" \
-			"$base_template"
-
-		local module_output="${app_name_l}-magisk-v${version}-${arch}.zip"
-		zip_module "$patched_apk" "$module_output" "$stock_apk" "${args[pkg_name]}" "$base_template"
-		rm -rf "$base_template"
-
-		echo "Built ${args[app_name]} (${arch}) (root): '${BUILD_DIR}/${module_output}'"
 	done
 }
 
@@ -271,7 +227,6 @@ build_youtube() {
 	youtube_args[rip_all_libs]=true
 	youtube_args[apkmirror_dlurl]="google-inc/youtube"
 	youtube_args[regexp]="APK</span>[^@]*@\([^#]*\)"
-	youtube_args[module_prop_name]="ytrvx-magisk"
 	RV_PATCHES_JAR_BAK=$RV_PATCHES_JAR
 	RV_PATCHES_JAR=$RVNE_PATCHES_JAR
 	build_rv youtube_args
@@ -290,12 +245,10 @@ build_music() {
 
 	for a in arm64-v8a arm-v7a; do
 		if [ $a = arm64-v8a ]; then
-			ytmusic_args[module_prop_name]="ytmusicrvx-magisk"
 			ytmusic_args[arch]=arm64-v8a
 			ytmusic_args[regexp]='arm64-v8a</div>[^@]*@\([^"]*\)'
 			ytmusic_args[mode]="$MUSIC_ARM64_V8A_MODE"
 		elif [ $a = arm-v7a ]; then
-			ytmusic_args[module_prop_name]="ytmusicrvx-arm-magisk"
 			ytmusic_args[arch]=arm-v7a
 			ytmusic_args[regexp]='armeabi-v7a</div>[^@]*@\([^"]*\)'
 			ytmusic_args[mode]="$MUSIC_ARM_V7A_MODE"
@@ -415,3 +368,16 @@ build_windy() {
 	build_rv windy_args
 }
 
+#shellcheck disable=SC2034
+build_tasker() {
+	declare -A tasker_args
+	tasker_args[app_name]="Tasker"
+	tasker_args[mode]="$TASKER_MODE"
+	tasker_args[pkg_name]="net.dinglisch.android.taskerm"
+	tasker_args[apkmirror_dlurl]="joaomgcd/tasker/"
+	tasker_args[regexp]='APK</span>[^@]*@\([^#]*\)'
+	RV_PATCHES_JAR_BAK=$RV_PATCHES_JAR
+	RV_PATCHES_JAR=$RVNE_PATCHES_JAR
+	build_rv tasker_args
+	RV_PATCHES_JAR=$RV_PATCHES_JAR_BAK
+}
