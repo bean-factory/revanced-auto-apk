@@ -374,7 +374,7 @@ build_tasker() {
 	tasker_args[app_name]="Tasker"
 	tasker_args[mode]="$TASKER_MODE"
 	tasker_args[pkg_name]="net.dinglisch.android.taskerm"
-	tasker_args[apkmirror_dlurl]="joaomgcd/tasker/"
+	tasker_args[apkmirror_dlurl]="joaomgcd/tasker"
 	tasker_args[regexp]='APK</span>[^@]*@\([^#]*\)'
 	RV_PATCHES_JAR_BAK=$RV_PATCHES_JAR
 	RV_PATCHES_JAR=$RVNE_PATCHES_JAR
