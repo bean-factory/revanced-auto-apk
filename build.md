@@ -17,8 +17,8 @@ ReVanced Patches:
   
 **App Versions:**  
 YouTube: 17.49.37  
-Twitch: 14.3.2  
+YouTube-Music (arm64-v8a): 5.36.51  
 Twitter: 9.69.1-release.0  
 Reddit: 2022.45.0  
-YouTube-Music (arm64-v8a): 5.36.51  
+Twitch: 14.3.2  
 YouTube-Music (arm-v7a): 5.36.51  
