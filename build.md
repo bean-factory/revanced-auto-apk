@@ -7,9 +7,9 @@ Patches: [revanced-patches-2.149.0.jar](https://github.com/revanced/revanced-pat
 
 **Patches Changelog**
   
-ReVanced Extended Patches:   
+ReVanced Extended Patches:  
 
-
+hide-pip-notificationcustom-branding-icon-afn-redArabicChinese SimplifiedFrenchJapaneseRussianSpanishTurkishVietnamese
   
 ReVanced Patches:   
 
@@ -17,8 +17,9 @@ ReVanced Patches:
   
 **App Versions:**  
 YouTube: 17.49.37  
+Tasker: 6.0.9  
 YouTube-Music (arm64-v8a): 5.36.51  
 Twitter: 9.69.1-release.0  
-Reddit: 2022.45.0  
 Twitch: 14.3.2  
+Reddit: 2022.45.0  
 YouTube-Music (arm-v7a): 5.36.51  
