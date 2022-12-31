@@ -36,16 +36,16 @@ jobs:
           }
 
           is_patches_latest() {
-	    declare -r last_patches_extended_json=$(wget -nv -O- https://api.github.com/repos/inotia00/revanced-patches/releases/latest)
-	    declare -r last_patches_url_extended=$(echo ${last_patches_extended_json} | json_get 'browser_download_url' 'jar')
-	    declare -r last_patches_ver_extended=$(echo ${last_patches_extended_json} | json_get 'tag_name')
-	    declare -r last_patches_json=$(wget -nv -O- https://api.github.com/repos/revanced/revanced-patches/releases/latest)
-	    declare -r last_patches_url=$(echo ${last_patches_json} | json_get 'browser_download_url' 'jar')
-	    declare -r last_patches_ver=$(echo ${last_patches_json}| json_get 'tag_name')
-	    declare -r last_patches="[${last_patches_url_extended##*/}](https://github.com/inotia00/revanced-patches/releases/tag/${last_patches_ver_extended}) [${last_patches_url##*/}](https://github.com/revanced/revanced-patches/releases/tag/${last_patches_ver})"
-	    cur_patches="$(sed -n 's/.*Patches (Extended): \(.*\)/\1/p' build.md | xargs) $(sed -n 's/.*Patches: \(.*\)/\1/p' build.md | xargs)"
-	    echo "latest patches version: $last_patches"
-	    echo "current patches version: $cur_patches"
+            declare -r last_patches_extended_json=$(wget -nv -O- https://api.github.com/repos/inotia00/revanced-patches/releases/latest)
+            declare -r last_patches_url_extended=$(echo ${last_patches_extended_json} | json_get 'browser_download_url' 'jar')
+            declare -r last_patches_ver_extended=$(echo ${last_patches_extended_json} | json_get 'tag_name')
+            declare -r last_patches_json=$(wget -nv -O- https://api.github.com/repos/revanced/revanced-patches/releases/latest)
+            declare -r last_patches_url=$(echo ${last_patches_json} | json_get 'browser_download_url' 'jar')
+            declare -r last_patches_ver=$(echo ${last_patches_json}| json_get 'tag_name')
+            declare -r last_patches="[${last_patches_url_extended##*/}](https://github.com/inotia00/revanced-patches/releases/tag/${last_patches_ver_extended}) [${last_patches_url##*/}](https://github.com/revanced/revanced-patches/releases/tag/${last_patches_ver})"
+            cur_patches="$(sed -n 's/.*Patches (Extended): \(.*\)/\1/p' build.md | xargs) $(sed -n 's/.*Patches: \(.*\)/\1/p' build.md | xargs)"
+            echo "latest patches version: $last_patches"
+            echo "current patches version: $cur_patches"
             [ "$cur_patches" != "$last_patches" ] # test success=>build, fail=>dont build
           }
 
