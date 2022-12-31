@@ -36,15 +36,17 @@ get_prebuilts() {
 	RV_PATCHES_CHANGELOG=$(echo "$RV_PATCHES" | json_get 'body' | sed 's/\(\\n\)\+/\\n/g')
 	#RV_PATCHES_CHANGELOG=""
 	RV_PATCHES_URL=$(echo "$RV_PATCHES" | json_get 'browser_download_url' 'jar')
+	RV_PATCHES_TAG=$(echo "$RV_PATCHES" | json_get 'tag_name')
 	RV_PATCHES_JAR="${TEMP_DIR}/${RV_PATCHES_URL##*/}"
-	log "Patches (Extended): [${RV_PATCHES_URL##*/}](https://github.com/inotia00/revanced-patches/releases/latest)"
+	log "Patches (Extended): [${RV_PATCHES_URL##*/}](https://github.com/inotia00/revanced-patches/releases/tag/$RV_PATCHES_TAG)"
 	
 	RVNE_PATCHES=$(req https://api.github.com/repos/revanced/revanced-patches/releases/latest -)
 	RVNE_PATCHES_CHANGELOG=$(echo "$RVNE_PATCHES" | json_get 'body' | sed 's/\(\\n\)\+/\\n/g')
 	#RVNE_PATCHES_CHANGELOG=""
 	RVNE_PATCHES_URL=$(echo "$RVNE_PATCHES" | json_get 'browser_download_url' 'jar')
+	RVNE_PATCHES_TAG=$(echo "$RVNE_PATCHES" | json_get 'tag_name')
 	RVNE_PATCHES_JAR="${TEMP_DIR}/${RVNE_PATCHES_URL##*/}"
-	log "Patches: [${RVNE_PATCHES_URL##*/}](https://github.com/revanced/revanced-patches/releases/latest)"
+	log "Patches: [${RVNE_PATCHES_URL##*/}](https://github.com/revanced/revanced-patches/releases/tag/$RVNE_PATCHES_TAG)"
 	log "\n**Patches Changelog**\n"
 	log "ReVanced Extended Patches:"
 	log "\n\`\`\`"
