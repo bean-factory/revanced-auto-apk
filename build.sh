@@ -25,7 +25,7 @@ build_tasker &
 log "\n**App Hashes:**"
 log "\`\`\`"
 for FILE in build/*.apk; do
-	echo "$(echo $FILE | cut -d / -f 2): $(sha256sum $FILE | cut -d ' ' -f 1)"
+	log "$(echo $FILE | cut -d / -f 2): $(sha256sum $FILE | cut -d ' ' -f 1)"
 done
 log "\`\`\`"
 wait
