@@ -234,7 +234,7 @@ join_args() {
 build_youtube() {
 	declare -A youtube_args
 	youtube_args[app_name]="YouTube"
-	youtube_args[patcher_args]="-m ${RV_INTEGRATIONS_APK} $(join_args "${YOUTUBE_EXCLUDED_PATCHES}" -e) $(join_args "${YOUTUBE_INCLUDED_PATCHES}" -i)"
+	youtube_args[patcher_args]="-m ${RVE_INTEGRATIONS_APK} $(join_args "${YOUTUBE_EXCLUDED_PATCHES}" -e) $(join_args "${YOUTUBE_INCLUDED_PATCHES}" -i)"
 	youtube_args[mode]="$YOUTUBE_MODE"
 	youtube_args[microg_patch]="microg-support"
 	youtube_args[pkg_name]="com.google.android.youtube"
