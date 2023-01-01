@@ -36,10 +36,10 @@ jobs:
           }
 
           is_patches_latest() {
-            declare -r last_patches_extended_json=$(wget -nv -O- https://api.github.com/repos/inotia00/revanced-patches/releases/latest)
+            declare -r last_patches_extended_json=$(wget -nv -O- --header="$WGET_HEADER" https://api.github.com/repos/inotia00/revanced-patches/releases/latest)
             declare -r last_patches_url_extended=$(echo ${last_patches_extended_json} | json_get 'browser_download_url' 'jar')
             declare -r last_patches_ver_extended=$(echo ${last_patches_extended_json} | json_get 'tag_name')
-            declare -r last_patches_json=$(wget -nv -O- https://api.github.com/repos/revanced/revanced-patches/releases/latest)
+            declare -r last_patches_json=$(wget -nv -O- --header="$WGET_HEADER" https://api.github.com/repos/revanced/revanced-patches/releases/latest)
             declare -r last_patches_url=$(echo ${last_patches_json} | json_get 'browser_download_url' 'jar')
             declare -r last_patches_ver=$(echo ${last_patches_json}| json_get 'tag_name')
             declare -r last_patches="[${last_patches_url_extended##*/}](https://github.com/inotia00/revanced-patches/releases/tag/${last_patches_ver_extended}) [${last_patches_url##*/}](https://github.com/revanced/revanced-patches/releases/tag/${last_patches_ver})"
@@ -68,4 +68,3 @@ jobs:
     needs: check
     uses: ./.github/workflows/build.yml
     if: ${{ needs.check.outputs.SHOULD_BUILD == 1 }}
-
