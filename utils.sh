@@ -90,7 +90,11 @@ get_largest_ver() {
 	if [[ $max = 0 ]]; then echo ""; else echo "$max"; fi
 }
 get_patch_last_supported_ver() {
-	unzip -p "$RV_PATCHES_JAR" | strings -s , | sed -rn "s/.*${1},versions,(([0-9.]*,*)*),Lk.*/\1/p" | tr ',' '\n' | get_largest_ver
+	if [ ${1} == "YouTube" ];then
+		unzip -p "$RVNE_PATCHES_JAR" | strings -s , | sed -rn "s/.*${1},versions,(([0-9.]*,*)*),Lk.*/\1/p" | tr ',' '\n' | get_largest_ver
+	else
+		unzip -p "$RV_PATCHES_JAR" | strings -s , | sed -rn "s/.*${1},versions,(([0-9.]*,*)*),Lk.*/\1/p" | tr ',' '\n' | get_largest_ver
+	fi
 }
 
 dl_if_dne() {
