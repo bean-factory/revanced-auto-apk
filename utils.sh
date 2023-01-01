@@ -47,7 +47,7 @@ get_prebuilts() {
 	RVNE_PATCHES_TAG=$(echo "$RVNE_PATCHES" | json_get 'tag_name')
 	RVNE_PATCHES_JAR="${TEMP_DIR}/${RVNE_PATCHES_URL##*/}"
 	log "Patches: [${RVNE_PATCHES_URL##*/}](https://github.com/revanced/revanced-patches/releases/tag/$RVNE_PATCHES_TAG)"
-	log "\n**Patches Changelog**\n"
+	log "\n**Patches Changelog**: "
 	log "ReVanced Extended Patches:"
 	log "\n\`\`\`"
 	log "${RV_PATCHES_CHANGELOG//# [/### [}"
@@ -210,7 +210,7 @@ build_rv() {
 		fi
 		if [ "$build_mode" = apk ]; then
 			cp -f "$patched_apk" "${apk_output}"
-			echo "Built ${args[app_name]} (${arch}) (non-root): '${apk_output}'"
+			echo "Built ${args[app_name]} (${arch}): '${apk_output}'"
 			continue
 		fi
 		declare -r base_template=$(mktemp -d -p $TEMP_DIR)
@@ -221,7 +221,6 @@ join_args() {
 	echo "$1" | tr -d '\t\r' | tr ' ' '\n' | grep -v '^$' | sed "s/^/${2} /" | paste -sd " " - || echo ""
 }
 
-#shellcheck disable=SC2034
 build_youtube() {
 	declare -A youtube_args
 	youtube_args[app_name]="YouTube"
@@ -238,7 +237,6 @@ build_youtube() {
 	RV_PATCHES_JAR=$RV_PATCHES_JAR_BAK
 }
 
-#shellcheck disable=SC2034
 build_music() {
 	declare -A ytmusic_args
 	ytmusic_args[app_name]="YouTube-Music"
@@ -263,7 +261,6 @@ build_music() {
 	done
 }
 
-#shellcheck disable=SC2034
 build_twitter() {
 	declare -A tw_args
 	tw_args[app_name]="Twitter"
@@ -276,7 +273,6 @@ build_twitter() {
 	build_rv tw_args
 }
 
-#shellcheck disable=SC2034
 build_reddit() {
 	declare -A reddit_args
 	reddit_args[app_name]="Reddit"
@@ -289,7 +285,6 @@ build_reddit() {
 	build_rv reddit_args
 }
 
-#shellcheck disable=SC2034
 build_twitch() {
 	declare -A twitch_args
 	twitch_args[app_name]="Twitch"
@@ -302,7 +297,6 @@ build_twitch() {
 	build_rv twitch_args
 }
 
-#shellcheck disable=SC2034
 build_tiktok() {
 	declare -A tiktok_args
 	tiktok_args[app_name]="TikTok"
@@ -315,7 +309,6 @@ build_tiktok() {
 	build_rv tiktok_args
 }
 
-#shellcheck disable=SC2034
 build_spotify() {
 	declare -A spotify_args
 	spotify_args[app_name]="Spotify"
@@ -325,7 +318,6 @@ build_spotify() {
 	build_rv spotify_args
 }
 
-#shellcheck disable=SC2034
 build_ticktick() {
 	declare -A ticktick_args
 	ticktick_args[app_name]="TickTick"
@@ -337,7 +329,6 @@ build_ticktick() {
 	build_rv ticktick_args
 }
 
-#shellcheck disable=SC2034
 build_warn_wetter() {
 	declare -A warn_wetter_args
 	warn_wetter_args[app_name]="WarnWetter"
@@ -349,7 +340,6 @@ build_warn_wetter() {
 	build_rv warn_wetter_args
 }
 
-#shellcheck disable=SC2034
 build_backdrops() {
 	declare -A backdrops_args
 	backdrops_args[app_name]="Backdrops"
@@ -361,7 +351,6 @@ build_backdrops() {
 	build_rv backdrops_args
 }
 
-#shellcheck disable=SC2034
 build_windy() {
 	declare -A windy_args
 	windy_args[app_name]="Windy"
@@ -373,7 +362,6 @@ build_windy() {
 	build_rv windy_args
 }
 
-#shellcheck disable=SC2034
 build_tasker() {
 	declare -A tasker_args
 	tasker_args[app_name]="Tasker"
@@ -385,4 +373,13 @@ build_tasker() {
 	RV_PATCHES_JAR=$RVNE_PATCHES_JAR
 	build_rv tasker_args
 	RV_PATCHES_JAR=$RV_PATCHES_JAR_BAK
+}
+
+hash_gen() {
+	log "\n**App Hashes:**"
+	log "\`\`\`"
+	for FILE in build/*.apk; do
+		log "$(echo $FILE | cut -d / -f 2): $(sha256sum $FILE | cut -d ' ' -f 1)"
+	done
+	log "\`\`\`"
 }
