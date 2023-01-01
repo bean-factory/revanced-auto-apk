@@ -2,7 +2,6 @@
 
 source semver
 
-MODULE_SCRIPTS_DIR="scripts"
 TEMP_DIR="temp"
 BUILD_DIR="build"
 
@@ -24,7 +23,7 @@ get_prebuilts() {
 	
 	RVE_INTEGRATIONS=$(req https://api.github.com/repos/inotia00/revanced-integrations/releases/latest -)
 	RVE_INTEGRATIONS_URL=$(echo "$RVE_INTEGRATIONS" | json_get 'browser_download_url')
-	RVE_INTEGRATIONS_APK=${RVE_INTEGRATIONS_URL##*/}
+	RVE_INTEGRATIONS_APK=$(echo ${RVE_INTEGRATIONS_URL##*/} | sed 's/unsigned/unsigned-extended/g')
 	RVE_INTEGRATIONS_APK="${RVE_INTEGRATIONS_APK%.apk}-$(cut -d/ -f8 <<<"$RVE_INTEGRATIONS_URL").apk"
 	RVE_INTEGRATIONS_TAG=$(echo "$RVE_INTEGRATIONS" | json_get 'tag_name')
 	log "Integrations (Extended): [$RVE_INTEGRATIONS_APK](https://github.com/inotia00/revanced-integrations/releases/tag/$RVE_INTEGRATIONS_TAG)"
@@ -43,7 +42,7 @@ get_prebuilts() {
 	#RVE_PATCHES_CHANGELOG=""
 	RVE_PATCHES_URL=$(echo "$RVE_PATCHES" | json_get 'browser_download_url' 'jar')
 	RVE_PATCHES_TAG=$(echo "$RVE_PATCHES" | json_get 'tag_name')
-	RVE_PATCHES_JAR="${TEMP_DIR}/${RVE_PATCHES_URL##*/}"
+	RVE_PATCHES_JAR="$(echo ${TEMP_DIR}/${RVE_PATCHES_URL##*/} | sed 's/revanced/revanced-extended/g')"
 	log "Patches (Extended): [${RVE_PATCHES_URL##*/}](https://github.com/inotia00/revanced-patches/releases/tag/$RVE_PATCHES_TAG)"
 	
 	RV_PATCHES=$(req https://api.github.com/repos/revanced/revanced-patches/releases/latest -)
