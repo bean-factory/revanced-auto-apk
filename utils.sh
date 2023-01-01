@@ -96,10 +96,10 @@ get_largest_ver() {
 	if [[ $max = 0 ]]; then echo ""; else echo "$max"; fi
 }
 get_patch_last_supported_ver() {
-	if [ ${1} == "YouTube" ];then
-		unzip -p "$RV_PATCHES_JAR" | strings -s , | sed -rn "s/.*${1},versions,(([0-9.]*,*)*),Lk.*/\1/p" | tr ',' '\n' | get_largest_ver
-	else
+	if [ ${1} == "YouTube" ] || [ ${1} == "YouTube-Music" ];then
 		unzip -p "$RVE_PATCHES_JAR" | strings -s , | sed -rn "s/.*${1},versions,(([0-9.]*,*)*),Lk.*/\1/p" | tr ',' '\n' | get_largest_ver
+	else
+		unzip -p "$RV_PATCHES_JAR" | strings -s , | sed -rn "s/.*${1},versions,(([0-9.]*,*)*),Lk.*/\1/p" | tr ',' '\n' | get_largest_ver
 	fi
 }
 
@@ -241,7 +241,10 @@ build_youtube() {
 	youtube_args[rip_all_libs]=true
 	youtube_args[apkmirror_dlurl]="google-inc/youtube"
 	youtube_args[regexp]="APK</span>[^@]*@\([^#]*\)"
+	RV_PATCHES_JAR_BAK=$RV_PATCHES_JAR
+	RV_PATCHES_JAR=$RVE_PATCHES_JAR
 	build_rv youtube_args
+	RV_PATCHES_JAR=$RV_PATCHES_JAR_BAK
 }
 
 build_music() {
