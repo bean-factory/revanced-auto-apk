@@ -22,6 +22,6 @@ build_warn_wetter &
 build_backdrops &
 build_windy &
 build_tasker &
-hash_gen &
 wait
+hash_gen
 echo "Done"
