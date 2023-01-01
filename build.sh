@@ -22,6 +22,7 @@ build_warn_wetter &
 build_backdrops &
 build_windy &
 build_tasker &
+build_citra &
 wait
 hash_gen
 echo "Done"
