@@ -29,7 +29,7 @@ jobs:
 
               echo "current yt version: $cur_yt"
               echo "latest yt version: $last_ver"
-              [ "$cur_yt" != "$last_ver" ] # test success=>build, fail=>dont build
+              [ "$cur_yt" != "$last_ver" ] && [[ "$last_patches" == *"jar"* ]] # test success=>build, fail=>dont build
             else
               return 1 # not experimental, dont build
             fi
@@ -46,7 +46,7 @@ jobs:
             cur_patches="$(sed -n 's/.*Patches (Extended): \(.*\)/\1/p' build.md | xargs) $(sed -n 's/.*Patches: \(.*\)/\1/p' build.md | xargs)"
             echo "latest patches version: $last_patches"
             echo "current patches version: $cur_patches"
-            [ "$cur_patches" != "$last_patches" ] # test success=>build, fail=>dont build
+            [ "$cur_patches" != "$last_patches" ] && [[ "$last_patches" == *"jar"* ]] # test success=>build, fail=>dont build
           }
 
           if ! git checkout update; then
