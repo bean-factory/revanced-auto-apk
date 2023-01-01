@@ -22,52 +22,52 @@ get_prebuilts() {
 	log "**ReVanced Versions:**"
 	log "CLI: [${RV_CLI_URL##*/}](https://github.com/revanced/revanced-cli/releases/tag/$RV_CLI_TAG)"
 	
-	RV_INTEGRATIONS=$(req https://api.github.com/repos/inotia00/revanced-integrations/releases/latest -)
+	RVE_INTEGRATIONS=$(req https://api.github.com/repos/inotia00/revanced-integrations/releases/latest -)
+	RVE_INTEGRATIONS_URL=$(echo "$RVE_INTEGRATIONS" | json_get 'browser_download_url')
+	RVE_INTEGRATIONS_APK=${RVE_INTEGRATIONS_URL##*/}
+	RVE_INTEGRATIONS_APK="${RVE_INTEGRATIONS_APK%.apk}-$(cut -d/ -f8 <<<"$RVE_INTEGRATIONS_URL").apk"
+	RVE_INTEGRATIONS_TAG=$(echo "$RVE_INTEGRATIONS" | json_get 'tag_name')
+	log "Integrations (Extended): [$RVE_INTEGRATIONS_APK](https://github.com/inotia00/revanced-integrations/releases/tag/$RVE_INTEGRATIONS_TAG)"
+	RVE_INTEGRATIONS_APK="${TEMP_DIR}/${RVE_INTEGRATIONS_APK}"
+	
+	RV_INTEGRATIONS=$(req https://api.github.com/repos/revanced/revanced-integrations/releases/latest -)
 	RV_INTEGRATIONS_URL=$(echo "$RV_INTEGRATIONS" | json_get 'browser_download_url')
 	RV_INTEGRATIONS_APK=${RV_INTEGRATIONS_URL##*/}
 	RV_INTEGRATIONS_APK="${RV_INTEGRATIONS_APK%.apk}-$(cut -d/ -f8 <<<"$RV_INTEGRATIONS_URL").apk"
 	RV_INTEGRATIONS_TAG=$(echo "$RV_INTEGRATIONS" | json_get 'tag_name')
-	log "Integrations (Extended): [$RV_INTEGRATIONS_APK](https://github.com/inotia00/revanced-integrations/releases/tag/$RV_INTEGRATIONS_TAG)"
+	log "Integrations: [$RV_INTEGRATIONS_APK](https://github.com/revanced/revanced-integrations/releases/tag/$RV_INTEGRATIONS_TAG)"
 	RV_INTEGRATIONS_APK="${TEMP_DIR}/${RV_INTEGRATIONS_APK}"
-	
-	RVNE_INTEGRATIONS=$(req https://api.github.com/repos/revanced/revanced-integrations/releases/latest -)
-	RVNE_INTEGRATIONS_URL=$(echo "$RVNE_INTEGRATIONS" | json_get 'browser_download_url')
-	RVNE_INTEGRATIONS_APK=${RVNE_INTEGRATIONS_URL##*/}
-	RVNE_INTEGRATIONS_APK="${RVNE_INTEGRATIONS_APK%.apk}-$(cut -d/ -f8 <<<"$RVNE_INTEGRATIONS_URL").apk"
-	RVNE_INTEGRATIONS_TAG=$(echo "$RVNE_INTEGRATIONS" | json_get 'tag_name')
-	log "Integrations: [$RVNE_INTEGRATIONS_APK](https://github.com/revanced/revanced-integrations/releases/tag/$RVNE_INTEGRATIONS_TAG)"
-	RVNE_INTEGRATIONS_APK="${TEMP_DIR}/${RVNE_INTEGRATIONS_APK}"
 
-	RV_PATCHES=$(req https://api.github.com/repos/inotia00/revanced-patches/releases/latest -)
+	RVE_PATCHES=$(req https://api.github.com/repos/inotia00/revanced-patches/releases/latest -)
+	RVE_PATCHES_CHANGELOG=$(echo "$RVE_PATCHES" | json_get 'body' | sed 's/\(\\n\)\+/\\n/g')
+	#RVE_PATCHES_CHANGELOG=""
+	RVE_PATCHES_URL=$(echo "$RVE_PATCHES" | json_get 'browser_download_url' 'jar')
+	RVE_PATCHES_TAG=$(echo "$RVE_PATCHES" | json_get 'tag_name')
+	RVE_PATCHES_JAR="${TEMP_DIR}/${RVE_PATCHES_URL##*/}"
+	log "Patches (Extended): [${RVE_PATCHES_URL##*/}](https://github.com/inotia00/revanced-patches/releases/tag/$RVE_PATCHES_TAG)"
+	
+	RV_PATCHES=$(req https://api.github.com/repos/revanced/revanced-patches/releases/latest -)
 	RV_PATCHES_CHANGELOG=$(echo "$RV_PATCHES" | json_get 'body' | sed 's/\(\\n\)\+/\\n/g')
 	#RV_PATCHES_CHANGELOG=""
 	RV_PATCHES_URL=$(echo "$RV_PATCHES" | json_get 'browser_download_url' 'jar')
 	RV_PATCHES_TAG=$(echo "$RV_PATCHES" | json_get 'tag_name')
 	RV_PATCHES_JAR="${TEMP_DIR}/${RV_PATCHES_URL##*/}"
-	log "Patches (Extended): [${RV_PATCHES_URL##*/}](https://github.com/inotia00/revanced-patches/releases/tag/$RV_PATCHES_TAG)"
-	
-	RVNE_PATCHES=$(req https://api.github.com/repos/revanced/revanced-patches/releases/latest -)
-	RVNE_PATCHES_CHANGELOG=$(echo "$RVNE_PATCHES" | json_get 'body' | sed 's/\(\\n\)\+/\\n/g')
-	#RVNE_PATCHES_CHANGELOG=""
-	RVNE_PATCHES_URL=$(echo "$RVNE_PATCHES" | json_get 'browser_download_url' 'jar')
-	RVNE_PATCHES_TAG=$(echo "$RVNE_PATCHES" | json_get 'tag_name')
-	RVNE_PATCHES_JAR="${TEMP_DIR}/${RVNE_PATCHES_URL##*/}"
-	log "Patches: [${RVNE_PATCHES_URL##*/}](https://github.com/revanced/revanced-patches/releases/tag/$RVNE_PATCHES_TAG)"
+	log "Patches: [${RV_PATCHES_URL##*/}](https://github.com/revanced/revanced-patches/releases/tag/$RV_PATCHES_TAG)"
 	log "\n**Patches Changelog**: "
 	log "ReVanced Extended Patches:"
 	log "\n\`\`\`"
-	log "${RV_PATCHES_CHANGELOG//# [/### [}"
+	log "${RVE_PATCHES_CHANGELOG//# [/### [}"
 	log "\`\`\`\n"
 	log "ReVanced Patches: "
 	log "\n\`\`\`"
-	log "${RVNE_PATCHES_CHANGELOG//# [/### [}"
+	log "${RV_PATCHES_CHANGELOG//# [/### [}"
 	log "\`\`\`\n"
 
 	dl_if_dne "$RV_CLI_JAR" "$RV_CLI_URL"
+	dl_if_dne "$RVE_INTEGRATIONS_APK" "$RVE_INTEGRATIONS_URL"
 	dl_if_dne "$RV_INTEGRATIONS_APK" "$RV_INTEGRATIONS_URL"
-	dl_if_dne "$RVNE_INTEGRATIONS_APK" "$RVNE_INTEGRATIONS_URL"
+	dl_if_dne "$RVE_PATCHES_JAR" "$RVE_PATCHES_URL"
 	dl_if_dne "$RV_PATCHES_JAR" "$RV_PATCHES_URL"
-	dl_if_dne "$RVNE_PATCHES_JAR" "$RVNE_PATCHES_URL"
 }
 
 abort() { echo "abort: $1" && exit 1; }
@@ -77,12 +77,12 @@ set_prebuilts() {
 	RV_CLI_JAR=$(find "$TEMP_DIR" -maxdepth 1 -name "revanced-cli-*" | tail -n1)
 	[ -z "$RV_CLI_JAR" ] && abort "revanced cli not found"
 	log "CLI: ${RV_CLI_JAR#"$TEMP_DIR/"}"
-	RV_INTEGRATIONS_APK=$(find "$TEMP_DIR" -maxdepth 1 -name "app-release-unsigned-*" | tail -n1)
+	RVE_INTEGRATIONS_APK=$(find "$TEMP_DIR" -maxdepth 1 -name "app-release-unsigned-*" | tail -n1)
 	[ -z "$RV_CLI_JAR" ] && abort "revanced integrations not found"
-	log "Integrations: ${RV_INTEGRATIONS_APK#"$TEMP_DIR/"}"
-	RV_PATCHES_JAR=$(find "$TEMP_DIR" -maxdepth 1 -name "revanced-patches-*" | tail -n1)
+	log "Integrations: ${RVE_INTEGRATIONS_APK#"$TEMP_DIR/"}"
+	RVE_PATCHES_JAR=$(find "$TEMP_DIR" -maxdepth 1 -name "revanced-patches-*" | tail -n1)
 	[ -z "$RV_CLI_JAR"  && abort "revanced patches not found"
-	log "Patches: ${RV_PATCHES_JAR#"$TEMP_DIR/"}"
+	log "Patches: ${RVE_PATCHES_JAR#"$TEMP_DIR/"}"
 }
 
 
@@ -97,9 +97,9 @@ get_largest_ver() {
 }
 get_patch_last_supported_ver() {
 	if [ ${1} == "YouTube" ];then
-		unzip -p "$RVNE_PATCHES_JAR" | strings -s , | sed -rn "s/.*${1},versions,(([0-9.]*,*)*),Lk.*/\1/p" | tr ',' '\n' | get_largest_ver
-	else
 		unzip -p "$RV_PATCHES_JAR" | strings -s , | sed -rn "s/.*${1},versions,(([0-9.]*,*)*),Lk.*/\1/p" | tr ',' '\n' | get_largest_ver
+	else
+		unzip -p "$RVE_PATCHES_JAR" | strings -s , | sed -rn "s/.*${1},versions,(([0-9.]*,*)*),Lk.*/\1/p" | tr ',' '\n' | get_largest_ver
 	fi
 }
 
@@ -234,23 +234,20 @@ join_args() {
 build_youtube() {
 	declare -A youtube_args
 	youtube_args[app_name]="YouTube"
-	youtube_args[patcher_args]="-m ${RVNE_INTEGRATIONS_APK} $(join_args "${YOUTUBE_EXCLUDED_PATCHES}" -e) $(join_args "${YOUTUBE_INCLUDED_PATCHES}" -i)"
+	youtube_args[patcher_args]="-m ${RV_INTEGRATIONS_APK} $(join_args "${YOUTUBE_EXCLUDED_PATCHES}" -e) $(join_args "${YOUTUBE_INCLUDED_PATCHES}" -i)"
 	youtube_args[mode]="$YOUTUBE_MODE"
 	youtube_args[microg_patch]="microg-support"
 	youtube_args[pkg_name]="com.google.android.youtube"
 	youtube_args[rip_all_libs]=true
 	youtube_args[apkmirror_dlurl]="google-inc/youtube"
 	youtube_args[regexp]="APK</span>[^@]*@\([^#]*\)"
-	RV_PATCHES_JAR_BAK=$RV_PATCHES_JAR
-	RV_PATCHES_JAR=$RVNE_PATCHES_JAR
 	build_rv youtube_args
-	RV_PATCHES_JAR=$RV_PATCHES_JAR_BAK
 }
 
 build_music() {
 	declare -A ytmusic_args
 	ytmusic_args[app_name]="YouTube-Music"
-	ytmusic_args[patcher_args]="-m ${RV_INTEGRATIONS_APK} $(join_args "${MUSIC_EXCLUDED_PATCHES}" -e) $(join_args "${MUSIC_INCLUDED_PATCHES}" -i)"
+	ytmusic_args[patcher_args]="-m ${RVE_INTEGRATIONS_APK} $(join_args "${MUSIC_EXCLUDED_PATCHES}" -e) $(join_args "${MUSIC_INCLUDED_PATCHES}" -i)"
 	ytmusic_args[microg_patch]="music-microg-support"
 	ytmusic_args[pkg_name]="com.google.android.apps.youtube.music"
 	ytmusic_args[rip_all_libs]=false
@@ -267,7 +264,10 @@ build_music() {
 			ytmusic_args[mode]="$MUSIC_ARM_V7A_MODE"
 		fi
 
+		RV_PATCHES_JAR_BAK=$RV_PATCHES_JAR
+		RV_PATCHES_JAR=$RVE_PATCHES_JAR
 		build_rv ytmusic_args
+		RV_PATCHES_JAR=$RV_PATCHES_JAR_BAK
 	done
 }
 
@@ -275,7 +275,7 @@ build_twitter() {
 	declare -A tw_args
 	tw_args[app_name]="Twitter"
 	tw_args[mode]="$TWITTER_MODE"
-	tw_args[patcher_args]="-m ${RVNE_INTEGRATIONS_APK} $(join_args "${TWITTER_EXCLUDED_PATCHES}" -e) $(join_args "${TWITTER_INCLUDED_PATCHES}" -i)"
+	tw_args[patcher_args]="-m ${RV_INTEGRATIONS_APK} $(join_args "${TWITTER_EXCLUDED_PATCHES}" -e) $(join_args "${TWITTER_INCLUDED_PATCHES}" -i)"
 	tw_args[pkg_name]="com.twitter.android"
 	tw_args[apkmirror_dlurl]="twitter-inc/twitter"
 	tw_args[regexp]='APK</span>[^@]*@\([^#]*\)'
@@ -287,7 +287,7 @@ build_reddit() {
 	declare -A reddit_args
 	reddit_args[app_name]="Reddit"
 	reddit_args[mode]="$REDDIT_MODE"
-	reddit_args[patcher_args]="-m ${RVNE_INTEGRATIONS_APK} $(join_args "${REDDIT_EXCLUDED_PATCHES}" -e) $(join_args "${REDDIT_INCLUDED_PATCHES}" -i)"
+	reddit_args[patcher_args]="-m ${RV_INTEGRATIONS_APK} $(join_args "${REDDIT_EXCLUDED_PATCHES}" -e) $(join_args "${REDDIT_INCLUDED_PATCHES}" -i)"
 	reddit_args[pkg_name]="com.reddit.frontpage"
 	reddit_args[apkmirror_dlurl]="redditinc/reddit"
 	reddit_args[regexp]='APK</span>[^@]*@\([^#]*\)'
@@ -298,7 +298,7 @@ build_reddit() {
 build_twitch() {
 	declare -A twitch_args
 	twitch_args[app_name]="Twitch"
-	twitch_args[patcher_args]="-m ${RVNE_INTEGRATIONS_APK} $(join_args "${TWITCH_EXCLUDED_PATCHES}" -e) $(join_args "${TWITCH_INCLUDED_PATCHES}" -i)"
+	twitch_args[patcher_args]="-m ${RV_INTEGRATIONS_APK} $(join_args "${TWITCH_EXCLUDED_PATCHES}" -e) $(join_args "${TWITCH_INCLUDED_PATCHES}" -i)"
 	twitch_args[mode]="$TWITCH_MODE"
 	twitch_args[pkg_name]="tv.twitch.android.app"
 	twitch_args[apkmirror_dlurl]="twitch-interactive-inc/twitch"
@@ -310,7 +310,7 @@ build_twitch() {
 build_tiktok() {
 	declare -A tiktok_args
 	tiktok_args[app_name]="TikTok"
-	tiktok_args[patcher_args]="-m ${RV_INTEGRATIONS_APK}"
+	tiktok_args[patcher_args]="-m ${RVE_INTEGRATIONS_APK}"
 	tiktok_args[mode]="$TIKTOK_MODE"
 	tiktok_args[pkg_name]="com.zhiliaoapp.musically"
 	tiktok_args[apkmirror_dlurl]="tiktok-pte-ltd/tik-tok-including-musical-ly"
@@ -379,10 +379,19 @@ build_tasker() {
 	tasker_args[pkg_name]="net.dinglisch.android.taskerm"
 	tasker_args[apkmirror_dlurl]="joaomgcd/tasker"
 	tasker_args[regexp]='APK</span>[^@]*@\([^#]*\)'
-	RV_PATCHES_JAR_BAK=$RV_PATCHES_JAR
-	RV_PATCHES_JAR=$RVNE_PATCHES_JAR
+	
 	build_rv tasker_args
-	RV_PATCHES_JAR=$RV_PATCHES_JAR_BAK
+}
+
+build_citra() {
+	declare -A citra_args
+	citra_args[app_name]="Tasker"
+	citra_args[mode]="$CITRA_MODE"
+	citra_args[pkg_name]="org.citra.citra_emu"
+	citra_args[apkmirror_dlurl]="citra-emulator/citra-emulator"
+	citra_args[regexp]='APK</span>[^@]*@\([^#]*\)'
+	
+	build_rv citra_args
 }
 
 hash_gen() {
