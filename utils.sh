@@ -15,21 +15,27 @@ json_get() {
 }
 get_prebuilts() {
 	echo "Getting prebuilts"
-	RV_CLI_URL=$(req https://api.github.com/repos/revanced/revanced-cli/releases/latest - | json_get 'browser_download_url')
+	RV_CLI=$(req https://api.github.com/repos/revanced/revanced-cli/releases/latest - )
+	RV_CLI_URL=$(echo "$RV_CLI" | json_get 'browser_download_url')
 	RV_CLI_JAR="${TEMP_DIR}/${RV_CLI_URL##*/}"
+	RV_CLI_TAG=$(echo "$RV_CLI" | json_get 'tag_name')
 	log "**ReVanced Versions:**"
-	log "CLI: ${RV_CLI_URL##*/}"
-
-	RV_INTEGRATIONS_URL=$(req https://api.github.com/repos/inotia00/revanced-integrations/releases/latest - | json_get 'browser_download_url')
+	log "CLI: [${RV_CLI_URL##*/}](https://github.com/revanced/revanced-cli/releases/tag/$RV_CLI_TAG)"
+	
+	RV_INTEGRATIONS=$(req https://api.github.com/repos/inotia00/revanced-integrations/releases/latest -)
+	RV_INTEGRATIONS_URL=$(echo "$RV_INTEGRATIONS" | json_get 'browser_download_url')
 	RV_INTEGRATIONS_APK=${RV_INTEGRATIONS_URL##*/}
 	RV_INTEGRATIONS_APK="${RV_INTEGRATIONS_APK%.apk}-$(cut -d/ -f8 <<<"$RV_INTEGRATIONS_URL").apk"
-	log "Integrations (Extended): $RV_INTEGRATIONS_APK"
+	RV_INTEGRATIONS_TAG=$(echo "$RV_INTEGRATIONS" | json_get 'tag_name')
+	log "Integrations (Extended): [$RV_INTEGRATIONS_APK](https://github.com/inotia00/revanced-integrations/releases/tag/$RV_INTEGRATIONS_TAG)"
 	RV_INTEGRATIONS_APK="${TEMP_DIR}/${RV_INTEGRATIONS_APK}"
 	
-	RVNE_INTEGRATIONS_URL=$(req https://api.github.com/repos/revanced/revanced-integrations/releases/latest - | json_get 'browser_download_url')
+	RVNE_INTEGRATIONS=$(req https://api.github.com/repos/revanced/revanced-integrations/releases/latest -)
+	RVNE_INTEGRATIONS_URL=$(echo "$RVNE_INTEGRATIONS" | json_get 'browser_download_url')
 	RVNE_INTEGRATIONS_APK=${RVNE_INTEGRATIONS_URL##*/}
 	RVNE_INTEGRATIONS_APK="${RVNE_INTEGRATIONS_APK%.apk}-$(cut -d/ -f8 <<<"$RVNE_INTEGRATIONS_URL").apk"
-	log "Integrations: $RVNE_INTEGRATIONS_APK"
+	RVNE_INTEGRATIONS_TAG=$(echo "$RVNE_INTEGRATIONS" | json_get 'tag_name')
+	log "Integrations: [$RVNE_INTEGRATIONS_APK](https://github.com/revanced/revanced-integrations/releases/tag/$RVNE_INTEGRATIONS_TAG)"
 	RVNE_INTEGRATIONS_APK="${TEMP_DIR}/${RVNE_INTEGRATIONS_APK}"
 
 	RV_PATCHES=$(req https://api.github.com/repos/inotia00/revanced-patches/releases/latest -)
