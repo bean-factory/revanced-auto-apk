@@ -385,7 +385,7 @@ build_tasker() {
 
 build_citra() {
 	declare -A citra_args
-	citra_args[app_name]="Tasker"
+	citra_args[app_name]="Citra"
 	citra_args[mode]="$CITRA_MODE"
 	citra_args[pkg_name]="org.citra.citra_emu"
 	citra_args[apkmirror_dlurl]="citra-emulator/citra-emulator"
