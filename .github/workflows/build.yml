@@ -48,7 +48,7 @@ jobs:
           fi
 
       - name: Upload modules to release
-        uses: svenstaro/upload-release-action@v2
+        uses: termux/upload-release-action@v4.0.2
         with:
           body: ${{ steps.get_output.outputs.BUILD_LOG }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
@@ -77,7 +77,8 @@ jobs:
 
           find . -name "*.json" | grep . || : >dummy.json
 
-      - uses: stefanzweifel/git-auto-commit-action@v4
+      - name: "Auto commit changes"
+        uses: stefanzweifel/git-auto-commit-action@v4
         with:
           branch: update
           skip_checkout: true
