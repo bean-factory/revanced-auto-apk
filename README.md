@@ -1,6 +1,8 @@
 # ReVanced APKs
 
-Get the [latest CI release](https://github.com/Kryptos-123/revanced-auto-apk/releases/latest).
+Get them from the [latest CI release](https://github.com/Kryptos-123/revanced-auto-apk/releases/latest) or [https://revanced-auto-apk.pages.dev](https://revanced-auto-apk.pages.dev).
+
+Get the PWA for Android from [beans-321/revanced-auto-apk-web](https://github.com/beans-321/revanced-auto-apk-web/releases/latest)
 
 ## Credits
 [j-hc](https://github.com/j-hc) for [https://github.com/j-hc/revanced-magisk-module](https://github.com/j-hc/revanced-magisk-module).
