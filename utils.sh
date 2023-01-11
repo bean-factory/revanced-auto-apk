@@ -144,7 +144,7 @@ patch_apk() {
 	eval "$cmd"
 }
 
-build_rv() {
+#build_rv() {
 	local -n args=$1
 	local version patcher_args dl_from build_mode_arr
 	local mode_arg=${args[mode]%/*} version_mode=${args[mode]#*/}
@@ -167,6 +167,7 @@ build_rv() {
 		local apkmirror_category=${args[apkmirror_dlurl]##*/}
 		if [ "$version_mode" = auto ] && [ $dl_from = apkmirror ]; then
 			version=$(get_patch_last_supported_ver "${args[pkg_name]}")
+			echo $version
 			if [ -z "$version" ]; then
 				version=$(get_apkmirror_vers "$apkmirror_category" | if [ "${args[pkg_name]}" = "com.twitter.android" ]; then grep release; else cat; fi | get_largest_ver)
 			fi
@@ -244,7 +245,7 @@ build_youtube() {
 	youtube_args[regexp]="APK</span>[^@]*@\([^#]*\)"
 	RV_PATCHES_JAR_BAK=$RV_PATCHES_JAR
 	RV_PATCHES_JAR=$RVE_PATCHES_JAR
-	build_rv youtube_args
+	#build_rv youtube_args
 	RV_PATCHES_JAR=$RV_PATCHES_JAR_BAK
 }
 
@@ -270,7 +271,7 @@ build_music() {
 
 		RV_PATCHES_JAR_BAK=$RV_PATCHES_JAR
 		RV_PATCHES_JAR=$RVE_PATCHES_JAR
-		build_rv ytmusic_args
+		#build_rv ytmusic_args
 		RV_PATCHES_JAR=$RV_PATCHES_JAR_BAK
 	done
 }
@@ -284,7 +285,7 @@ build_twitter() {
 	tw_args[apkmirror_dlurl]="twitter-inc/twitter"
 	tw_args[regexp]='APK</span>[^@]*@\([^#]*\)'
 
-	build_rv tw_args
+	#build_rv tw_args
 }
 
 build_reddit() {
@@ -296,7 +297,7 @@ build_reddit() {
 	reddit_args[apkmirror_dlurl]="redditinc/reddit"
 	reddit_args[regexp]='APK</span>[^@]*@\([^#]*\)'
 
-	build_rv reddit_args
+	#build_rv reddit_args
 }
 
 build_twitch() {
@@ -308,7 +309,7 @@ build_twitch() {
 	twitch_args[apkmirror_dlurl]="twitch-interactive-inc/twitch"
 	twitch_args[regexp]='APK</span>[^@]*@\([^#]*\)'
 
-	build_rv twitch_args
+	#build_rv twitch_args
 }
 
 build_tiktok() {
@@ -320,7 +321,7 @@ build_tiktok() {
 	tiktok_args[apkmirror_dlurl]="tiktok-pte-ltd/tik-tok-including-musical-ly"
 	tiktok_args[regexp]='APK</span>[^@]*@\([^#]*\)'
 
-	build_rv tiktok_args
+	#build_rv tiktok_args
 }
 
 build_spotify() {
@@ -329,7 +330,7 @@ build_spotify() {
 	spotify_args[mode]="$SPOTIFY_MODE"
 	spotify_args[pkg_name]="com.spotify.music"
 
-	build_rv spotify_args
+	#build_rv spotify_args
 }
 
 build_ticktick() {
@@ -340,7 +341,7 @@ build_ticktick() {
 	ticktick_args[apkmirror_dlurl]="appest-inc/ticktick-to-do-list-with-reminder-day-planner"
 	ticktick_args[regexp]='APK</span>[^@]*@\([^#]*\)'
 
-	build_rv ticktick_args
+	#build_rv ticktick_args
 }
 
 build_warn_wetter() {
@@ -351,7 +352,7 @@ build_warn_wetter() {
 	warn_wetter_args[apkmirror_dlurl]="deutscher-wetterdienst/warnwetter"
 	warn_wetter_args[regexp]='APK</span>[^@]*@\([^#]*\)'
 
-	build_rv warn_wetter_args
+	#build_rv warn_wetter_args
 }
 
 build_backdrops() {
@@ -362,7 +363,7 @@ build_backdrops() {
 	backdrops_args[apkmirror_dlurl]="backdrops/backdrops-wallpapers"
 	backdrops_args[regexp]='APK</span>[^@]*@\([^#]*\)'
 
-	build_rv backdrops_args
+	#build_rv backdrops_args
 }
 
 build_windy() {
@@ -373,7 +374,7 @@ build_windy() {
 	windy_args[apkmirror_dlurl]="windy-weather-world-inc/windy-wind-weather-forecast"
 	windy_args[regexp]='APK</span>[^@]*@\([^#]*\)'
 
-	build_rv windy_args
+	#build_rv windy_args
 }
 
 build_tasker() {
@@ -384,7 +385,7 @@ build_tasker() {
 	tasker_args[apkmirror_dlurl]="joaomgcd/tasker"
 	tasker_args[regexp]='APK</span>[^@]*@\([^#]*\)'
 	
-	build_rv tasker_args
+	#build_rv tasker_args
 }
 
 build_citra() {
@@ -395,7 +396,7 @@ build_citra() {
 	citra_args[apkmirror_dlurl]="citra-emulator/citra-emulator"
 	citra_args[regexp]='APK</span>[^@]*@\([^#]*\)'
 	
-	build_rv citra_args
+	#build_rv citra_args
 }
 
 hash_gen() {
