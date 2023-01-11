@@ -144,7 +144,7 @@ patch_apk() {
 	eval "$cmd"
 }
 
-#build_rv() {
+build_rv() {
 	local -n args=$1
 	local version patcher_args dl_from build_mode_arr
 	local mode_arg=${args[mode]%/*} version_mode=${args[mode]#*/}
