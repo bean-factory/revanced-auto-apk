@@ -15,6 +15,7 @@ ReVanced Patches:
 remember-playback-rate
   
 **App Versions:**  
+YouTube: 18.01.35  
 
 **App Hashes:**  
   
