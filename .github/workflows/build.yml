@@ -47,6 +47,17 @@ jobs:
             echo "RELEASE_NAME=$yt_op" >> $GITHUB_OUTPUT
           fi
 
+      - name: Upload modules to release
+        uses: termux/upload-release-action@v4.0.2
+        with:
+          body: ${{ steps.get_output.outputs.BUILD_LOG }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: ./build/*
+          release_name: ${{ steps.get_output.outputs.RELEASE_NAME }}
+          tag: ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}
+          file_glob: true
+          overwrite: false
+
       - name: Switch to update branch
         run: git checkout -f update || git switch --discard-changes --orphan update
 
