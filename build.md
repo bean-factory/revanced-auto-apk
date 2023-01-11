@@ -15,15 +15,6 @@ ReVanced Patches:
 remember-playback-rate
   
 **App Versions:**  
-YouTube-Music (arm64-v8a): 5.38.53  
-Twitter: 9.71.0-release.0  
-Tasker: 6.0.9  
-Backdrops: 4.1.96  
-Citra: bed6a4f12  
-YouTube: 18.01.35  
-Reddit: 2022.45.0  
-Twitch: 14.3.2  
-YouTube-Music (arm-v7a): 5.38.53  
 
 **App Hashes:**  
   
