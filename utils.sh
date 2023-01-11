@@ -245,7 +245,7 @@ build_youtube() {
 	youtube_args[regexp]="APK</span>[^@]*@\([^#]*\)"
 	RV_PATCHES_JAR_BAK=$RV_PATCHES_JAR
 	RV_PATCHES_JAR=$RVE_PATCHES_JAR
-	#build_rv youtube_args
+	build_rv youtube_args
 	RV_PATCHES_JAR=$RV_PATCHES_JAR_BAK
 }
 
