@@ -87,7 +87,7 @@ set_prebuilts() {
 req() { wget -nv -O "$2" --header="$WGET_HEADER" "$1"; }
 log() { echo -e "$1  " >>build.md; }
 
-{
+get_largest_ver() {
 	read -r max
 	while read -r v; do
 		if ! semver_validate "$max" "$v"; then continue; fi
