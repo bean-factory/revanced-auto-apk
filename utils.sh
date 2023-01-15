@@ -1,7 +1,4 @@
 #!/usr/bin/env bash
-
-source semver
-
 TEMP_DIR="temp"
 BUILD_DIR="build"
 
@@ -89,20 +86,47 @@ set_prebuilts() {
 
 req() { wget -nv -O "$2" --header="$WGET_HEADER" "$1"; }
 log() { echo -e "$1  " >>build.md; }
-get_largest_ver() {
-	local max=0
-	while read -r v || [ -n "$v" ]; do
-		if [ "$(command_compare "$v" "$max")" = 1 ]; then max=$v; fi
+
+{
+	read -r max
+	while read -r v; do
+		if ! semver_validate "$max" "$v"; then continue; fi
+		if [ "$(semver_cmp "$max" "$v")" = 1 ]; then max=$v; fi
 	done
-	if [[ $max = 0 ]]; then echo ""; else echo "$max"; fi
+	echo "$max"
 }
 get_patch_last_supported_ver() {
-	if [ ${1} == "YouTube" ] || [ ${1} == "YouTube-Music" ];then
-		unzip -p "$RVE_PATCHES_JAR" | strings -s , | sed -rn "s/.*${1},versions,(([0-9.]*,*)*),Lk.*/\1/p" | tr ',' '\n' | get_largest_ver
+	local vs
+	if [ ${1} == "com.google.android.youtube" ] || [ ${1} == "com.google.android.apps.youtube.music" ];then
+		vs=$(unzip -p "$RVE_PATCHES_JAR" | strings -s , | sed -rn "s/.*${1},versions,(([0-9.]*,*)*),Lk.*/\1/p" | tr ',' '\n')
 	else
-		unzip -p "$RV_PATCHES_JAR" | strings -s , | sed -rn "s/.*${1},versions,(([0-9.]*,*)*),Lk.*/\1/p" | tr ',' '\n' | get_largest_ver
+		vs=$(unzip -p "$RV_PATCHES_JAR" | strings -s , | sed -rn "s/.*${1},versions,(([0-9.]*,*)*),Lk.*/\1/p" | tr ',' '\n')
 	fi
+	printf "%s\n" "$vs" | get_largest_ver
 }
+semver_cmp() {
+	IFS=. read -r -a v1 <<<"${1//[^.0-9]/}"
+	IFS=. read -r -a v2 <<<"${2//[^.0-9]/}"
+	local c1="${1//[^.]/}"
+	local c2="${2//[^.]/}"
+	local mi=$((${#c1} < ${#c2} ? ${#c1} : ${#c2}))
+	for ((i = 0; i <= mi; i++)); do
+		if ((v1[i] > v2[i])); then
+			echo -1
+			return 0
+		elif ((v2[i] > v1[i])); then
+			echo 1
+			return 0
+		fi
+	done
+	echo 0
+}
+semver_validate() {
+	local a1="${1%-*}" a2="${2%-*}"
+	local a1c="${a1//[.0-9]/}" a2c="${a2//[.0-9]/}"
+	[ ${#a1c} = 0 ] && [ ${#a2c} = 0 ]
+}
+
 
 dl_if_dne() {
 	if [ ! -f "$1" ]; then
