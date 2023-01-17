@@ -15,13 +15,13 @@ ReVanced Patches:
 fix-playback
   
 **App Versions:**  
-Backdrops: 5.0.1  
-Twitter: 9.71.0-release.0  
+Backdrops: 5.0.4  
+Tasker: 6.0.9  
 Citra: bed6a4f12  
 YouTube-Music (arm64-v8a): 5.39.52  
-Tasker: 6.0.9  
-Reddit: 2023.01.0  
+Twitter: 9.71.0-release.0  
 Twitch: 14.3.3  
+Reddit: 2023.01.0  
 YouTube: 18.01.36  
 YouTube-Music (arm-v7a): 5.39.52  
 
