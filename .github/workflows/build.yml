@@ -48,7 +48,7 @@ jobs:
           fi
 
       - name: Upload modules to release
-        uses: termux/upload-release-action@v4.0.2
+        uses: svenstaro/upload-release-action@v2
         with:
           body: ${{ steps.get_output.outputs.BUILD_LOG }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
@@ -56,7 +56,7 @@ jobs:
           release_name: ${{ steps.get_output.outputs.RELEASE_NAME }}
           tag: ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}
           file_glob: true
-          overwrite: false
+          overwrite: true
 
       - name: Switch to update branch
         run: git checkout -f update || git switch --discard-changes --orphan update
