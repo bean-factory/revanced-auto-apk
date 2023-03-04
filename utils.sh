@@ -208,7 +208,7 @@ build_rv() {
 		echo "Choosing version '${version}'"
 
 		local stock_apk="${TEMP_DIR}/${app_name_l}-stock-v${version}-${arch}.apk"
-		local apk_output="${BUILD_DIR}/${app_name_l}-v${version}-${arch}.apk"
+		local apk_output="${BUILD_DIR}/${app_name} (${version} ${arch}).apk"
 		if [ "${args[microg_patch]:-}" ]; then
 			local patched_apk="${TEMP_DIR}/${app_name_l}-v${version}-${arch}-${build_mode}.apk"
 		else
