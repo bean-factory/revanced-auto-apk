@@ -173,7 +173,7 @@ build_rv() {
 	local version patcher_args dl_from build_mode_arr
 	local mode_arg=${args[mode]%/*} version_mode=${args[mode]#*/}
 	local arch=${args[arch]:-all} app_name_l=${args[app_name],,}
-	local app_name=${args[app_name],,}
+	local app_name=${args[app_name]}
 	if [ "${args[apkmirror_dlurl]:-}" ] && [ "${args[regexp]:-}" ]; then dl_from=apkmirror; else dl_from=uptodown; fi
 
 	if [ "$mode_arg" = none ]; then
