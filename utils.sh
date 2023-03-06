@@ -267,6 +267,9 @@ build_youtube() {
 	RV_PATCHES_JAR_BAK=$RV_PATCHES_JAR
 	RV_PATCHES_JAR=$RVE_PATCHES_JAR
 	build_rv youtube_args
+	youtube_args[app_name]="YouTube-MMT-Icon"
+	youtube_args[patcher_args]="-m ${RVE_INTEGRATIONS_APK} $(join_args "${YOUTUBE_EXCLUDED_PATCHES}" -e) $(join_args "${YOUTUBE_INCLUDED_PATCHES}" -i) -i custom-branding-icon-mmt"
+	build_rv youtube_args
 	RV_PATCHES_JAR=$RV_PATCHES_JAR_BAK
 }
 
@@ -293,6 +296,8 @@ build_music() {
 		RV_PATCHES_JAR_BAK=$RV_PATCHES_JAR
 		RV_PATCHES_JAR=$RVE_PATCHES_JAR
 		build_rv ytmusic_args
+		ytmusic_args[app_name]="YouTube-Music-MMT-Icon"
+		ytmusic_args[patcher_args]="-m ${RVE_INTEGRATIONS_APK} $(join_args "${MUSIC_EXCLUDED_PATCHES}" -e) $(join_args "${MUSIC_INCLUDED_PATCHES}" -i) -i custom-branding-music-mmt"
 		RV_PATCHES_JAR=$RV_PATCHES_JAR_BAK
 	done
 }
