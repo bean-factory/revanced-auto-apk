@@ -21,7 +21,6 @@ get_prebuilts() {
 	RVE_INTEGRATIONS=$(req https://api.github.com/repos/inotia00/revanced-integrations/releases/latest -)
 	RVE_INTEGRATIONS_URL=$(echo "$RVE_INTEGRATIONS" | json_get 'browser_download_url')
 	RVE_INTEGRATIONS_APK=${RVE_INTEGRATIONS_URL##*/}
-	RVE_INTEGRATIONS_APK="${RVE_INTEGRATIONS_APK%.apk}-$(cut -d/ -f8 <<<"$RVE_INTEGRATIONS_URL").apk"
 	RVE_INTEGRATIONS_TAG=$(echo "$RVE_INTEGRATIONS" | json_get 'tag_name')
 	log "Integrations (Extended): [$RVE_INTEGRATIONS_APK](https://github.com/inotia00/revanced-integrations/releases/tag/$RVE_INTEGRATIONS_TAG)"
 	RVE_INTEGRATIONS_APK=$(echo ${RVE_INTEGRATIONS_URL##*/} | sed 's/unsigned/unsigned-extended/g')
@@ -30,7 +29,6 @@ get_prebuilts() {
 	RV_INTEGRATIONS=$(req https://api.github.com/repos/revanced/revanced-integrations/releases/latest -)
 	RV_INTEGRATIONS_URL=$(echo "$RV_INTEGRATIONS" | json_get 'browser_download_url')
 	RV_INTEGRATIONS_APK=${RV_INTEGRATIONS_URL##*/}
-	RV_INTEGRATIONS_APK="${RV_INTEGRATIONS_APK%.apk}-$(cut -d/ -f8 <<<"$RV_INTEGRATIONS_URL").apk"
 	RV_INTEGRATIONS_TAG=$(echo "$RV_INTEGRATIONS" | json_get 'tag_name')
 	log "Integrations: [$RV_INTEGRATIONS_APK](https://github.com/revanced/revanced-integrations/releases/tag/$RV_INTEGRATIONS_TAG)"
 	RV_INTEGRATIONS_APK="${TEMP_DIR}/${RV_INTEGRATIONS_APK}"
