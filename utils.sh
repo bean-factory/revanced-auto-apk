@@ -282,25 +282,25 @@ build_music() {
 	ytmusic_args[rip_all_libs]=false
 	ytmusic_args[apkmirror_dlurl]="google-inc/youtube-music"
 
-	for a in arm64-v8a arm-v7a; do
-		if [ $a = arm64-v8a ]; then
-			ytmusic_args[arch]=arm64-v8a
-			ytmusic_args[regexp]='arm64-v8a</div>[^@]*@\([^"]*\)'
-			ytmusic_args[mode]="$MUSIC_ARM64_V8A_MODE"
-		elif [ $a = arm-v7a ]; then
-			ytmusic_args[arch]=arm-v7a
-			ytmusic_args[regexp]='armeabi-v7a</div>[^@]*@\([^"]*\)'
-			ytmusic_args[mode]="$MUSIC_ARM_V7A_MODE"
-		fi
-
-		RV_PATCHES_JAR_BAK=$RV_PATCHES_JAR
-		RV_PATCHES_JAR=$RVE_PATCHES_JAR
-		build_rv ytmusic_args
-		ytmusic_args[app_name]="YouTube-Music-MMT-Icon"
-		ytmusic_args[patcher_args]="-m ${RVE_INTEGRATIONS_APK} $(join_args "${MUSIC_EXCLUDED_PATCHES}" -e) $(join_args "${MUSIC_INCLUDED_PATCHES}" -i) -i custom-branding-music-mmt"
-		build_rv ytmusic_args
-		RV_PATCHES_JAR=$RV_PATCHES_JAR_BAK
-	done
+	RV_PATCHES_JAR_BAK=$RV_PATCHES_JAR
+	RV_PATCHES_JAR=$RVE_PATCHES_JAR
+	ytmusic_args[arch]=arm64-v8a
+	ytmusic_args[regexp]='arm64-v8a</div>[^@]*@\([^"]*\)'
+	ytmusic_args[mode]="$MUSIC_ARM64_V8A_MODE"
+	build_rv ytmusic_args
+	ytmusic_args[app_name]="YouTube-Music-MMT-Icon"
+	ytmusic_args[patcher_args]="-m ${RVE_INTEGRATIONS_APK} $(join_args "${MUSIC_EXCLUDED_PATCHES}" -e) $(join_args "${MUSIC_INCLUDED_PATCHES}" -i) -i custom-branding-music-mmt"
+	build_rv ytmusic_args
+	ytmusic_args[app_name]="YouTube-Music"
+	ytmusic_args[patcher_args]="-m ${RVE_INTEGRATIONS_APK} $(join_args "${MUSIC_EXCLUDED_PATCHES}" -e) $(join_args "${MUSIC_INCLUDED_PATCHES}" -i)"
+	ytmusic_args[arch]=arm-v7a
+	ytmusic_args[regexp]='armeabi-v7a</div>[^@]*@\([^"]*\)'
+	ytmusic_args[mode]="$MUSIC_ARM_V7A_MODE"
+	build_rv ytmusic_args
+	ytmusic_args[app_name]="YouTube-Music-MMT-Icon"
+	ytmusic_args[patcher_args]="-m ${RVE_INTEGRATIONS_APK} $(join_args "${MUSIC_EXCLUDED_PATCHES}" -e) $(join_args "${MUSIC_INCLUDED_PATCHES}" -i) -i custom-branding-music-mmt"
+	build_rv ytmusic_args
+	RV_PATCHES_JAR=$RV_PATCHES_JAR_BAK
 }
 
 build_twitter() {
