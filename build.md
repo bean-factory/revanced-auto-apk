@@ -20,12 +20,12 @@ Tasker: 6.0.9
 Citra: bed6a4f12  
 YouTube-Music (arm64-v8a): 5.47.51  
 Twitter: 9.78.0-release.0  
-YouTube: 18.08.39  
 Twitch: 14.7.0  
+YouTube: 18.08.39  
 Reddit: 2023.07.1  
+YouTube-Music (arm-v7a): 5.47.51  
 YouTube-Music-MMT-Icon (arm64-v8a): 5.47.51  
 YouTube-MMT-Icon: 18.08.39  
-YouTube-Music (arm-v7a): 5.47.51  
 YouTube-Music-MMT-Icon (arm-v7a): 5.47.51  
 
 **App Hashes:**  
