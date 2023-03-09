@@ -171,6 +171,7 @@ build_rv() {
 	local version patcher_args dl_from build_mode_arr
 	local mode_arg=${args[mode]%/*} version_mode=${args[mode]#*/}
 	local arch=${args[arch]:-all} app_name_l=${args[app_name],,}
+	local app_name=${args[app_name]}
 	if [ "${args[apkmirror_dlurl]:-}" ] && [ "${args[regexp]:-}" ]; then dl_from=apkmirror; else dl_from=uptodown; fi
 
 	if [ "$mode_arg" = none ]; then
@@ -206,7 +207,7 @@ build_rv() {
 		echo "Choosing version '${version}'"
 
 		local stock_apk="${TEMP_DIR}/${app_name_l}-stock-v${version}-${arch}.apk"
-		local apk_output="${BUILD_DIR}/${app_name_l}-v${version}-${arch}.apk"
+		local apk_output="${BUILD_DIR}/${app_name}-v${version}-${arch}.apk"
 		if [ "${args[microg_patch]:-}" ]; then
 			local patched_apk="${TEMP_DIR}/${app_name_l}-v${version}-${arch}-${build_mode}.apk"
 		else
