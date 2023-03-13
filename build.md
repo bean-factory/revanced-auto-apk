@@ -16,17 +16,13 @@ unlock-plusopen-links-directly
   
 **App Versions:**  
 Backdrops: 5.0.7  
-Citra: bed6a4f12  
+Twitch: 14.7.0_BETA  
 Tasker: 6.0.9  
-YouTube-Music (arm64-v8a): 5.47.52  
-Twitch: 14.7.0  
+YouTube: 18.09.39  
+Citra: bed6a4f12  
 Twitter: 9.79.0-release.1  
 Reddit: 2023.09.1  
-YouTube: 18.08.39  
-YouTube-Music (arm-v7a): 5.47.52  
-YouTube-MMT-Icon: 18.08.39  
-YouTube-Music-MMT-Icon (arm64-v8a): 5.47.52  
-YouTube-Music-MMT-Icon (arm-v7a): 5.47.52  
+YouTube-MMT-Icon: 18.09.39  
 
 **App Hashes:**  
   
