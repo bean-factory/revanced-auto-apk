@@ -34,8 +34,8 @@ get_prebuilts() {
 	RV_INTEGRATIONS_APK="${TEMP_DIR}/${RV_INTEGRATIONS_APK}"
 
 	RVE_PATCHES=$(req https://api.github.com/repos/inotia00/revanced-patches/releases/latest -)
+	RVE_PATCHES_JSON="${TEMP_DIR}/extended-patches-$(json_get 'tag_name' <<<"$RVE_PATCHES").json"
 	RVE_PATCHES_CHANGELOG=$(echo "$RVE_PATCHES" | json_get 'body' | sed 's/\(\\n\)\+/\\n/g')
-	#RVE_PATCHES_CHANGELOG=""
 	RVE_PATCHES_URL=$(echo "$RVE_PATCHES" | json_get 'browser_download_url' 'jar')
 	RVE_PATCHES_TAG=$(echo "$RVE_PATCHES" | json_get 'tag_name')
 	RVE_PATCHES_JAR="${TEMP_DIR}/${RVE_PATCHES_URL##*/}"
@@ -43,8 +43,8 @@ get_prebuilts() {
 	RVE_PATCHES_JAR="$(echo ${TEMP_DIR}/${RVE_PATCHES_URL##*/} | sed 's/revanced/revanced-extended/g')"
 	
 	RV_PATCHES=$(req https://api.github.com/repos/revanced/revanced-patches/releases/latest -)
+	RV_PATCHES_JSON="${TEMP_DIR}/patches-$(json_get 'tag_name' <<<"$RV_PATCHES").json"
 	RV_PATCHES_CHANGELOG=$(echo "$RV_PATCHES" | json_get 'body' | sed 's/\(\\n\)\+/\\n/g')
-	#RV_PATCHES_CHANGELOG=""
 	RV_PATCHES_URL=$(echo "$RV_PATCHES" | json_get 'browser_download_url' 'jar')
 	RV_PATCHES_TAG=$(echo "$RV_PATCHES" | json_get 'tag_name')
 	RV_PATCHES_JAR="${TEMP_DIR}/${RV_PATCHES_URL##*/}"
@@ -63,7 +63,9 @@ get_prebuilts() {
 	dl_if_dne "$RVE_INTEGRATIONS_APK" "$RVE_INTEGRATIONS_URL"
 	dl_if_dne "$RV_INTEGRATIONS_APK" "$RV_INTEGRATIONS_URL"
 	dl_if_dne "$RVE_PATCHES_JAR" "$RVE_PATCHES_URL"
+	dl_if_dne "$RVE_PATCHES_JSON" "$(grep 'json' <<<"$RVE_PATCHES")"
 	dl_if_dne "$RV_PATCHES_JAR" "$RV_PATCHES_URL"
+	dl_if_dne "$RV_PATCHES_JSON" "$(grep 'json' <<<"$RV_PATCHES")"
 }
 
 abort() { echo "abort: $1" && exit 1; }
@@ -86,45 +88,26 @@ req() { wget -nv -O "$2" --header="$WGET_HEADER" "$1"; }
 log() { echo -e "$1  " >>build.md; }
 
 get_largest_ver() {
-	read -r max
-	while read -r v; do
-		if ! semver_validate "$max" "$v"; then continue; fi
-		if [ "$(semver_cmp "$max" "$v")" = 1 ]; then max=$v; fi
-	done
-	echo "$max"
-}
-get_patch_last_supported_ver() {
-	local vs
-	if [ ${1} == "com.google.android.youtube" ] || [ ${1} == "com.google.android.apps.youtube.music" ];then
-		vs=$(unzip -p "$RVE_PATCHES_JAR" | strings -s , | sed -rn "s/.*${1},versions,(([0-9.]*,*)*),Lk.*/\1/p" | tr ',' '\n')
-	else
-		vs=$(unzip -p "$RV_PATCHES_JAR" | strings -s , | sed -rn "s/.*${1},versions,(([0-9.]*,*)*),Lk.*/\1/p" | tr ',' '\n')
-	fi
-	printf "%s\n" "$vs" | get_largest_ver
-}
-semver_cmp() {
-	IFS=. read -r -a v1 <<<"${1//[^.0-9]/}"
-	IFS=. read -r -a v2 <<<"${2//[^.0-9]/}"
-	local c1="${1//[^.]/}"
-	local c2="${2//[^.]/}"
-	local mi=$((${#c1} < ${#c2} ? ${#c1} : ${#c2}))
-	for ((i = 0; i <= mi; i++)); do
-		if ((v1[i] > v2[i])); then
-			echo -1
-			return 0
-		elif ((v2[i] > v1[i])); then
-			echo 1
-			return 0
-		fi
-	done
-	echo 0
+	local vers m
+	vers=$(tee)
+	m=$(head -1 <<<"$vers")
+	if ! semver_validate "$m"; then echo "$m"; else sort -rV <<<"$vers" | head -1; fi
 }
 semver_validate() {
-	local a1="${1%-*}" a2="${2%-*}"
-	local a1c="${a1//[.0-9]/}" a2c="${a2//[.0-9]/}"
-	[ ${#a1c} = 0 ] && [ ${#a2c} = 0 ]
+	local a="${1%-*}"
+	local ac="${a//[.0-9]/}"
+	[ ${#ac} = 0 ]
 }
+get_patch_last_supported_ver() {
+	if [ ${1} == "com.google.android.youtube" ] || [ ${1} == "com.google.android.apps.youtube.music" ];then
+		jq -r ".[] | select(.compatiblePackages[].name==\"${1}\" and .excluded==false) | .compatiblePackages[].versions" "$RVE_PATCHES_JSON" |
+		tr -d ' ,\t[]"' | sort -u | grep -v '^$' | get_largest_ver || return 1
+	else
+		jq -r ".[] | select(.compatiblePackages[].name==\"${1}\" and .excluded==false) | .compatiblePackages[].versions" "$RV_PATCHES_JSON" |
+		tr -d ' ,\t[]"' | sort -u | grep -v '^$' | get_largest_ver || return 1
+	fi
 
+}
 
 dl_if_dne() {
 	if [ ! -f "$1" ]; then
