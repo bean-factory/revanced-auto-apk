@@ -34,18 +34,20 @@ get_prebuilts() {
 	RV_INTEGRATIONS_APK="${TEMP_DIR}/${RV_INTEGRATIONS_APK}"
 
 	RVE_PATCHES=$(req https://api.github.com/repos/inotia00/revanced-patches/releases/latest -)
+	RVE_PATCHES_DL=$(json_get 'browser_download_url' <<<"$RVE_PATCHES")
 	RVE_PATCHES_JSON="${TEMP_DIR}/extended-patches-$(json_get 'tag_name' <<<"$RVE_PATCHES").json"
 	RVE_PATCHES_CHANGELOG=$(echo "$RVE_PATCHES" | json_get 'body' | sed 's/\(\\n\)\+/\\n/g')
-	RVE_PATCHES_URL=$(echo "$RVE_PATCHES" | json_get 'browser_download_url' 'jar')
+	RVE_PATCHES_URL=$(grep 'jar' <<<"$RVE_PATCHES_DL")
 	RVE_PATCHES_TAG=$(echo "$RVE_PATCHES" | json_get 'tag_name')
 	RVE_PATCHES_JAR="${TEMP_DIR}/${RVE_PATCHES_URL##*/}"
 	log "Patches (Extended): [${RVE_PATCHES_URL##*/}](https://github.com/inotia00/revanced-patches/releases/tag/$RVE_PATCHES_TAG)"
 	RVE_PATCHES_JAR="$(echo ${TEMP_DIR}/${RVE_PATCHES_URL##*/} | sed 's/revanced/revanced-extended/g')"
 	
 	RV_PATCHES=$(req https://api.github.com/repos/revanced/revanced-patches/releases/latest -)
+	RV_PATCHES_DL=$(json_get 'browser_download_url' <<<"$RV_PATCHES")
 	RV_PATCHES_JSON="${TEMP_DIR}/patches-$(json_get 'tag_name' <<<"$RV_PATCHES").json"
 	RV_PATCHES_CHANGELOG=$(echo "$RV_PATCHES" | json_get 'body' | sed 's/\(\\n\)\+/\\n/g')
-	RV_PATCHES_URL=$(echo "$RV_PATCHES" | json_get 'browser_download_url' 'jar')
+	RV_PATCHES_URL=$(grep 'jar' <<<"$RV_PATCHES_DL")
 	RV_PATCHES_TAG=$(echo "$RV_PATCHES" | json_get 'tag_name')
 	RV_PATCHES_JAR="${TEMP_DIR}/${RV_PATCHES_URL##*/}"
 	log "Patches: [${RV_PATCHES_URL##*/}](https://github.com/revanced/revanced-patches/releases/tag/$RV_PATCHES_TAG)"
@@ -63,9 +65,9 @@ get_prebuilts() {
 	dl_if_dne "$RVE_INTEGRATIONS_APK" "$RVE_INTEGRATIONS_URL"
 	dl_if_dne "$RV_INTEGRATIONS_APK" "$RV_INTEGRATIONS_URL"
 	dl_if_dne "$RVE_PATCHES_JAR" "$RVE_PATCHES_URL"
-	dl_if_dne "$RVE_PATCHES_JSON" "$(grep 'json' <<<"$RVE_PATCHES")"
+	dl_if_dne "$RVE_PATCHES_JSON" "$(grep 'json' <<<"$RVE_PATCHES_DL")"
 	dl_if_dne "$RV_PATCHES_JAR" "$RV_PATCHES_URL"
-	dl_if_dne "$RV_PATCHES_JSON" "$(grep 'json' <<<"$RV_PATCHES")"
+	dl_if_dne "$RV_PATCHES_JSON" "$(grep 'json' <<<"$RV_PATCHES_DL")"
 }
 
 abort() { echo "abort: $1" && exit 1; }
