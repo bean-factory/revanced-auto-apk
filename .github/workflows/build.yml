@@ -49,12 +49,7 @@ jobs:
           cp -f build.md build.tmp
 
           cd build
-          yt_op=$(find . -maxdepth 1 -name "youtube-revanced-extended-magisk-*.zip" -printf '%P')
-          if [ -z "$yt_op" ]; then
-            echo "RELEASE_NAME=ReVanced APKs" >> $GITHUB_OUTPUT
-          else
-            echo "RELEASE_NAME=$yt_op" >> $GITHUB_OUTPUT
-          fi
+          echo "RELEASE_NAME=ReVanced APKs" >> $GITHUB_OUTPUT
 
       - name: Upload modules to release
         uses: svenstaro/upload-release-action@v2
@@ -93,3 +88,11 @@ jobs:
           skip_checkout: true
           file_pattern: build.md *.json
           commit_message: Bump version ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}
+
+      - name: Delete Older Releases
+        uses: dev-drprasad/delete-older-releases@v0.2.1
+        with:
+          keep_latest: 3
+          delete_tags: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
