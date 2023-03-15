@@ -455,7 +455,7 @@ build_instagram() {
 
 build_nova() {
 	declare -A nova_args
-	nova_args[app_name]="Nova Launcher"
+	nova_args[app_name]="Nova-Launcher"
 	nova_args[mode]="$NOVA_MODE"
 	nova_args[pkg_name]="com.teslacoilsw.launcher"
 	nova_args[apkmirror_dlurl]="teslacoil-software/nova-launcher"
