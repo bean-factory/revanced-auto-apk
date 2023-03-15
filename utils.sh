@@ -444,22 +444,22 @@ build_citra() {
 
 build_instagram() {
 	declare -A instagram_args
-	citra_args[app_name]="Instagram"
-	citra_args[mode]="$INSTAGRAM_MODE"
-	citra_args[pkg_name]="com.instagram.android"
-	citra_args[apkmirror_dlurl]="instagram/instagram-instagram"
-	citra_args[regexp]='APK</span>[^@]*@\([^#]*\)'
+	instagram_args[app_name]="Instagram"
+	instagram_args[mode]="$INSTAGRAM_MODE"
+	instagram_args[pkg_name]="com.instagram.android"
+	instagram_args[apkmirror_dlurl]="instagram/instagram-instagram"
+	instagram_args[regexp]='APK</span>[^@]*@\([^#]*\)'
 	
 	build_rv instagram_args
 }
 
 build_nova() {
 	declare -A nova_args
-	citra_args[app_name]="Nova Launcher"
-	citra_args[mode]="$NOVA_MODE"
-	citra_args[pkg_name]="com.teslacoilsw.launcher"
-	citra_args[apkmirror_dlurl]="teslacoil-software/nova-launcher"
-	citra_args[regexp]='APK</span>[^@]*@\([^#]*\)'
+	nova_args[app_name]="Nova Launcher"
+	nova_args[mode]="$NOVA_MODE"
+	nova_args[pkg_name]="com.teslacoilsw.launcher"
+	nova_args[apkmirror_dlurl]="teslacoil-software/nova-launcher"
+	nova_args[regexp]='APK</span>[^@]*@\([^#]*\)'
 	
 	build_rv nova_args
 }
