@@ -23,6 +23,8 @@ build_backdrops &
 build_windy &
 build_tasker &
 build_citra &
+build_instagram &
+build_nova &
 wait
 hash_gen
 echo "Done"
