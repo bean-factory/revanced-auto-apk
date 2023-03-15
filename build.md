@@ -15,7 +15,15 @@ ReVanced Patches:
 2023.09.114.6.1hide-floating-microphone-button18.05.4018.05.40general-ads
   
 **App Versions:**  
+Citra: bed6a4f12  
+Tasker: 6.0.9  
+YouTube: 18.09.39  
+Backdrops: 4.52  
+Twitter: 9.71.0-release.0  
+YouTube-Music (arm64-v8a): 5.48.52  
+Reddit: 2023.09.1  
 Twitch: 14.6.1  
+YouTube-Music (arm-v7a): 5.48.52  
 
 **App Hashes:**  
   
