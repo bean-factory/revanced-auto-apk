@@ -2,6 +2,7 @@
 TEMP_DIR="temp"
 BUILD_DIR="build"
 
+if [ "${GITHUB_TOKEN:-}" ]; then GH_HEADER="Authorization: token ${GITHUB_TOKEN}"; else GH_HEADER=; fi
 GITHUB_REPOSITORY=${GITHUB_REPOSITORY:-$"beans-321/revanced-auto-apk"}
 NEXT_VER_CODE=${NEXT_VER_CODE:-$(date +'%Y%m%d')}
 WGET_HEADER="User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:106.0) Gecko/20100101 Firefox/106.0"
@@ -11,14 +12,14 @@ json_get() {
 }
 get_prebuilts() {
 	echo "Getting prebuilts"
-	RV_CLI=$(req https://api.github.com/repos/revanced/revanced-cli/releases/latest - )
+	RV_CLI=$(gh_req https://api.github.com/repos/revanced/revanced-cli/releases/latest - )
 	RV_CLI_URL=$(echo "$RV_CLI" | json_get 'browser_download_url')
 	RV_CLI_JAR="${TEMP_DIR}/${RV_CLI_URL##*/}"
 	RV_CLI_TAG=$(echo "$RV_CLI" | json_get 'tag_name')
 	log "**ReVanced Versions:**"
 	log "CLI: [${RV_CLI_URL##*/}](https://github.com/revanced/revanced-cli/releases/tag/$RV_CLI_TAG)"
 	
-	RVE_INTEGRATIONS=$(req https://api.github.com/repos/inotia00/revanced-integrations/releases/latest -)
+	RVE_INTEGRATIONS=$(gh_req https://api.github.com/repos/inotia00/revanced-integrations/releases/latest -)
 	RVE_INTEGRATIONS_URL=$(echo "$RVE_INTEGRATIONS" | json_get 'browser_download_url')
 	RVE_INTEGRATIONS_APK=${RVE_INTEGRATIONS_URL##*/}
 	RVE_INTEGRATIONS_TAG=$(echo "$RVE_INTEGRATIONS" | json_get 'tag_name')
@@ -26,14 +27,14 @@ get_prebuilts() {
 	RVE_INTEGRATIONS_APK=$(echo ${RVE_INTEGRATIONS_URL##*/} | sed 's/unsigned/unsigned-extended/g')
 	RVE_INTEGRATIONS_APK="${TEMP_DIR}/${RVE_INTEGRATIONS_APK}"
 	
-	RV_INTEGRATIONS=$(req https://api.github.com/repos/revanced/revanced-integrations/releases/latest -)
+	RV_INTEGRATIONS=$(gh_req https://api.github.com/repos/revanced/revanced-integrations/releases/latest -)
 	RV_INTEGRATIONS_URL=$(echo "$RV_INTEGRATIONS" | json_get 'browser_download_url')
 	RV_INTEGRATIONS_APK=${RV_INTEGRATIONS_URL##*/}
 	RV_INTEGRATIONS_TAG=$(echo "$RV_INTEGRATIONS" | json_get 'tag_name')
 	log "Integrations: [$RV_INTEGRATIONS_APK](https://github.com/revanced/revanced-integrations/releases/tag/$RV_INTEGRATIONS_TAG)"
 	RV_INTEGRATIONS_APK="${TEMP_DIR}/${RV_INTEGRATIONS_APK}"
 
-	RVE_PATCHES=$(req https://api.github.com/repos/inotia00/revanced-patches/releases/latest -)
+	RVE_PATCHES=$(gh_req https://api.github.com/repos/inotia00/revanced-patches/releases/latest -)
 	RVE_PATCHES_DL=$(json_get 'browser_download_url' <<<"$RVE_PATCHES")
 	RVE_PATCHES_JSON="${TEMP_DIR}/extended-patches-$(json_get 'tag_name' <<<"$RVE_PATCHES").json"
 	RVE_PATCHES_CHANGELOG=$(echo "$RVE_PATCHES" | json_get 'body' | sed 's/\(\\n\)\+/\\n/g')
@@ -43,7 +44,7 @@ get_prebuilts() {
 	log "Patches (Extended): [${RVE_PATCHES_URL##*/}](https://github.com/inotia00/revanced-patches/releases/tag/$RVE_PATCHES_TAG)"
 	RVE_PATCHES_JAR="$(echo ${TEMP_DIR}/${RVE_PATCHES_URL##*/} | sed 's/revanced/revanced-extended/g')"
 	
-	RV_PATCHES=$(req https://api.github.com/repos/revanced/revanced-patches/releases/latest -)
+	RV_PATCHES=$(gh_req https://api.github.com/repos/revanced/revanced-patches/releases/latest -)
 	RV_PATCHES_DL=$(json_get 'browser_download_url' <<<"$RV_PATCHES")
 	RV_PATCHES_JSON="${TEMP_DIR}/patches-$(json_get 'tag_name' <<<"$RV_PATCHES").json"
 	RV_PATCHES_CHANGELOG=$(echo "$RV_PATCHES" | json_get 'body' | sed 's/\(\\n\)\+/\\n/g')
@@ -86,7 +87,18 @@ set_prebuilts() {
 }
 
 
-req() { wget -nv -O "$2" --header="$WGET_HEADER" "$1"; }
+_req() {
+	if [ "$2" = - ]; then
+		wget -nv -O "$2" --header="$3" "$1"
+	else
+		local dlp
+		dlp="$(dirname "$2")/tmp.$(basename "$2")"
+		wget -nv -O "$dlp" --header="$3" "$1"
+		mv -f "$dlp" "$2"
+	fi
+}
+req() { _req "$1" "$2" "User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:108.0) Gecko/20100101 Firefox/108.0"; }
+gh_req() { _req "$1" "$2" "$GH_HEADER"; }
 log() { echo -e "$1  " >>build.md; }
 
 get_largest_ver() {
