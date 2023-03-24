@@ -1,0 +1,23 @@
+{
+    "date": "2022-01-01",
+    "applicationId": "com.teslacoilsw.launcher",
+    "applicationVersion": 80300,
+    "androidSdkInt": 33,
+    "deviceBrand": "Google",
+    "deviceModel": "Pixel 6",
+    "search_sessions": 4,
+    "search_windows": 5,
+    "search_windows_with_click": 5,
+    "search_opens": {
+        "PREVIOUSLY_OPENED": 1,
+        "SEARCH_BAR": 3,
+        "APP_DRAWER": 1,
+        "GESTURE_DOUBLE_TAP": 1
+    },
+    "search_clicks": {
+        "APP": 2,
+        "LINK_SHORTCUT_INFO": 1,
+        "CONTACT_ACTION_SMS": 2
+    },
+    "search_no_clicks_when_micro_shown": 1
+}
