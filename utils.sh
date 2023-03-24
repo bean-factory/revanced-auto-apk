@@ -12,12 +12,12 @@ json_get() {
 }
 get_prebuilts() {
 	echo "Getting prebuilts"
-	RV_CLI=$(gh_req https://api.github.com/repos/revanced/revanced-cli/releases/latest - )
+	RV_CLI=$(gh_req https://api.github.com/repos/j-hc/revanced-cli/releases/latest - )
 	RV_CLI_URL=$(echo "$RV_CLI" | json_get 'browser_download_url')
 	RV_CLI_JAR="${TEMP_DIR}/${RV_CLI_URL##*/}"
 	RV_CLI_TAG=$(echo "$RV_CLI" | json_get 'tag_name')
 	log "**ReVanced Versions:**"
-	log "CLI: [${RV_CLI_URL##*/}](https://github.com/revanced/revanced-cli/releases/tag/$RV_CLI_TAG)"
+	log "CLI: [${RV_CLI_URL##*/}](https://github.com/j-hc/revanced-cli/releases/tag/$RV_CLI_TAG)"
 	
 	RVE_INTEGRATIONS=$(gh_req https://api.github.com/repos/inotia00/revanced-integrations/releases/latest -)
 	RVE_INTEGRATIONS_URL=$(echo "$RVE_INTEGRATIONS" | json_get 'browser_download_url')
@@ -158,7 +158,7 @@ patch_apk() {
 	local stock_input=$1 patched_apk=$2 patcher_args=$3
 	# --rip-lib is only available in my own revanced-cli builds
 	declare -r tdir=$(mktemp -d -p $TEMP_DIR)
-	local cmd="java -jar $RV_CLI_JAR --temp-dir=$tdir -c -a "$stock_input" -o "$patched_apk" -b $RV_PATCHES_JAR --keystore=ks.keystore $patcher_args --options=./options.toml"
+	local cmd="java -jar $RV_CLI_JAR --rip-lib x86_64 --rip-lib x86 --temp-dir=$tdir -c -a "$stock_input" -o "$patched_apk" -b $RV_PATCHES_JAR --keystore=ks.keystore $patcher_args --options=./options.toml"
 	echo "$cmd"
 	eval "$cmd"
 }
