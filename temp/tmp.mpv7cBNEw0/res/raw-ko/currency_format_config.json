@@ -1,0 +1,224 @@
+{
+"__signature": "@generated SignedSource<<89b5d113406de43a502174229b5e3d28>>",
+"__generatedBy": "export-localized-js-module.php",
+"AED": {
+"format": "{symbol}{amount}",
+"name": "UAE 디르함"
+},
+"ARS": {
+"format": "{symbol}{amount}",
+"name": "아르헨티나 페소"
+},
+"AUD": {
+"format": "{symbol}{amount}",
+"name": "호주 달러"
+},
+"BDT": {
+"format": "{symbol}{amount}",
+"name": "방글라데시 타카"
+},
+"BOB": {
+"format": "{symbol}{amount}",
+"name": "볼리비아 볼리비아노"
+},
+"BRL": {
+"format": "{symbol}{amount}",
+"name": "브라질 헤알"
+},
+"CAD": {
+"format": "{symbol}{amount}",
+"name": "캐나다 달러"
+},
+"CHF": {
+"format": "{symbol}{amount}",
+"name": "스위스 프랑"
+},
+"CLP": {
+"format": "{symbol}{amount}",
+"name": "칠레 페소"
+},
+"CNY": {
+"format": "{symbol}{amount}",
+"name": "중국 위안"
+},
+"COP": {
+"format": "{symbol}{amount}",
+"name": "콜롬비아 페소"
+},
+"CRC": {
+"format": "{symbol}{amount}",
+"name": "코스타리카 콜론"
+},
+"CZK": {
+"format": "{symbol}{amount}",
+"name": "체코 코루나"
+},
+"DKK": {
+"format": "{symbol}{amount}",
+"name": "덴마크 크로네"
+},
+"DZD": {
+"format": "{symbol}{amount}",
+"name": "알제리 디나르"
+},
+"EGP": {
+"format": "{symbol}{amount}",
+"name": "이집트 파운드"
+},
+"EUR": {
+"format": "{symbol}{amount}",
+"name": "유로"
+},
+"GBP": {
+"format": "{symbol}{amount}",
+"name": "영국 파운드"
+},
+"GTQ": {
+"format": "{symbol}{amount}",
+"name": "과테말라 케트살"
+},
+"HKD": {
+"format": "{symbol}{amount}",
+"name": "홍콩 달러"
+},
+"HNL": {
+"format": "{symbol}{amount}",
+"name": "온두라스 렘피라"
+},
+"HUF": {
+"format": "{symbol}{amount}",
+"name": "헝가리 포린트"
+},
+"IDR": {
+"format": "{symbol}{amount}",
+"name": "인도네시아 루피아"
+},
+"ILS": {
+"format": "{symbol}{amount}",
+"name": "이스라엘 셰켈"
+},
+"INR": {
+"format": "{symbol}{amount}",
+"name": "인도 루피"
+},
+"ISK": {
+"format": "{symbol}{amount}",
+"name": "아이슬란드 크로나"
+},
+"JPY": {
+"format": "{symbol}{amount}",
+"name": "일본 엔"
+},
+"KES": {
+"format": "{symbol}{amount}",
+"name": "케냐 실링"
+},
+"KRW": {
+"format": "{symbol}{amount}",
+"name": "대한민국 원"
+},
+"MOP": {
+"format": "{symbol}{amount}",
+"name": "마카우 파타카"
+},
+"MXN": {
+"format": "{symbol}{amount}",
+"name": "멕시코 페소"
+},
+"MYR": {
+"format": "{symbol}{amount}",
+"name": "말레이시아 링깃"
+},
+"NGN": {
+"format": "{symbol}{amount}",
+"name": "나이지리아 나이라"
+},
+"NIO": {
+"format": "{symbol}{amount}",
+"name": "니카라과 코로도바"
+},
+"NOK": {
+"format": "{symbol}{amount}",
+"name": "노르웨이 크로네"
+},
+"NZD": {
+"format": "{symbol}{amount}",
+"name": "뉴질랜드 달러"
+},
+"PEN": {
+"format": "{symbol}{amount}",
+"name": "페루 누에보 솔"
+},
+"PHP": {
+"format": "{symbol}{amount}",
+"name": "필리핀 페소"
+},
+"PKR": {
+"format": "{symbol}{amount}",
+"name": "파키스탄 루피"
+},
+"PLN": {
+"format": "{symbol}{amount}",
+"name": "폴란드 즈워티"
+},
+"PYG": {
+"format": "{symbol}{amount}",
+"name": "파라과이 과라니"
+},
+"QAR": {
+"format": "{symbol}{amount}",
+"name": "카타르 리얄"
+},
+"RON": {
+"format": "{symbol}{amount}",
+"name": "루마니아 레우"
+},
+"RUB": {
+"format": "{symbol}{amount}",
+"name": "러시아 루블"
+},
+"SAR": {
+"format": "{symbol}{amount}",
+"name": "사우디아라비아 리얄"
+},
+"SEK": {
+"format": "{symbol}{amount}",
+"name": "스웨덴 크로나"
+},
+"SGD": {
+"format": "{symbol}{amount}",
+"name": "싱가폴 달러"
+},
+"THB": {
+"format": "{symbol}{amount}",
+"name": "태국 바트"
+},
+"TRY": {
+"format": "{symbol}{amount}",
+"name": "터키 리라"
+},
+"TWD": {
+"format": "{symbol}{amount}",
+"name": "대만 달러"
+},
+"USD": {
+"format": "{symbol}{amount}",
+"name": "미국 달러"
+},
+"UYU": {
+"format": "{symbol}{amount}",
+"name": "우루과이 페소"
+},
+"VEF": {
+"format": "{symbol}{amount}",
+"name": "베네수엘라 볼리바"
+},
+"VND": {
+"format": "{symbol}{amount}",
+"name": "베트남 동"
+},
+"ZAR": {
+"format": "{symbol}{amount}",
+"name": "남아프리카공화국 랜드"
+}
+}
