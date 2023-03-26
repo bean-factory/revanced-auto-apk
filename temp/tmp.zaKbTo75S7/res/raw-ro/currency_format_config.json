@@ -1,0 +1,224 @@
+{
+"__signature": "@generated SignedSource<<96afcf246d301ff3283aeac464c6b7ab>>",
+"__generatedBy": "export-localized-js-module.php",
+"AED": {
+"format": "{amount} {symbol}",
+"name": "Dirham EAU"
+},
+"ARS": {
+"format": "{amount} {symbol}",
+"name": "Peso argentinian"
+},
+"AUD": {
+"format": "{amount} {symbol}",
+"name": "Dolar australian"
+},
+"BDT": {
+"format": "{amount} {symbol}",
+"name": "Taka din Bangladesh"
+},
+"BOB": {
+"format": "{amount} {symbol}",
+"name": "Boliviano bolivian"
+},
+"BRL": {
+"format": "{amount} {symbol}",
+"name": "Real brazilian"
+},
+"CAD": {
+"format": "{amount} {symbol}",
+"name": "Dolar canadian"
+},
+"CHF": {
+"format": "{amount} {symbol}",
+"name": "Franc elveţian"
+},
+"CLP": {
+"format": "{amount} {symbol}",
+"name": "Peso chilian"
+},
+"CNY": {
+"format": "{amount} {symbol}",
+"name": "Yuan renminbi chinezesc"
+},
+"COP": {
+"format": "{amount} {symbol}",
+"name": "Peso columbian"
+},
+"CRC": {
+"format": "{amount} {symbol}",
+"name": "Colon costarican"
+},
+"CZK": {
+"format": "{amount} {symbol}",
+"name": "Coroană cehă"
+},
+"DKK": {
+"format": "{amount} {symbol}",
+"name": "Coroană daneză"
+},
+"DZD": {
+"format": "{amount} {symbol}",
+"name": "Dinar algerian"
+},
+"EGP": {
+"format": "{amount} {symbol}",
+"name": "Liră egipteană"
+},
+"EUR": {
+"format": "{amount} {symbol}",
+"name": "Euro"
+},
+"GBP": {
+"format": "{amount} {symbol}",
+"name": "Liră sterlină"
+},
+"GTQ": {
+"format": "{amount} {symbol}",
+"name": "Quetzal guatemalez"
+},
+"HKD": {
+"format": "{amount} {symbol}",
+"name": "Dolar din Hong Kong"
+},
+"HNL": {
+"format": "{amount} {symbol}",
+"name": "Lempira honduriană"
+},
+"HUF": {
+"format": "{amount} {symbol}",
+"name": "Forint maghiar"
+},
+"IDR": {
+"format": "{amount} {symbol}",
+"name": "Rupie indoneziană"
+},
+"ILS": {
+"format": "{amount} {symbol}",
+"name": "Şechel israelian nou"
+},
+"INR": {
+"format": "{amount} {symbol}",
+"name": "Rupie indiană"
+},
+"ISK": {
+"format": "{amount} {symbol}",
+"name": "Coroană islandeză"
+},
+"JPY": {
+"format": "{amount} {symbol}",
+"name": "Yen japonez"
+},
+"KES": {
+"format": "{amount} {symbol}",
+"name": "Şiling kenyan"
+},
+"KRW": {
+"format": "{amount} {symbol}",
+"name": "Won coreean"
+},
+"MOP": {
+"format": "{amount} {symbol}",
+"name": "Pataca din Macao"
+},
+"MXN": {
+"format": "{amount} {symbol}",
+"name": "Peso mexican"
+},
+"MYR": {
+"format": "{amount} {symbol}",
+"name": "Ringgit malaezian"
+},
+"NGN": {
+"format": "{amount} {symbol}",
+"name": "Naira nigerian"
+},
+"NIO": {
+"format": "{amount} {symbol}",
+"name": "Cordoba nicaraguană"
+},
+"NOK": {
+"format": "{amount} {symbol}",
+"name": "Coroană norvegiană"
+},
+"NZD": {
+"format": "{amount} {symbol}",
+"name": "Dolar neozeelandez"
+},
+"PEN": {
+"format": "{amount} {symbol}",
+"name": "Nuevo Sol peruan"
+},
+"PHP": {
+"format": "{amount} {symbol}",
+"name": "Peso filipinez"
+},
+"PKR": {
+"format": "{amount} {symbol}",
+"name": "Rupie pakistaneză"
+},
+"PLN": {
+"format": "{amount} {symbol}",
+"name": "Zlot polonez"
+},
+"PYG": {
+"format": "{amount} {symbol}",
+"name": "Guarani paraguayan"
+},
+"QAR": {
+"format": "{amount} {symbol}",
+"name": "Riyal Qatar"
+},
+"RON": {
+"format": "{amount} {symbol}",
+"name": "Leu românesc"
+},
+"RUB": {
+"format": "{amount} {symbol}",
+"name": "Rublă rusească"
+},
+"SAR": {
+"format": "{amount} {symbol}",
+"name": "Rial saudit"
+},
+"SEK": {
+"format": "{amount} {symbol}",
+"name": "Coroană suedeză"
+},
+"SGD": {
+"format": "{amount} {symbol}",
+"name": "Dolar singaporez"
+},
+"THB": {
+"format": "{amount} {symbol}",
+"name": "Baht thailandez"
+},
+"TRY": {
+"format": "{amount} {symbol}",
+"name": "Liră turcească"
+},
+"TWD": {
+"format": "{amount} {symbol}",
+"name": "Dolar taiwanez"
+},
+"USD": {
+"format": "{amount} {symbol}",
+"name": "Dolari americani"
+},
+"UYU": {
+"format": "{amount} {symbol}",
+"name": "Peso uruguayan"
+},
+"VEF": {
+"format": "{amount} {symbol}",
+"name": "Bolivar venezuelean"
+},
+"VND": {
+"format": "{amount} {symbol}",
+"name": "Dong vietnamez"
+},
+"ZAR": {
+"format": "{amount} {symbol}",
+"name": "Rand sud-african"
+}
+}

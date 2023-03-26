@@ -1,5 +1,5 @@
 **ReVanced Versions:**  
-CLI: [revanced-cli-2.20.1-all.jar](https://github.com/revanced/revanced-cli/releases/tag/v2.20.1)  
+CLI: [revanced-cli-2.21.0-all.jar](https://github.com/j-hc/revanced-cli/releases/tag/v2.21.0)  
 Integrations (Extended): [revanced-integrations-0.100.15.apk](https://github.com/inotia00/revanced-integrations/releases/tag/v0.100.15)  
 Integrations: [revanced-integrations-0.100.1.apk](https://github.com/revanced/revanced-integrations/releases/tag/v0.100.1)  
 Patches (Extended): [revanced-patches-2.166.15.jar](https://github.com/inotia00/revanced-patches/releases/tag/v2.166.15)  
@@ -16,14 +16,11 @@ ReVanced Patches:
   
 **App Versions:**  
 YouTube: 18.11.36  
-Tasker: 6.0.9  
-Citra: bed6a4f12  
-Backdrops: 4.52  
-Reddit: 2023.09.1  
 YouTube-Music (arm64-v8a): 5.49.54  
-Instagram: 277.0.0.0.22  
-Twitter: 9.71.0-release.0  
 Twitch: 14.6.1  
+Reddit: 2023.09.1  
+Twitter: 9.71.0-release.0  
+Instagram: 277.0.0.0.22  
 YouTube-Music (arm-v7a): 5.49.54  
 
 **App Hashes:**  
