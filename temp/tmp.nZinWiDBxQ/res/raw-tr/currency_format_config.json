@@ -1,0 +1,224 @@
+{
+"__signature": "@generated SignedSource<<d3b9a5c922a64b77868f32f9dc6addfc>>",
+"__generatedBy": "export-localized-js-module.php",
+"AED": {
+"format": "{amount} {symbol}",
+"name": "BAE Dirhemi"
+},
+"ARS": {
+"format": "{amount} {symbol}",
+"name": "Arjantin Pesosu"
+},
+"AUD": {
+"format": "{amount} {symbol}",
+"name": "Avustralya Doları"
+},
+"BDT": {
+"format": "{amount} {symbol}",
+"name": "Bangladeş Takası"
+},
+"BOB": {
+"format": "{amount} {symbol}",
+"name": "Bolivya Bolivianosu"
+},
+"BRL": {
+"format": "{amount} {symbol}",
+"name": "Brezilya Reali"
+},
+"CAD": {
+"format": "{amount} {symbol}",
+"name": "Kanada Doları"
+},
+"CHF": {
+"format": "{amount} {symbol}",
+"name": "İsviçre Frangı"
+},
+"CLP": {
+"format": "{amount} {symbol}",
+"name": "Şili Pesosu"
+},
+"CNY": {
+"format": "{amount} {symbol}",
+"name": "Çin Yuanı"
+},
+"COP": {
+"format": "{amount} {symbol}",
+"name": "Kolombiya Pesosu"
+},
+"CRC": {
+"format": "{amount} {symbol}",
+"name": "Kosta Rika Colonu"
+},
+"CZK": {
+"format": "{amount} {symbol}",
+"name": "Çek Korunası"
+},
+"DKK": {
+"format": "{amount} {symbol}",
+"name": "Danimarka Kronu"
+},
+"DZD": {
+"format": "{amount} {symbol}",
+"name": "Cezayir Dinarı"
+},
+"EGP": {
+"format": "{amount} {symbol}",
+"name": "Mısır Poundu"
+},
+"EUR": {
+"format": "{amount} {symbol}",
+"name": "Avro"
+},
+"GBP": {
+"format": "{amount} {symbol}",
+"name": "İngiliz Sterlini"
+},
+"GTQ": {
+"format": "{amount} {symbol}",
+"name": "Guatemala Quetzalı"
+},
+"HKD": {
+"format": "{amount} {symbol}",
+"name": "Hong Kong Doları"
+},
+"HNL": {
+"format": "{amount} {symbol}",
+"name": "Honduras Lempirası"
+},
+"HUF": {
+"format": "{amount} {symbol}",
+"name": "Macar Forinti"
+},
+"IDR": {
+"format": "{amount} {symbol}",
+"name": "Endonezya Rupisi"
+},
+"ILS": {
+"format": "{amount} {symbol}",
+"name": "Yeni İsrail Şekeli"
+},
+"INR": {
+"format": "{amount} {symbol}",
+"name": "Hindistan Rupisi"
+},
+"ISK": {
+"format": "{amount} {symbol}",
+"name": "İzlanda Kronu"
+},
+"JPY": {
+"format": "{amount} {symbol}",
+"name": "Japon Yeni"
+},
+"KES": {
+"format": "{amount} {symbol}",
+"name": "Kenya Şilini"
+},
+"KRW": {
+"format": "{amount} {symbol}",
+"name": "Güney Kore Wonu"
+},
+"MOP": {
+"format": "{amount} {symbol}",
+"name": "Macau Patakası"
+},
+"MXN": {
+"format": "{amount} {symbol}",
+"name": "Meksika Pesosu"
+},
+"MYR": {
+"format": "{amount} {symbol}",
+"name": "Malezya Ringgiti"
+},
+"NGN": {
+"format": "{amount} {symbol}",
+"name": "Nijerya Nairası"
+},
+"NIO": {
+"format": "{amount} {symbol}",
+"name": "Nikaragua Kordobası"
+},
+"NOK": {
+"format": "{amount} {symbol}",
+"name": "Norveç Kronu"
+},
+"NZD": {
+"format": "{amount} {symbol}",
+"name": "Yeni Zelanda Doları"
+},
+"PEN": {
+"format": "{amount} {symbol}",
+"name": "Peru Nuevo Sol'u"
+},
+"PHP": {
+"format": "{amount} {symbol}",
+"name": "Filipin Pesosu"
+},
+"PKR": {
+"format": "{amount} {symbol}",
+"name": "Pakistan Rupisi"
+},
+"PLN": {
+"format": "{amount} {symbol}",
+"name": "Polonya Zlotisi"
+},
+"PYG": {
+"format": "{amount} {symbol}",
+"name": "Paraguay Guaranisi"
+},
+"QAR": {
+"format": "{amount} {symbol}",
+"name": "Katar Riyali"
+},
+"RON": {
+"format": "{amount} {symbol}",
+"name": "Rumen Leyi"
+},
+"RUB": {
+"format": "{amount} {symbol}",
+"name": "Rus Rublesi"
+},
+"SAR": {
+"format": "{amount} {symbol}",
+"name": "Suudi Arabistan Riyali"
+},
+"SEK": {
+"format": "{amount} {symbol}",
+"name": "İsveç Kronu"
+},
+"SGD": {
+"format": "{amount} {symbol}",
+"name": "Singapur Doları"
+},
+"THB": {
+"format": "{amount} {symbol}",
+"name": "Tayland Bahtı"
+},
+"TRY": {
+"format": "{amount} {symbol}",
+"name": "Türk Lirası"
+},
+"TWD": {
+"format": "{amount} {symbol}",
+"name": "Tayvan Doları"
+},
+"USD": {
+"format": "{amount} {symbol}",
+"name": "Amerikan Doları"
+},
+"UYU": {
+"format": "{amount} {symbol}",
+"name": "Uruguay Pesosu"
+},
+"VEF": {
+"format": "{amount} {symbol}",
+"name": "Venezuela Bolivarı"
+},
+"VND": {
+"format": "{amount} {symbol}",
+"name": "Vietnam Dongu"
+},
+"ZAR": {
+"format": "{amount} {symbol}",
+"name": "Güney Afrika Randı"
+}
+}

@@ -1,0 +1,224 @@
+{
+"__signature": "@generated SignedSource<<38e1d02580e466a357ebabb2098559ad>>",
+"__generatedBy": "export-localized-js-module.php",
+"AED": {
+"format": "{amount} {symbol}",
+"name": "Ντιρχάμ Ηνωμένων Αραβικών Εμιράτων"
+},
+"ARS": {
+"format": "{amount} {symbol}",
+"name": "Πέσο Αργεντινής"
+},
+"AUD": {
+"format": "{amount} {symbol}",
+"name": "Δολάριο Αυστραλίας"
+},
+"BDT": {
+"format": "{amount} {symbol}",
+"name": "Τάκα Μπαγκλαντές"
+},
+"BOB": {
+"format": "{amount} {symbol}",
+"name": "Μπολιβιάνο (Βολιβία)"
+},
+"BRL": {
+"format": "{amount} {symbol}",
+"name": "Ρεάλ Βραζιλίας"
+},
+"CAD": {
+"format": "{amount} {symbol}",
+"name": "Δολάριο Καναδά"
+},
+"CHF": {
+"format": "{amount} {symbol}",
+"name": "Ελβετικό φράγκο"
+},
+"CLP": {
+"format": "{amount} {symbol}",
+"name": "Πέσο Χιλής"
+},
+"CNY": {
+"format": "{amount} {symbol}",
+"name": "Γιουάν Κίνας"
+},
+"COP": {
+"format": "{amount} {symbol}",
+"name": "Πέσο Κολομβίας"
+},
+"CRC": {
+"format": "{amount} {symbol}",
+"name": "Κολόν (Κόστα Ρίκα)"
+},
+"CZK": {
+"format": "{amount} {symbol}",
+"name": "Κορόνα Τσεχίας"
+},
+"DKK": {
+"format": "{amount} {symbol}",
+"name": "Κορόνα Δανίας"
+},
+"DZD": {
+"format": "{amount} {symbol}",
+"name": "Δηνάριο Αλγερίας"
+},
+"EGP": {
+"format": "{amount} {symbol}",
+"name": "Λίρα Αιγύπτου"
+},
+"EUR": {
+"format": "{amount} {symbol}",
+"name": "Ευρώ"
+},
+"GBP": {
+"format": "{amount} {symbol}",
+"name": "Λίρα Αγγλίας"
+},
+"GTQ": {
+"format": "{amount} {symbol}",
+"name": "Κετσάλ Γουατεμάλας"
+},
+"HKD": {
+"format": "{amount} {symbol}",
+"name": "Δολάριο Χονγκ Κονγκ"
+},
+"HNL": {
+"format": "{amount} {symbol}",
+"name": "Λεμπίρα Ονδούρας"
+},
+"HUF": {
+"format": "{amount} {symbol}",
+"name": "Φιορίνι Ουγγαρίας"
+},
+"IDR": {
+"format": "{amount} {symbol}",
+"name": "Ρουπία Ινδονησίας"
+},
+"ILS": {
+"format": "{amount} {symbol}",
+"name": "Νέο σέκελ του Ισραήλ"
+},
+"INR": {
+"format": "{amount} {symbol}",
+"name": "Ρουπία Ινδίας"
+},
+"ISK": {
+"format": "{amount} {symbol}",
+"name": "Κορόνα Ισλανδίας"
+},
+"JPY": {
+"format": "{amount} {symbol}",
+"name": "Γιεν Ιαπωνίας"
+},
+"KES": {
+"format": "{amount} {symbol}",
+"name": "Σελίνι Κένυας"
+},
+"KRW": {
+"format": "{amount} {symbol}",
+"name": "Γουόν Κορέας"
+},
+"MOP": {
+"format": "{amount} {symbol}",
+"name": "Πατάκα (Μακάο)"
+},
+"MXN": {
+"format": "{amount} {symbol}",
+"name": "Πέσο Μεξικού"
+},
+"MYR": {
+"format": "{amount} {symbol}",
+"name": "Ρινγκίτ Μαλαισίας"
+},
+"NGN": {
+"format": "{amount} {symbol}",
+"name": "Νάιρα Νιγηρίας"
+},
+"NIO": {
+"format": "{amount} {symbol}",
+"name": "Κόρδοβα Νικαράγουας"
+},
+"NOK": {
+"format": "{amount} {symbol}",
+"name": "Κορόνα Νορβηγίας"
+},
+"NZD": {
+"format": "{amount} {symbol}",
+"name": "Δολάριο Νέας Ζηλανδίας"
+},
+"PEN": {
+"format": "{amount} {symbol}",
+"name": "Νέο Σολ (Περού)"
+},
+"PHP": {
+"format": "{amount} {symbol}",
+"name": "Πέσο Φιλιππίνων"
+},
+"PKR": {
+"format": "{amount} {symbol}",
+"name": "Ρουπία Πακιστάν"
+},
+"PLN": {
+"format": "{amount} {symbol}",
+"name": "Ζλότι (Πολωνίας)"
+},
+"PYG": {
+"format": "{amount} {symbol}",
+"name": "Γκουαρανί (Παραγουάη)"
+},
+"QAR": {
+"format": "{amount} {symbol}",
+"name": "Ριάλ του Κατάρ"
+},
+"RON": {
+"format": "{amount} {symbol}",
+"name": "Λέου Ρουμανίας"
+},
+"RUB": {
+"format": "{amount} {symbol}",
+"name": "Ρούβλι Ρωσίας"
+},
+"SAR": {
+"format": "{amount} {symbol}",
+"name": "Ριάλ Σαουδικής Αραβίας"
+},
+"SEK": {
+"format": "{amount} {symbol}",
+"name": "Κορόνα Σουηδίας"
+},
+"SGD": {
+"format": "{amount} {symbol}",
+"name": "Δολάριο Σιγκαπούρης"
+},
+"THB": {
+"format": "{amount} {symbol}",
+"name": "Μπατ Ταϊλάνδης"
+},
+"TRY": {
+"format": "{amount} {symbol}",
+"name": "Λίρα Τουρκίας"
+},
+"TWD": {
+"format": "{amount} {symbol}",
+"name": "Δολάριο Ταϊβάν"
+},
+"USD": {
+"format": "{amount} {symbol}",
+"name": "Δολάρια ΗΠΑ"
+},
+"UYU": {
+"format": "{amount} {symbol}",
+"name": "Πέσο Ουρουγουάης"
+},
+"VEF": {
+"format": "{amount} {symbol}",
+"name": "Μπολίβαρ Βενεζουέλας"
+},
+"VND": {
+"format": "{amount} {symbol}",
+"name": "Ντονγκ (Βιετνάμ)"
+},
+"ZAR": {
+"format": "{amount} {symbol}",
+"name": "Ραντ Νότιας Αφρικής"
+}
+}
