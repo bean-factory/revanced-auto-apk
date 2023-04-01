@@ -70,6 +70,8 @@ jobs:
     if: ${{ needs.check.outputs.SHOULD_BUILD == 1 }}
 
   cleanup:
+    name: Cleanup
+    runs-on: ubuntu-latest
     steps:
       - name: Delete workflow runs
         uses: Mattraks/delete-workflow-runs@v2
