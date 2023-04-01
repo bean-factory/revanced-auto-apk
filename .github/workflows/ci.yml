@@ -71,7 +71,9 @@ jobs:
 
   cleanup:
     name: Cleanup
+    needs: build
     runs-on: ubuntu-latest
+    if: ${{ always() }}
     steps:
       - name: Delete workflow runs
         uses: Mattraks/delete-workflow-runs@v2
@@ -88,4 +90,3 @@ jobs:
           delete_tags: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
