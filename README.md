@@ -11,6 +11,15 @@ Get the PWA for Android from [beans-321/revanced-auto-apk-web](https://github.co
 
 Note: YouTube and YouTube-Music require [Vanced MicroG](https://github.com/inotia00/VancedMicroG/releases/latest) to work.
 
+## Patch List
+
+- YouTube: `bypass-ambient-mode-restrictions` `client-spoof` `custom-video-speed` `default-video-quality` `default-video-speed` `disable-haptic-feedback` `disable-quic-protocol` `enable-external-browser` `enable-minimized-playback` `enable-old-layout` `enable-old-quality-layout` `enable-open-links-directly` `enable-seekbar-tapping` `enable-tablet-miniplayer` `enable-tablet-navigation-bar` `enable-timestamps-speed` `enable-wide-searchbar` `force-vp9-codec` `header-switch` `hide-account-menu` `hide-auto-captions` `hide-auto-player-popup-panels` `hide-autoplay-button` `hide-autoplay-preview` `hide-button-container` `hide-captions-button` `hide-cast-button` `hide-category-bar` `hide-channel-avatar-section` `hide-channel-watermark` `hide-collapse-button` `hide-comment-component` `hide-create-button` `hide-crowdfunding-box` `hide-email-address` `hide-endscreen-cards` `hide-endscreen-overlay` `hide-filmstrip-overlay` `hide-floating-microphone` `hide-flyout-panel` `hide-fullscreen-buttoncontainer` `hide-fullscreen-panels` `hide-general-ads` `hide-info-cards` `hide-live-chat-button` `hide-mix-playlists` `hide-music-button` `hide-next-prev-button` `hide-pip-notification` `hide-player-button-background` `hide-player-overlay-filter` `hide-seekbar` `hide-shorts-button` `hide-shorts-component` `hide-shorts-navbar` `hide-startup-shorts-player` `hide-stories` `hide-suggested-actions` `hide-time-stamp` `hide-tooltip-content` `hide-video-ads` `layout-switch` `lift-vertical-video-restriction` `microg-support` `optimize-resource` `overlay-buttons` `patch-options` `protobuf-spoof` `return-youtube-dislike` `settings` `sponsorblock` `swipe-controls` `switch-create-notification` `theme` `translations` 
+- YouTube Music: `background-play` `certificate-spoof` `client-spoof-music` `disable-auto-captions` `enable-black-navbar` `enable-color-match-player` `enable-compact-dialog` `enable-force-minimized-player` `enable-force-shuffle` `enable-opus-codec` `enable-zen-mode` `exclusive-audio-playback` `hide-compact-header` `hide-get-premium` `hide-music-ads` `hide-music-cast-button` `hide-new-playlist` `hide-playlist-card` `hide-taste-builder` `hide-upgrade-button` `minimized-playback-music` `music-microg-support` `music-settings` `optimize-resource-music` `patch-options` `spoof-version` `translations-music` 
+- Instagram: `hide-timeline-ads` 
+- Reddit: `premium-icon-reddit` `general-reddit-ads` `hide-subreddit-banner` 
+- Twitch: `block-audio-ads` `block-embedded-ads` `block-video-ads` `settings` `show-deleted-messages` 
+- Twitter: `dynamic-color` `hide-ads` `hide-recommended-users` `hide-views-stats` 
+
 ## Credits
 [j-hc](https://github.com/j-hc) for [https://github.com/j-hc/revanced-magisk-module](https://github.com/j-hc/revanced-magisk-module).
 
