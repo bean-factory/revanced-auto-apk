@@ -1,0 +1,224 @@
+{
+"__signature": "@generated SignedSource<<d81a5f844abe02ab1f0691dd8f857f13>>",
+"__generatedBy": "export-localized-js-module.php",
+"AED": {
+"format": "{symbol} {amount}",
+"name": "דירהם של איחוד האמירויות הערביות"
+},
+"ARS": {
+"format": "{symbol} {amount}",
+"name": "פזו ארגנטיני"
+},
+"AUD": {
+"format": "{symbol} {amount}",
+"name": "דולר אוסטרלי"
+},
+"BDT": {
+"format": "{symbol} {amount}",
+"name": "טאקה בנגלדשי"
+},
+"BOB": {
+"format": "{symbol} {amount}",
+"name": "בוליביאנו בוליביאני"
+},
+"BRL": {
+"format": "{symbol} {amount}",
+"name": "ריאל ברזילאי"
+},
+"CAD": {
+"format": "{symbol} {amount}",
+"name": "דולר קנדי"
+},
+"CHF": {
+"format": "{symbol} {amount}",
+"name": "פרנק שוויצרי"
+},
+"CLP": {
+"format": "{symbol} {amount}",
+"name": "פזו צ'יליאני"
+},
+"CNY": {
+"format": "{symbol} {amount}",
+"name": "יואן סיני"
+},
+"COP": {
+"format": "{symbol} {amount}",
+"name": "פזו קולומביאני"
+},
+"CRC": {
+"format": "{symbol} {amount}",
+"name": "קולון קוסטה-ריקני"
+},
+"CZK": {
+"format": "{symbol} {amount}",
+"name": "כתר צ'כי"
+},
+"DKK": {
+"format": "{symbol} {amount}",
+"name": "כתר דני"
+},
+"DZD": {
+"format": "{symbol} {amount}",
+"name": "דינר אלג'ירי"
+},
+"EGP": {
+"format": "{symbol} {amount}",
+"name": "לירה מצרית"
+},
+"EUR": {
+"format": "{symbol} {amount}",
+"name": "יורו"
+},
+"GBP": {
+"format": "{symbol} {amount}",
+"name": "לירה שטרלינג"
+},
+"GTQ": {
+"format": "{symbol} {amount}",
+"name": "קצאל גואטמלי"
+},
+"HKD": {
+"format": "{symbol} {amount}",
+"name": "דולר הונג קונג"
+},
+"HNL": {
+"format": "{symbol} {amount}",
+"name": "למפירה של הונדורס"
+},
+"HUF": {
+"format": "{symbol} {amount}",
+"name": "פורינט הונגרי"
+},
+"IDR": {
+"format": "{symbol} {amount}",
+"name": "רופי אינדונזי"
+},
+"ILS": {
+"format": "{symbol} {amount}",
+"name": "שקל ישראלי חדש"
+},
+"INR": {
+"format": "{symbol} {amount}",
+"name": "רופי הודי"
+},
+"ISK": {
+"format": "{symbol} {amount}",
+"name": "כתר איסלנדי"
+},
+"JPY": {
+"format": "{symbol} {amount}",
+"name": "ין יפני"
+},
+"KES": {
+"format": "{symbol} {amount}",
+"name": "שילינג קנייתי"
+},
+"KRW": {
+"format": "{symbol} {amount}",
+"name": "וון קוריאני"
+},
+"MOP": {
+"format": "{symbol} {amount}",
+"name": "פטקה של מקאו"
+},
+"MXN": {
+"format": "{symbol} {amount}",
+"name": "פזו מקסיקני"
+},
+"MYR": {
+"format": "{symbol} {amount}",
+"name": "רינגיט מלזי"
+},
+"NGN": {
+"format": "{symbol} {amount}",
+"name": "נאירה ניגרי"
+},
+"NIO": {
+"format": "{symbol} {amount}",
+"name": "קורדובה ניקרגוואית"
+},
+"NOK": {
+"format": "{symbol} {amount}",
+"name": "כתר נורבגי"
+},
+"NZD": {
+"format": "{symbol} {amount}",
+"name": "דולר ניו זילנדי"
+},
+"PEN": {
+"format": "{symbol} {amount}",
+"name": "נואבו סול פרואני"
+},
+"PHP": {
+"format": "{symbol} {amount}",
+"name": "פסו פיליפיני"
+},
+"PKR": {
+"format": "{symbol} {amount}",
+"name": "רופי פקיסטני"
+},
+"PLN": {
+"format": "{symbol} {amount}",
+"name": "זלוטי פולני"
+},
+"PYG": {
+"format": "{symbol} {amount}",
+"name": "גוארני פרגוואי"
+},
+"QAR": {
+"format": "{symbol} {amount}",
+"name": "ריאל קטארי"
+},
+"RON": {
+"format": "{symbol} {amount}",
+"name": "לאו רומני"
+},
+"RUB": {
+"format": "{symbol} {amount}",
+"name": "רובל רוסי"
+},
+"SAR": {
+"format": "{symbol} {amount}",
+"name": "ריאל של ערב הסעודית"
+},
+"SEK": {
+"format": "{symbol} {amount}",
+"name": "כתר שבדי"
+},
+"SGD": {
+"format": "{symbol} {amount}",
+"name": "דולר סינגפורי"
+},
+"THB": {
+"format": "{symbol} {amount}",
+"name": "באט תאילנדי"
+},
+"TRY": {
+"format": "{symbol} {amount}",
+"name": "לירה טורקית"
+},
+"TWD": {
+"format": "{symbol} {amount}",
+"name": "דולר טאיווני"
+},
+"USD": {
+"format": "{symbol} {amount}",
+"name": "דולר ארה\"ב"
+},
+"UYU": {
+"format": "{symbol} {amount}",
+"name": "פסו אורוגואי"
+},
+"VEF": {
+"format": "{symbol} {amount}",
+"name": "בוליבר ונצואלה"
+},
+"VND": {
+"format": "{symbol} {amount}",
+"name": "דונג וייטנאמי"
+},
+"ZAR": {
+"format": "{symbol} {amount}",
+"name": "רנד דרום אפריקאי"
+}
+}
