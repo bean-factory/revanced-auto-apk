@@ -1,0 +1,224 @@
+{
+"__signature": "@generated SignedSource<<2511d31fc675bff603dd21538b5e9d83>>",
+"__generatedBy": "export-localized-js-module.php",
+"AED": {
+"format": "{symbol} {amount}",
+"name": "VAE-dirham"
+},
+"ARS": {
+"format": "{symbol} {amount}",
+"name": "Argentijnse peso"
+},
+"AUD": {
+"format": "{symbol} {amount}",
+"name": "Australische dollar"
+},
+"BDT": {
+"format": "{symbol} {amount}",
+"name": "Bengalese taka"
+},
+"BOB": {
+"format": "{symbol} {amount}",
+"name": "Boliviaanse boliviano"
+},
+"BRL": {
+"format": "{symbol} {amount}",
+"name": "Braziliaanse real"
+},
+"CAD": {
+"format": "{symbol} {amount}",
+"name": "Canadese dollar"
+},
+"CHF": {
+"format": "{symbol} {amount}",
+"name": "Zwitserse frank"
+},
+"CLP": {
+"format": "{symbol} {amount}",
+"name": "Chileense peso"
+},
+"CNY": {
+"format": "{symbol} {amount}",
+"name": "Chinese yuan"
+},
+"COP": {
+"format": "{symbol} {amount}",
+"name": "Colombiaanse peso"
+},
+"CRC": {
+"format": "{symbol} {amount}",
+"name": "Costa Ricaanse colon"
+},
+"CZK": {
+"format": "{symbol} {amount}",
+"name": "Tsjechische kroon"
+},
+"DKK": {
+"format": "{symbol} {amount}",
+"name": "Deense kroon"
+},
+"DZD": {
+"format": "{symbol} {amount}",
+"name": "Algerijnse dinar"
+},
+"EGP": {
+"format": "{symbol} {amount}",
+"name": "Egyptische pond"
+},
+"EUR": {
+"format": "{symbol} {amount}",
+"name": "Euro"
+},
+"GBP": {
+"format": "{symbol} {amount}",
+"name": "Britse Pond"
+},
+"GTQ": {
+"format": "{symbol} {amount}",
+"name": "Guatemalteekse quetzal"
+},
+"HKD": {
+"format": "{symbol} {amount}",
+"name": "Hongkongse dollar"
+},
+"HNL": {
+"format": "{symbol} {amount}",
+"name": "Hondurese lempira"
+},
+"HUF": {
+"format": "{symbol} {amount}",
+"name": "Hongaarse forint"
+},
+"IDR": {
+"format": "{symbol} {amount}",
+"name": "Indonesische roepia"
+},
+"ILS": {
+"format": "{symbol} {amount}",
+"name": "Israëlische nieuwe shekel"
+},
+"INR": {
+"format": "{symbol} {amount}",
+"name": "Indiase roepie"
+},
+"ISK": {
+"format": "{symbol} {amount}",
+"name": "IJslandse kroon"
+},
+"JPY": {
+"format": "{symbol} {amount}",
+"name": "Japanse yen"
+},
+"KES": {
+"format": "{symbol} {amount}",
+"name": "Keniaanse shilling"
+},
+"KRW": {
+"format": "{symbol} {amount}",
+"name": "Koreaanse won"
+},
+"MOP": {
+"format": "{symbol} {amount}",
+"name": "Macause pataca"
+},
+"MXN": {
+"format": "{symbol} {amount}",
+"name": "Mexicaanse peso"
+},
+"MYR": {
+"format": "{symbol} {amount}",
+"name": "Maleisische ringgit"
+},
+"NGN": {
+"format": "{symbol} {amount}",
+"name": "Nigeriaanse naira"
+},
+"NIO": {
+"format": "{symbol} {amount}",
+"name": "Nicaraguaanse cordoba"
+},
+"NOK": {
+"format": "{symbol} {amount}",
+"name": "Noorse kroon"
+},
+"NZD": {
+"format": "{symbol} {amount}",
+"name": "Nieuw-Zeelandse dollar"
+},
+"PEN": {
+"format": "{symbol} {amount}",
+"name": "Peruaanse nuevo sol"
+},
+"PHP": {
+"format": "{symbol} {amount}",
+"name": "Filipijnse peso"
+},
+"PKR": {
+"format": "{symbol} {amount}",
+"name": "Pakistaanse roepie"
+},
+"PLN": {
+"format": "{symbol} {amount}",
+"name": "Poolse zloty"
+},
+"PYG": {
+"format": "{symbol} {amount}",
+"name": "Paraguayaanse guarani"
+},
+"QAR": {
+"format": "{symbol} {amount}",
+"name": "Qatarese rial"
+},
+"RON": {
+"format": "{symbol} {amount}",
+"name": "Roemeense leu"
+},
+"RUB": {
+"format": "{symbol} {amount}",
+"name": "Russische roebel"
+},
+"SAR": {
+"format": "{symbol} {amount}",
+"name": "Saoedi-Arabische riyal"
+},
+"SEK": {
+"format": "{symbol} {amount}",
+"name": "Zweedse kroon"
+},
+"SGD": {
+"format": "{symbol} {amount}",
+"name": "Singaporese dollar"
+},
+"THB": {
+"format": "{symbol} {amount}",
+"name": "Thaise baht"
+},
+"TRY": {
+"format": "{symbol} {amount}",
+"name": "Turkse lira"
+},
+"TWD": {
+"format": "{symbol} {amount}",
+"name": "Taiwanese dollar"
+},
+"USD": {
+"format": "{symbol} {amount}",
+"name": "Amerikaanse dollars"
+},
+"UYU": {
+"format": "{symbol} {amount}",
+"name": "Uruguayaanse peso"
+},
+"VEF": {
+"format": "{symbol} {amount}",
+"name": "Venezolaanse bolivar"
+},
+"VND": {
+"format": "{symbol} {amount}",
+"name": "Vietnamese dong"
+},
+"ZAR": {
+"format": "{symbol} {amount}",
+"name": "Zuid-Afrikaanse rand"
+}
+}
