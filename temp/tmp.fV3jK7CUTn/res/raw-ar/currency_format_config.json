@@ -1,0 +1,224 @@
+{
+"__signature": "@generated SignedSource<<61646de0eeb30cd66de7bf50b92ccabf>>",
+"__generatedBy": "export-localized-js-module.php",
+"AED": {
+"format": "{symbol}{amount}",
+"name": "الدرهم الإماراتي"
+},
+"ARS": {
+"format": "{symbol}{amount}",
+"name": "البيزو الأرجنتيني"
+},
+"AUD": {
+"format": "{symbol}{amount}",
+"name": "الدولار الأسترالي"
+},
+"BDT": {
+"format": "{symbol}{amount}",
+"name": "تاكا بنجلاديشي"
+},
+"BOB": {
+"format": "{symbol}{amount}",
+"name": "البوليفيانو البوليفي"
+},
+"BRL": {
+"format": "{symbol}{amount}",
+"name": "الريال البرازيلي"
+},
+"CAD": {
+"format": "{symbol}{amount}",
+"name": "الدولار الكندي"
+},
+"CHF": {
+"format": "{symbol}{amount}",
+"name": "الفرنك السويسري"
+},
+"CLP": {
+"format": "{symbol}{amount}",
+"name": "البيزو التشيلي"
+},
+"CNY": {
+"format": "{symbol}{amount}",
+"name": "اليوان الصيني"
+},
+"COP": {
+"format": "{symbol}{amount}",
+"name": "البيزو الكولومبي"
+},
+"CRC": {
+"format": "{symbol}{amount}",
+"name": "الكولن الكوستاريكي"
+},
+"CZK": {
+"format": "{symbol}{amount}",
+"name": "الكورونا التشيكية"
+},
+"DKK": {
+"format": "{symbol}{amount}",
+"name": "الكرون الدانماركي"
+},
+"DZD": {
+"format": "{symbol}{amount}",
+"name": "دينار جزائري"
+},
+"EGP": {
+"format": "{symbol}{amount}",
+"name": "الجنيه المصري"
+},
+"EUR": {
+"format": "{symbol}{amount}",
+"name": "اليورو"
+},
+"GBP": {
+"format": "{symbol}{amount}",
+"name": "الجنيه الإنجليزي"
+},
+"GTQ": {
+"format": "{symbol}{amount}",
+"name": "كويتزال غواتيمالي"
+},
+"HKD": {
+"format": "{symbol}{amount}",
+"name": "دولار هونغ كونغ"
+},
+"HNL": {
+"format": "{symbol}{amount}",
+"name": "اللمبيرا الهندوراسي"
+},
+"HUF": {
+"format": "{symbol}{amount}",
+"name": "الفورنت الهنغاري"
+},
+"IDR": {
+"format": "{symbol}{amount}",
+"name": "الروبية الإندونيسية"
+},
+"ILS": {
+"format": "{symbol}{amount}",
+"name": "الشيكل الإسرائيلي الجديد"
+},
+"INR": {
+"format": "{symbol}{amount}",
+"name": "الروبية الهندية"
+},
+"ISK": {
+"format": "{symbol}{amount}",
+"name": "الكرونا الأيسلندية"
+},
+"JPY": {
+"format": "{symbol}{amount}",
+"name": "الين الياباني"
+},
+"KES": {
+"format": "{symbol}{amount}",
+"name": "شيلينغ كيني"
+},
+"KRW": {
+"format": "{symbol}{amount}",
+"name": "الوون الكوري"
+},
+"MOP": {
+"format": "{symbol}{amount}",
+"name": "باتاكا ماكاو"
+},
+"MXN": {
+"format": "{symbol}{amount}",
+"name": "البيزو المكسيكي"
+},
+"MYR": {
+"format": "{symbol}{amount}",
+"name": "الرنجيت الماليزي"
+},
+"NGN": {
+"format": "{symbol}{amount}",
+"name": "نايرا نيجيرى"
+},
+"NIO": {
+"format": "{symbol}{amount}",
+"name": "كوردوبا نيكاراغوا"
+},
+"NOK": {
+"format": "{symbol}{amount}",
+"name": "الكرون النرويجي"
+},
+"NZD": {
+"format": "{symbol}{amount}",
+"name": "الدولار النيوزيلندي"
+},
+"PEN": {
+"format": "{symbol}{amount}",
+"name": "نيفوسول بيرو"
+},
+"PHP": {
+"format": "{symbol}{amount}",
+"name": "البيزو الفلبيني"
+},
+"PKR": {
+"format": "{symbol}{amount}",
+"name": "روبية باكستانية"
+},
+"PLN": {
+"format": "{symbol}{amount}",
+"name": "الزلوطي البولندي"
+},
+"PYG": {
+"format": "{symbol}{amount}",
+"name": "الغواراني الباراغواني"
+},
+"QAR": {
+"format": "{symbol}{amount}",
+"name": "الريال القطري"
+},
+"RON": {
+"format": "{symbol}{amount}",
+"name": "اللو الروماني"
+},
+"RUB": {
+"format": "{symbol}{amount}",
+"name": "الروبل الروسي"
+},
+"SAR": {
+"format": "{symbol}{amount}",
+"name": "الريال السعودي"
+},
+"SEK": {
+"format": "{symbol}{amount}",
+"name": "الكرون السويدي"
+},
+"SGD": {
+"format": "{symbol}{amount}",
+"name": "الدولار السنغافوري"
+},
+"THB": {
+"format": "{symbol}{amount}",
+"name": "الباهت التايلاندي"
+},
+"TRY": {
+"format": "{symbol}{amount}",
+"name": "الليرة التركية"
+},
+"TWD": {
+"format": "{symbol}{amount}",
+"name": "الدولار التايواني"
+},
+"USD": {
+"format": "{symbol}{amount}",
+"name": "الدولار الأمريكي"
+},
+"UYU": {
+"format": "{symbol}{amount}",
+"name": "البيزو الأرغواني"
+},
+"VEF": {
+"format": "{symbol}{amount}",
+"name": "البوليفار الفنزويلي"
+},
+"VND": {
+"format": "{symbol}{amount}",
+"name": "الدونج الفييتنامي"
+},
+"ZAR": {
+"format": "{symbol}{amount}",
+"name": "الراند الجنوب أفريقي"
+}
+}
