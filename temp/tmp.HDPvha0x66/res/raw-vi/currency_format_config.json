@@ -1,0 +1,224 @@
+{
+"__signature": "@generated SignedSource<<802eabd709addb175bb91692666c3e2d>>",
+"__generatedBy": "export-localized-js-module.php",
+"AED": {
+"format": "{amount} {symbol}",
+"name": "Đồng Dirham UAE"
+},
+"ARS": {
+"format": "{amount} {symbol}",
+"name": "Đồng Peso Argentina"
+},
+"AUD": {
+"format": "{amount} {symbol}",
+"name": "Đô-la Úc"
+},
+"BDT": {
+"format": "{amount} {symbol}",
+"name": "Đồng Taka Bangladesh"
+},
+"BOB": {
+"format": "{amount} {symbol}",
+"name": "Đồng Boliviano Bolivia"
+},
+"BRL": {
+"format": "{amount} {symbol}",
+"name": "Đồng Real Brazil"
+},
+"CAD": {
+"format": "{amount} {symbol}",
+"name": "Đô-la Canada"
+},
+"CHF": {
+"format": "{amount} {symbol}",
+"name": "Đồng Franc Thụy Sĩ"
+},
+"CLP": {
+"format": "{amount} {symbol}",
+"name": "Đồng Peso Chile"
+},
+"CNY": {
+"format": "{amount} {symbol}",
+"name": "Đồng Nhân dân tệ Trung Quốc"
+},
+"COP": {
+"format": "{amount} {symbol}",
+"name": "Đồng Peso Colombia"
+},
+"CRC": {
+"format": "{amount} {symbol}",
+"name": "Đồng Colon Costa Rica"
+},
+"CZK": {
+"format": "{amount} {symbol}",
+"name": "Đồng Koruna Cộng hòa Séc"
+},
+"DKK": {
+"format": "{amount} {symbol}",
+"name": "Đồng Krone Đan Mạch"
+},
+"DZD": {
+"format": "{amount} {symbol}",
+"name": "Đồng Dinar Algeria"
+},
+"EGP": {
+"format": "{amount} {symbol}",
+"name": "Đồng bảng Ai Cập"
+},
+"EUR": {
+"format": "{amount} {symbol}",
+"name": "Đồng Euro"
+},
+"GBP": {
+"format": "{amount} {symbol}",
+"name": "Đồng Bảng Anh"
+},
+"GTQ": {
+"format": "{amount} {symbol}",
+"name": "Đồng Quetzal Guatemala"
+},
+"HKD": {
+"format": "{amount} {symbol}",
+"name": "Đô-la Hồng Kông"
+},
+"HNL": {
+"format": "{amount} {symbol}",
+"name": "Đồng Lempira Honduras"
+},
+"HUF": {
+"format": "{amount} {symbol}",
+"name": "Đồng Forint Hungary"
+},
+"IDR": {
+"format": "{amount} {symbol}",
+"name": "Đồng Rupiah Indonesia"
+},
+"ILS": {
+"format": "{amount} {symbol}",
+"name": "Đồng New Shekel Israel"
+},
+"INR": {
+"format": "{amount} {symbol}",
+"name": "Đồng Rupee Ấn Độ"
+},
+"ISK": {
+"format": "{amount} {symbol}",
+"name": "Đồng Krona Iceland"
+},
+"JPY": {
+"format": "{amount} {symbol}",
+"name": "Đồng Yên Nhật"
+},
+"KES": {
+"format": "{amount} {symbol}",
+"name": "Đồng Shilling Kenya"
+},
+"KRW": {
+"format": "{amount} {symbol}",
+"name": "Đồng Won Hàn Quốc"
+},
+"MOP": {
+"format": "{amount} {symbol}",
+"name": "Đồng Patacas Ma Cao"
+},
+"MXN": {
+"format": "{amount} {symbol}",
+"name": "Đồng Peso Mexico"
+},
+"MYR": {
+"format": "{amount} {symbol}",
+"name": "Đồng Ringgit Malaysia"
+},
+"NGN": {
+"format": "{amount} {symbol}",
+"name": "Đồng Naira Nigeria"
+},
+"NIO": {
+"format": "{amount} {symbol}",
+"name": "Đồng Cordoba Nicaragua"
+},
+"NOK": {
+"format": "{amount} {symbol}",
+"name": "Đồng Krone Na Uy"
+},
+"NZD": {
+"format": "{amount} {symbol}",
+"name": "Đô-la New Zealand"
+},
+"PEN": {
+"format": "{amount} {symbol}",
+"name": "Đồng Nuevo Sol Peru"
+},
+"PHP": {
+"format": "{amount} {symbol}",
+"name": "Đồng Peso Philippin"
+},
+"PKR": {
+"format": "{amount} {symbol}",
+"name": "Đồng Rupee Pakistan"
+},
+"PLN": {
+"format": "{amount} {symbol}",
+"name": "Đồng Zloty Ba Lan"
+},
+"PYG": {
+"format": "{amount} {symbol}",
+"name": "Đồng Guarani Paraguay"
+},
+"QAR": {
+"format": "{amount} {symbol}",
+"name": "Đồng Rials Qatar"
+},
+"RON": {
+"format": "{amount} {symbol}",
+"name": "Đồng Leu Romania"
+},
+"RUB": {
+"format": "{amount} {symbol}",
+"name": "Đồng Rúp Nga"
+},
+"SAR": {
+"format": "{amount} {symbol}",
+"name": "Đồng Riyal Ả-rập Xê-út"
+},
+"SEK": {
+"format": "{amount} {symbol}",
+"name": "Đồng Krona Thụy Điển"
+},
+"SGD": {
+"format": "{amount} {symbol}",
+"name": "Đô-la Singapore"
+},
+"THB": {
+"format": "{amount} {symbol}",
+"name": "Đồng Baht Thái"
+},
+"TRY": {
+"format": "{amount} {symbol}",
+"name": "Đồng Lira Thổ Nhĩ Kỳ"
+},
+"TWD": {
+"format": "{amount} {symbol}",
+"name": "Đô-la Đài Loan"
+},
+"USD": {
+"format": "{amount} {symbol}",
+"name": "Đô la Mỹ"
+},
+"UYU": {
+"format": "{amount} {symbol}",
+"name": "Đồng Peso Uruguay"
+},
+"VEF": {
+"format": "{amount} {symbol}",
+"name": "Đồng Bolivar Venezuela"
+},
+"VND": {
+"format": "{amount} {symbol}",
+"name": "Đồng Việt Nam"
+},
+"ZAR": {
+"format": "{amount} {symbol}",
+"name": "Đồng Rand Nam Phi"
+}
+}

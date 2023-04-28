@@ -1,0 +1,224 @@
+{
+"__signature": "@generated SignedSource<<01afa6f95ef57509c4721c6b4264f8e0>>",
+"__generatedBy": "export-localized-js-module.php",
+"AED": {
+"format": "{symbol} {amount}",
+"name": "Dirham UEA"
+},
+"ARS": {
+"format": "{symbol} {amount}",
+"name": "Peso Argentina"
+},
+"AUD": {
+"format": "{symbol} {amount}",
+"name": "Dolar Australia"
+},
+"BDT": {
+"format": "{symbol} {amount}",
+"name": "Bangladeshi Taka"
+},
+"BOB": {
+"format": "{symbol} {amount}",
+"name": "Boliviano Bolivia"
+},
+"BRL": {
+"format": "{symbol} {amount}",
+"name": "Real Brasil"
+},
+"CAD": {
+"format": "{symbol} {amount}",
+"name": "Dolar Kanada"
+},
+"CHF": {
+"format": "{symbol} {amount}",
+"name": "Franc Swiss"
+},
+"CLP": {
+"format": "{symbol} {amount}",
+"name": "Peso Cile"
+},
+"CNY": {
+"format": "{symbol} {amount}",
+"name": "Yuan Cina"
+},
+"COP": {
+"format": "{symbol} {amount}",
+"name": "Peso Kolombia"
+},
+"CRC": {
+"format": "{symbol} {amount}",
+"name": "Colon Kosta Rika"
+},
+"CZK": {
+"format": "{symbol} {amount}",
+"name": "Koruna Cheska"
+},
+"DKK": {
+"format": "{symbol} {amount}",
+"name": "Krone Denmark"
+},
+"DZD": {
+"format": "{symbol} {amount}",
+"name": "Algerian Dinar"
+},
+"EGP": {
+"format": "{symbol} {amount}",
+"name": "Pound Mesir"
+},
+"EUR": {
+"format": "{symbol} {amount}",
+"name": "Euro"
+},
+"GBP": {
+"format": "{symbol} {amount}",
+"name": "Poundsterling Inggris"
+},
+"GTQ": {
+"format": "{symbol} {amount}",
+"name": "Quetzal Guatemala"
+},
+"HKD": {
+"format": "{symbol} {amount}",
+"name": "Dolar Hong Kong"
+},
+"HNL": {
+"format": "{symbol} {amount}",
+"name": "Lempira Honduras"
+},
+"HUF": {
+"format": "{symbol} {amount}",
+"name": "Forint Hongaria"
+},
+"IDR": {
+"format": "{symbol} {amount}",
+"name": "Rupiah Indonesia"
+},
+"ILS": {
+"format": "{symbol} {amount}",
+"name": "Shekel Baru Israel"
+},
+"INR": {
+"format": "{symbol} {amount}",
+"name": "Rupee India"
+},
+"ISK": {
+"format": "{symbol} {amount}",
+"name": "Krona Islandia"
+},
+"JPY": {
+"format": "{symbol} {amount}",
+"name": "Yen Jepang"
+},
+"KES": {
+"format": "{symbol} {amount}",
+"name": "Kenyan Shilling"
+},
+"KRW": {
+"format": "{symbol} {amount}",
+"name": "Won Korea"
+},
+"MOP": {
+"format": "{symbol} {amount}",
+"name": "Pataca Macau"
+},
+"MXN": {
+"format": "{symbol} {amount}",
+"name": "Peso Meksiko"
+},
+"MYR": {
+"format": "{symbol} {amount}",
+"name": "Ringgit Malaysia"
+},
+"NGN": {
+"format": "{symbol} {amount}",
+"name": "Nigerian Naira"
+},
+"NIO": {
+"format": "{symbol} {amount}",
+"name": "Cordoba Nikaragua"
+},
+"NOK": {
+"format": "{symbol} {amount}",
+"name": "Krone Norwegia"
+},
+"NZD": {
+"format": "{symbol} {amount}",
+"name": "Dolar Selandia Baru"
+},
+"PEN": {
+"format": "{symbol} {amount}",
+"name": "Nuevo Sol Peru"
+},
+"PHP": {
+"format": "{symbol} {amount}",
+"name": "Peso Filipina"
+},
+"PKR": {
+"format": "{symbol} {amount}",
+"name": "Pakistani Rupee"
+},
+"PLN": {
+"format": "{symbol} {amount}",
+"name": "Zloty Polandia"
+},
+"PYG": {
+"format": "{symbol} {amount}",
+"name": "Guarani Paraguay"
+},
+"QAR": {
+"format": "{symbol} {amount}",
+"name": "Rial Qatar"
+},
+"RON": {
+"format": "{symbol} {amount}",
+"name": "Leu Rumania"
+},
+"RUB": {
+"format": "{symbol} {amount}",
+"name": "Rubel Rusia"
+},
+"SAR": {
+"format": "{symbol} {amount}",
+"name": "Riyal Arab Saudi"
+},
+"SEK": {
+"format": "{symbol} {amount}",
+"name": "Krona Swedia"
+},
+"SGD": {
+"format": "{symbol} {amount}",
+"name": "Dolar Singapura"
+},
+"THB": {
+"format": "{symbol} {amount}",
+"name": "Baht Thailand"
+},
+"TRY": {
+"format": "{symbol} {amount}",
+"name": "Lira Turki"
+},
+"TWD": {
+"format": "{symbol} {amount}",
+"name": "Dolar Taiwan"
+},
+"USD": {
+"format": "{symbol} {amount}",
+"name": "Dolar AS"
+},
+"UYU": {
+"format": "{symbol} {amount}",
+"name": "Peso Uruguay"
+},
+"VEF": {
+"format": "{symbol} {amount}",
+"name": "Bolivar Venezuela"
+},
+"VND": {
+"format": "{symbol} {amount}",
+"name": "Dong Vietnam"
+},
+"ZAR": {
+"format": "{symbol} {amount}",
+"name": "Rand Afrika Selatan"
+}
+}

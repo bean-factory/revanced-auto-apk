@@ -1,0 +1,224 @@
+{
+"__signature": "@generated SignedSource<<842dd039f54b98fe2f18bd64c3b5a846>>",
+"__generatedBy": "export-localized-js-module.php",
+"AED": {
+"format": "{symbol}{amount}",
+"name": "阿联酋迪拉姆"
+},
+"ARS": {
+"format": "{symbol}{amount}",
+"name": "阿根廷比索"
+},
+"AUD": {
+"format": "{symbol}{amount}",
+"name": "澳大利亚元"
+},
+"BDT": {
+"format": "{symbol}{amount}",
+"name": "Bangladeshi Taka"
+},
+"BOB": {
+"format": "{symbol}{amount}",
+"name": "玻利维亚诺"
+},
+"BRL": {
+"format": "{symbol}{amount}",
+"name": "巴西雷亚尔"
+},
+"CAD": {
+"format": "{symbol}{amount}",
+"name": "加元"
+},
+"CHF": {
+"format": "{symbol}{amount}",
+"name": "瑞士法郎"
+},
+"CLP": {
+"format": "{symbol}{amount}",
+"name": "智利比索"
+},
+"CNY": {
+"format": "{symbol}{amount}",
+"name": "人民币"
+},
+"COP": {
+"format": "{symbol}{amount}",
+"name": "哥伦比亚比索"
+},
+"CRC": {
+"format": "{symbol}{amount}",
+"name": "哥斯达黎加科朗"
+},
+"CZK": {
+"format": "{symbol}{amount}",
+"name": "捷克克朗"
+},
+"DKK": {
+"format": "{symbol}{amount}",
+"name": "丹麦克朗"
+},
+"DZD": {
+"format": "{symbol}{amount}",
+"name": "Algerian Dinar"
+},
+"EGP": {
+"format": "{symbol}{amount}",
+"name": "埃及镑"
+},
+"EUR": {
+"format": "{symbol}{amount}",
+"name": "欧元"
+},
+"GBP": {
+"format": "{symbol}{amount}",
+"name": "英镑"
+},
+"GTQ": {
+"format": "{symbol}{amount}",
+"name": "危地马拉格查尔"
+},
+"HKD": {
+"format": "{symbol}{amount}",
+"name": "港币"
+},
+"HNL": {
+"format": "{symbol}{amount}",
+"name": "洪都拉斯伦皮拉"
+},
+"HUF": {
+"format": "{symbol}{amount}",
+"name": "匈牙利福林"
+},
+"IDR": {
+"format": "{symbol}{amount}",
+"name": "印尼盾"
+},
+"ILS": {
+"format": "{symbol}{amount}",
+"name": "以色列新谢克尔"
+},
+"INR": {
+"format": "{symbol}{amount}",
+"name": "印度卢比"
+},
+"ISK": {
+"format": "{symbol}{amount}",
+"name": "冰岛克朗"
+},
+"JPY": {
+"format": "{symbol}{amount}",
+"name": "日元"
+},
+"KES": {
+"format": "{symbol}{amount}",
+"name": "Kenyan Shilling"
+},
+"KRW": {
+"format": "{symbol}{amount}",
+"name": "韩元"
+},
+"MOP": {
+"format": "{symbol}{amount}",
+"name": "澳门元"
+},
+"MXN": {
+"format": "{symbol}{amount}",
+"name": "墨西哥比索"
+},
+"MYR": {
+"format": "{symbol}{amount}",
+"name": "马来西亚令吉"
+},
+"NGN": {
+"format": "{symbol}{amount}",
+"name": "Nigerian Naira"
+},
+"NIO": {
+"format": "{symbol}{amount}",
+"name": "尼加拉瓜科多巴"
+},
+"NOK": {
+"format": "{symbol}{amount}",
+"name": "挪威克朗"
+},
+"NZD": {
+"format": "{symbol}{amount}",
+"name": "新西兰元"
+},
+"PEN": {
+"format": "{symbol}{amount}",
+"name": "秘鲁新索尔"
+},
+"PHP": {
+"format": "{symbol}{amount}",
+"name": "菲律宾披索"
+},
+"PKR": {
+"format": "{symbol}{amount}",
+"name": "Pakistani Rupee"
+},
+"PLN": {
+"format": "{symbol}{amount}",
+"name": "波兰兹罗提"
+},
+"PYG": {
+"format": "{symbol}{amount}",
+"name": "巴拉圭瓜拉尼"
+},
+"QAR": {
+"format": "{symbol}{amount}",
+"name": "卡塔尔里亚尔"
+},
+"RON": {
+"format": "{symbol}{amount}",
+"name": "罗马尼亚列伊"
+},
+"RUB": {
+"format": "{symbol}{amount}",
+"name": "俄罗斯卢布"
+},
+"SAR": {
+"format": "{symbol}{amount}",
+"name": "沙特阿拉伯里亚尔"
+},
+"SEK": {
+"format": "{symbol}{amount}",
+"name": "瑞典克朗"
+},
+"SGD": {
+"format": "{symbol}{amount}",
+"name": "新加坡元"
+},
+"THB": {
+"format": "{symbol}{amount}",
+"name": "泰铢"
+},
+"TRY": {
+"format": "{symbol}{amount}",
+"name": "土耳其里拉"
+},
+"TWD": {
+"format": "{symbol}{amount}",
+"name": "新台币"
+},
+"USD": {
+"format": "{symbol}{amount}",
+"name": "美元"
+},
+"UYU": {
+"format": "{symbol}{amount}",
+"name": "乌拉圭比索"
+},
+"VEF": {
+"format": "{symbol}{amount}",
+"name": "委内瑞拉博利瓦币"
+},
+"VND": {
+"format": "{symbol}{amount}",
+"name": "越南盾"
+},
+"ZAR": {
+"format": "{symbol}{amount}",
+"name": "南非兰特"
+}
+}
