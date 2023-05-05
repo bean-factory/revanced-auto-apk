@@ -15,12 +15,12 @@ ReVanced Patches:
 navigation-buttons18.16.3718.16.37
   
 **App Versions:**  
-Twitter: 9.71.0-release.0  
-Twitch: 14.6.1  
 YouTube-Music (arm64-v8a): 5.55.53  
+Twitch: 14.6.1  
 Reddit: 2023.12.0  
 YouTube: 18.16.39  
 Instagram: 283.0.0.0.16  
+Twitter: 9.87.0-release.0  
 YouTube-Music (arm-v7a): 5.55.53  
 
 **App Hashes:**  
