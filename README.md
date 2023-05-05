@@ -9,7 +9,7 @@ Get the PWA for Android from [beans-321/revanced-auto-apk-web](https://github.co
  * Cleans APKs to make them smaller.
  * Fully open-source, every binary or APK is compiled without human intervention.
 
-Note: YouTube and YouTube-Music require [Vanced MicroG](https://github.com/inotia00/VancedMicroG/releases/latest) to work.
+Note: YouTube and YouTube-Music require [mMicroG](https://github.com/inotia00/mMicroG/releases/latest) to work.
 
 ## Patch List
 
