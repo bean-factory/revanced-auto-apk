@@ -1,0 +1,224 @@
+{
+"__signature": "@generated SignedSource<<15e2acfaafca047ea247d782efb00374>>",
+"__generatedBy": "export-localized-js-module.php",
+"AED": {
+"format": "{amount} {symbol}",
+"name": "Dirham (ZEA)"
+},
+"ARS": {
+"format": "{amount} {symbol}",
+"name": "Peso argentyńskie"
+},
+"AUD": {
+"format": "{amount} {symbol}",
+"name": "Dolar australijski"
+},
+"BDT": {
+"format": "{amount} {symbol}",
+"name": "Taka bangladeska"
+},
+"BOB": {
+"format": "{amount} {symbol}",
+"name": "Boliviano boliwijskie"
+},
+"BRL": {
+"format": "{amount} {symbol}",
+"name": "Real brazylijski"
+},
+"CAD": {
+"format": "{amount} {symbol}",
+"name": "Dolar kanadyjski"
+},
+"CHF": {
+"format": "{amount} {symbol}",
+"name": "Frank szwajcarski"
+},
+"CLP": {
+"format": "{amount} {symbol}",
+"name": "Peso chilijskie"
+},
+"CNY": {
+"format": "{amount} {symbol}",
+"name": "Yuan chiński"
+},
+"COP": {
+"format": "{amount} {symbol}",
+"name": "Peso kolumbijskie"
+},
+"CRC": {
+"format": "{amount} {symbol}",
+"name": "Colon kostarykański"
+},
+"CZK": {
+"format": "{amount} {symbol}",
+"name": "Korona czeska"
+},
+"DKK": {
+"format": "{amount} {symbol}",
+"name": "Korona duńska"
+},
+"DZD": {
+"format": "{amount} {symbol}",
+"name": "Dinar algierski"
+},
+"EGP": {
+"format": "{amount} {symbol}",
+"name": "Funt egipski"
+},
+"EUR": {
+"format": "{amount} {symbol}",
+"name": "Euro"
+},
+"GBP": {
+"format": "{amount} {symbol}",
+"name": "Funt brytyjski"
+},
+"GTQ": {
+"format": "{amount} {symbol}",
+"name": "Quetzal gwatemalski"
+},
+"HKD": {
+"format": "{amount} {symbol}",
+"name": "Dolar hongkoński"
+},
+"HNL": {
+"format": "{amount} {symbol}",
+"name": "Lempira honduraska"
+},
+"HUF": {
+"format": "{amount} {symbol}",
+"name": "Forint węgierski"
+},
+"IDR": {
+"format": "{amount} {symbol}",
+"name": "Rupia indonezyjska"
+},
+"ILS": {
+"format": "{amount} {symbol}",
+"name": "Nowy szekel izraelski"
+},
+"INR": {
+"format": "{amount} {symbol}",
+"name": "Rupia indyjska"
+},
+"ISK": {
+"format": "{amount} {symbol}",
+"name": "Korona islandzka"
+},
+"JPY": {
+"format": "{amount} {symbol}",
+"name": "Jen japoński"
+},
+"KES": {
+"format": "{amount} {symbol}",
+"name": "Szyling kenijski"
+},
+"KRW": {
+"format": "{amount} {symbol}",
+"name": "Won koreański"
+},
+"MOP": {
+"format": "{amount} {symbol}",
+"name": "Pataca makauska"
+},
+"MXN": {
+"format": "{amount} {symbol}",
+"name": "Peso meksykańskie"
+},
+"MYR": {
+"format": "{amount} {symbol}",
+"name": "Ringgit malezyjski"
+},
+"NGN": {
+"format": "{amount} {symbol}",
+"name": "Naira nigeryjska"
+},
+"NIO": {
+"format": "{amount} {symbol}",
+"name": "Cordoba nikaraguańska"
+},
+"NOK": {
+"format": "{amount} {symbol}",
+"name": "Korona norweska"
+},
+"NZD": {
+"format": "{amount} {symbol}",
+"name": "Dolar nowozelandzki"
+},
+"PEN": {
+"format": "{amount} {symbol}",
+"name": "Nowy sol peruwiański"
+},
+"PHP": {
+"format": "{amount} {symbol}",
+"name": "Peso filipińskie"
+},
+"PKR": {
+"format": "{amount} {symbol}",
+"name": "Rupia pakistańska"
+},
+"PLN": {
+"format": "{amount} {symbol}",
+"name": "Złoty polski"
+},
+"PYG": {
+"format": "{amount} {symbol}",
+"name": "Guarani paragwajskie"
+},
+"QAR": {
+"format": "{amount} {symbol}",
+"name": "Rial katarski"
+},
+"RON": {
+"format": "{amount} {symbol}",
+"name": "Lej rumuński"
+},
+"RUB": {
+"format": "{amount} {symbol}",
+"name": "Rubel rosyjski"
+},
+"SAR": {
+"format": "{amount} {symbol}",
+"name": "Rial saudyjski"
+},
+"SEK": {
+"format": "{amount} {symbol}",
+"name": "Korona szwedzka"
+},
+"SGD": {
+"format": "{amount} {symbol}",
+"name": "Dolar singapurski"
+},
+"THB": {
+"format": "{amount} {symbol}",
+"name": "Bat tajlandzki"
+},
+"TRY": {
+"format": "{amount} {symbol}",
+"name": "Lira turecka"
+},
+"TWD": {
+"format": "{amount} {symbol}",
+"name": "Dolar tajwański"
+},
+"USD": {
+"format": "{amount} {symbol}",
+"name": "Dolary amerykańskie"
+},
+"UYU": {
+"format": "{amount} {symbol}",
+"name": "Peso urugwajskie"
+},
+"VEF": {
+"format": "{amount} {symbol}",
+"name": "Boliwar wenezuelski"
+},
+"VND": {
+"format": "{amount} {symbol}",
+"name": "Dong wietnamski"
+},
+"ZAR": {
+"format": "{amount} {symbol}",
+"name": "Rand południowoafrykański"
+}
+}
