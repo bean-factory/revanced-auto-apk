@@ -23,7 +23,7 @@ Note: YouTube and YouTube-Music require [Vanced MicroG](https://github.com/inoti
 ## Credits
 [j-hc](https://github.com/j-hc) for [https://github.com/j-hc/revanced-magisk-module](https://github.com/j-hc/revanced-magisk-module).
 
-[inotia00](https://github.com/inotia00) for [revanced-extended patches](https://github.com/inotia00/revanced-patches/tree/revanced-extended) and his version of [Vanced MicroG](https://github.com/inotia00/VancedMicroG).
+[inotia00](https://github.com/inotia00) for [revanced-extended patches](https://github.com/inotia00/revanced-patches/tree/revanced-extended) and his version of [MicroG](https://github.com/inotia00/mMicroG).
 
 [Gnad Gnaoh](https://github.com/gnadgnaoh) for helping NoName-exe figure some stuff out.
 
