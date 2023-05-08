@@ -1,0 +1,224 @@
+{
+"__signature": "@generated SignedSource<<21140c17424ec44a78d8f7d8bf7a0540>>",
+"__generatedBy": "export-localized-js-module.php",
+"AED": {
+"format": "{amount} {symbol}",
+"name": "emirátusi dirham"
+},
+"ARS": {
+"format": "{amount} {symbol}",
+"name": "argentin peso"
+},
+"AUD": {
+"format": "{amount} {symbol}",
+"name": "ausztrál dollár"
+},
+"BDT": {
+"format": "{amount} {symbol}",
+"name": "bangladesi taka"
+},
+"BOB": {
+"format": "{amount} {symbol}",
+"name": "bolíviai boliviano"
+},
+"BRL": {
+"format": "{amount} {symbol}",
+"name": "brazil reál"
+},
+"CAD": {
+"format": "{amount} {symbol}",
+"name": "kanadai dollár"
+},
+"CHF": {
+"format": "{amount} {symbol}",
+"name": "svájci frank"
+},
+"CLP": {
+"format": "{amount} {symbol}",
+"name": "chilei peso"
+},
+"CNY": {
+"format": "{amount} {symbol}",
+"name": "kínai jüan"
+},
+"COP": {
+"format": "{amount} {symbol}",
+"name": "kolumbiai peso"
+},
+"CRC": {
+"format": "{amount} {symbol}",
+"name": "Costa Rica-i colón"
+},
+"CZK": {
+"format": "{amount} {symbol}",
+"name": "cseh korona"
+},
+"DKK": {
+"format": "{amount} {symbol}",
+"name": "dán korona"
+},
+"DZD": {
+"format": "{amount} {symbol}",
+"name": "algériai dinár"
+},
+"EGP": {
+"format": "{amount} {symbol}",
+"name": "egyiptomi font"
+},
+"EUR": {
+"format": "{amount} {symbol}",
+"name": "euró"
+},
+"GBP": {
+"format": "{amount} {symbol}",
+"name": "angol font"
+},
+"GTQ": {
+"format": "{amount} {symbol}",
+"name": "guatemalai quetzal"
+},
+"HKD": {
+"format": "{amount} {symbol}",
+"name": "hongkongi dollár"
+},
+"HNL": {
+"format": "{amount} {symbol}",
+"name": "hondurasi lempira"
+},
+"HUF": {
+"format": "{amount} {symbol}",
+"name": "magyar forint"
+},
+"IDR": {
+"format": "{amount} {symbol}",
+"name": "indonéz rúpia"
+},
+"ILS": {
+"format": "{amount} {symbol}",
+"name": "izraeli új sékel"
+},
+"INR": {
+"format": "{amount} {symbol}",
+"name": "indiai rúpia"
+},
+"ISK": {
+"format": "{amount} {symbol}",
+"name": "izlandi korona"
+},
+"JPY": {
+"format": "{amount} {symbol}",
+"name": "japán jen"
+},
+"KES": {
+"format": "{amount} {symbol}",
+"name": "kenyai shilling"
+},
+"KRW": {
+"format": "{amount} {symbol}",
+"name": "koreai von"
+},
+"MOP": {
+"format": "{amount} {symbol}",
+"name": "makaói pataca"
+},
+"MXN": {
+"format": "{amount} {symbol}",
+"name": "mexikói peso"
+},
+"MYR": {
+"format": "{amount} {symbol}",
+"name": "maláj ringgit"
+},
+"NGN": {
+"format": "{amount} {symbol}",
+"name": "nigériai naira"
+},
+"NIO": {
+"format": "{amount} {symbol}",
+"name": "nicaraguai córdoba"
+},
+"NOK": {
+"format": "{amount} {symbol}",
+"name": "norvég korona"
+},
+"NZD": {
+"format": "{amount} {symbol}",
+"name": "új-zélandi dollár"
+},
+"PEN": {
+"format": "{amount} {symbol}",
+"name": "perui új sol"
+},
+"PHP": {
+"format": "{amount} {symbol}",
+"name": "Fülöp-szigeteki peso"
+},
+"PKR": {
+"format": "{amount} {symbol}",
+"name": "pakisztáni rúpia"
+},
+"PLN": {
+"format": "{amount} {symbol}",
+"name": "lengyel zloty"
+},
+"PYG": {
+"format": "{amount} {symbol}",
+"name": "paraguayi guaraní"
+},
+"QAR": {
+"format": "{amount} {symbol}",
+"name": "katari riál"
+},
+"RON": {
+"format": "{amount} {symbol}",
+"name": "román lej"
+},
+"RUB": {
+"format": "{amount} {symbol}",
+"name": "orosz rubel"
+},
+"SAR": {
+"format": "{amount} {symbol}",
+"name": "szaúdi riál"
+},
+"SEK": {
+"format": "{amount} {symbol}",
+"name": "svéd korona"
+},
+"SGD": {
+"format": "{amount} {symbol}",
+"name": "szingapúri dollár"
+},
+"THB": {
+"format": "{amount} {symbol}",
+"name": "thai baht"
+},
+"TRY": {
+"format": "{amount} {symbol}",
+"name": "török líra"
+},
+"TWD": {
+"format": "{amount} {symbol}",
+"name": "tajvani dollár"
+},
+"USD": {
+"format": "{amount} {symbol}",
+"name": "USA-dollár"
+},
+"UYU": {
+"format": "{amount} {symbol}",
+"name": "uruguayi peso"
+},
+"VEF": {
+"format": "{amount} {symbol}",
+"name": "venezuelai bolivár"
+},
+"VND": {
+"format": "{amount} {symbol}",
+"name": "vietnami dong"
+},
+"ZAR": {
+"format": "{amount} {symbol}",
+"name": "dél-afrikai rand"
+}
+}
