@@ -1,0 +1,224 @@
+{
+"__signature": "@generated SignedSource<<dadb83339f27a109a506decadd5fba75>>",
+"__generatedBy": "export-localized-js-module.php",
+"AED": {
+"format": "{amount} {symbol}",
+"name": "Dirham - Spojené arabské emiráty"
+},
+"ARS": {
+"format": "{amount} {symbol}",
+"name": "Argentinské peso"
+},
+"AUD": {
+"format": "{amount} {symbol}",
+"name": "Australský dolar"
+},
+"BDT": {
+"format": "{amount} {symbol}",
+"name": "Bangladéšský táká"
+},
+"BOB": {
+"format": "{amount} {symbol}",
+"name": "Bolivijský boliviano"
+},
+"BRL": {
+"format": "{amount} {symbol}",
+"name": "Brazilský real"
+},
+"CAD": {
+"format": "{amount} {symbol}",
+"name": "Kanadský dolar"
+},
+"CHF": {
+"format": "{amount} {symbol}",
+"name": "Švýcarský frank"
+},
+"CLP": {
+"format": "{amount} {symbol}",
+"name": "Chilské peso"
+},
+"CNY": {
+"format": "{amount} {symbol}",
+"name": "Čínský jüan"
+},
+"COP": {
+"format": "{amount} {symbol}",
+"name": "Kolumbijské peso"
+},
+"CRC": {
+"format": "{amount} {symbol}",
+"name": "Kostarický colón"
+},
+"CZK": {
+"format": "{amount} {symbol}",
+"name": "Česká koruna"
+},
+"DKK": {
+"format": "{amount} {symbol}",
+"name": "Dánská koruna"
+},
+"DZD": {
+"format": "{amount} {symbol}",
+"name": "Alžírský dinár"
+},
+"EGP": {
+"format": "{amount} {symbol}",
+"name": "Egyptská libra"
+},
+"EUR": {
+"format": "{amount} {symbol}",
+"name": "Euro"
+},
+"GBP": {
+"format": "{amount} {symbol}",
+"name": "Britská libra"
+},
+"GTQ": {
+"format": "{amount} {symbol}",
+"name": "Guatemalský quetzal"
+},
+"HKD": {
+"format": "{amount} {symbol}",
+"name": "Hongkongský dolar"
+},
+"HNL": {
+"format": "{amount} {symbol}",
+"name": "Honduraská lempira"
+},
+"HUF": {
+"format": "{amount} {symbol}",
+"name": "Maďarský forint"
+},
+"IDR": {
+"format": "{amount} {symbol}",
+"name": "Indonéská rupie"
+},
+"ILS": {
+"format": "{amount} {symbol}",
+"name": "Nový izraelský šekel"
+},
+"INR": {
+"format": "{amount} {symbol}",
+"name": "Indická rupie"
+},
+"ISK": {
+"format": "{amount} {symbol}",
+"name": "Islandská koruna"
+},
+"JPY": {
+"format": "{amount} {symbol}",
+"name": "Japonský jen"
+},
+"KES": {
+"format": "{amount} {symbol}",
+"name": "Keňský šilink"
+},
+"KRW": {
+"format": "{amount} {symbol}",
+"name": "Korejský won"
+},
+"MOP": {
+"format": "{amount} {symbol}",
+"name": "Macauská pataca"
+},
+"MXN": {
+"format": "{amount} {symbol}",
+"name": "Mexické peso"
+},
+"MYR": {
+"format": "{amount} {symbol}",
+"name": "Malajsijský ringgit"
+},
+"NGN": {
+"format": "{amount} {symbol}",
+"name": "Nigerijská naira"
+},
+"NIO": {
+"format": "{amount} {symbol}",
+"name": "Nikaragujská cordóba"
+},
+"NOK": {
+"format": "{amount} {symbol}",
+"name": "Norská koruna"
+},
+"NZD": {
+"format": "{amount} {symbol}",
+"name": "Novozélandský dolar"
+},
+"PEN": {
+"format": "{amount} {symbol}",
+"name": "Peruánský nový sol"
+},
+"PHP": {
+"format": "{amount} {symbol}",
+"name": "Filipínské peso"
+},
+"PKR": {
+"format": "{amount} {symbol}",
+"name": "Pákistánská rupie"
+},
+"PLN": {
+"format": "{amount} {symbol}",
+"name": "Polský zlotý"
+},
+"PYG": {
+"format": "{amount} {symbol}",
+"name": "Paraguayské guaraní"
+},
+"QAR": {
+"format": "{amount} {symbol}",
+"name": "Katarský rial"
+},
+"RON": {
+"format": "{amount} {symbol}",
+"name": "Rumunský leu"
+},
+"RUB": {
+"format": "{amount} {symbol}",
+"name": "Ruský rubl"
+},
+"SAR": {
+"format": "{amount} {symbol}",
+"name": "Saúdskoarabský rijál"
+},
+"SEK": {
+"format": "{amount} {symbol}",
+"name": "Švédská koruna"
+},
+"SGD": {
+"format": "{amount} {symbol}",
+"name": "Singapurský dolar"
+},
+"THB": {
+"format": "{amount} {symbol}",
+"name": "Thajský baht"
+},
+"TRY": {
+"format": "{amount} {symbol}",
+"name": "Turecká lira"
+},
+"TWD": {
+"format": "{amount} {symbol}",
+"name": "Tchaj-wanský dolar"
+},
+"USD": {
+"format": "{amount} {symbol}",
+"name": "Americké dolary"
+},
+"UYU": {
+"format": "{amount} {symbol}",
+"name": "Uruguayské peso"
+},
+"VEF": {
+"format": "{amount} {symbol}",
+"name": "Venezuelský bolivar"
+},
+"VND": {
+"format": "{amount} {symbol}",
+"name": "Vietnamský dong"
+},
+"ZAR": {
+"format": "{amount} {symbol}",
+"name": "Jihoafrický rand"
+}
+}

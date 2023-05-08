@@ -1,0 +1,224 @@
+{
+"__signature": "@generated SignedSource<<45914ce1dce391787a2de18951927625>>",
+"__generatedBy": "export-localized-js-module.php",
+"AED": {
+"format": "{symbol} {amount}",
+"name": "Emiratarabisk dirham"
+},
+"ARS": {
+"format": "{symbol} {amount}",
+"name": "Argentinsk peso"
+},
+"AUD": {
+"format": "{symbol} {amount}",
+"name": "Australsk dollar"
+},
+"BDT": {
+"format": "{symbol} {amount}",
+"name": "Bangladeshiske taka"
+},
+"BOB": {
+"format": "{symbol} {amount}",
+"name": "Boliviansk boliviano"
+},
+"BRL": {
+"format": "{symbol} {amount}",
+"name": "Brasiliansk real"
+},
+"CAD": {
+"format": "{symbol} {amount}",
+"name": "Canadisk dollar"
+},
+"CHF": {
+"format": "{symbol} {amount}",
+"name": "Sveitsisk franc"
+},
+"CLP": {
+"format": "{symbol} {amount}",
+"name": "Chilensk peso"
+},
+"CNY": {
+"format": "{symbol} {amount}",
+"name": "Kinesisk yuan"
+},
+"COP": {
+"format": "{symbol} {amount}",
+"name": "Colombiansk peso"
+},
+"CRC": {
+"format": "{symbol} {amount}",
+"name": "Costaricansk colón"
+},
+"CZK": {
+"format": "{symbol} {amount}",
+"name": "Tsjekkisk koruna"
+},
+"DKK": {
+"format": "{symbol} {amount}",
+"name": "Dansk krone"
+},
+"DZD": {
+"format": "{symbol} {amount}",
+"name": "Algerisk dinar"
+},
+"EGP": {
+"format": "{symbol} {amount}",
+"name": "Egyptisk pund"
+},
+"EUR": {
+"format": "{symbol} {amount}",
+"name": "Euro"
+},
+"GBP": {
+"format": "{symbol} {amount}",
+"name": "Britisk pund"
+},
+"GTQ": {
+"format": "{symbol} {amount}",
+"name": "Guatemalansk quetzal"
+},
+"HKD": {
+"format": "{symbol} {amount}",
+"name": "Hongkong-dollar"
+},
+"HNL": {
+"format": "{symbol} {amount}",
+"name": "Honduransk lempira"
+},
+"HUF": {
+"format": "{symbol} {amount}",
+"name": "Ungarsk forint"
+},
+"IDR": {
+"format": "{symbol} {amount}",
+"name": "Indonesisk rupiah"
+},
+"ILS": {
+"format": "{symbol} {amount}",
+"name": "Ny israelsk shekel"
+},
+"INR": {
+"format": "{symbol} {amount}",
+"name": "Indisk rupi"
+},
+"ISK": {
+"format": "{symbol} {amount}",
+"name": "Islandsk krone"
+},
+"JPY": {
+"format": "{symbol} {amount}",
+"name": "Japansk yen"
+},
+"KES": {
+"format": "{symbol} {amount}",
+"name": "Kenyansk shilling"
+},
+"KRW": {
+"format": "{symbol} {amount}",
+"name": "Koreansk won"
+},
+"MOP": {
+"format": "{symbol} {amount}",
+"name": "Macaoisk pataca"
+},
+"MXN": {
+"format": "{symbol} {amount}",
+"name": "Meksikansk peso"
+},
+"MYR": {
+"format": "{symbol} {amount}",
+"name": "Malaysisk ringgit"
+},
+"NGN": {
+"format": "{symbol} {amount}",
+"name": "Nigeriansk naira"
+},
+"NIO": {
+"format": "{symbol} {amount}",
+"name": "Nicaraguansk cordoba"
+},
+"NOK": {
+"format": "{symbol} {amount}",
+"name": "Norsk krone"
+},
+"NZD": {
+"format": "{symbol} {amount}",
+"name": "Newzealandsk dollar"
+},
+"PEN": {
+"format": "{symbol} {amount}",
+"name": "Peruansk nuevo sol"
+},
+"PHP": {
+"format": "{symbol} {amount}",
+"name": "Filippinsk peso"
+},
+"PKR": {
+"format": "{symbol} {amount}",
+"name": "Pakistansk rupi"
+},
+"PLN": {
+"format": "{symbol} {amount}",
+"name": "Polsk złoty"
+},
+"PYG": {
+"format": "{symbol} {amount}",
+"name": "Paraguayansk guaraní"
+},
+"QAR": {
+"format": "{symbol} {amount}",
+"name": "Qatarsk riyal"
+},
+"RON": {
+"format": "{symbol} {amount}",
+"name": "Rumensk lei"
+},
+"RUB": {
+"format": "{symbol} {amount}",
+"name": "Russisk rubel"
+},
+"SAR": {
+"format": "{symbol} {amount}",
+"name": "Saudiarabisk riyal"
+},
+"SEK": {
+"format": "{symbol} {amount}",
+"name": "Svensk krone"
+},
+"SGD": {
+"format": "{symbol} {amount}",
+"name": "Singaporsk dollar"
+},
+"THB": {
+"format": "{symbol} {amount}",
+"name": "Thailandsk baht"
+},
+"TRY": {
+"format": "{symbol} {amount}",
+"name": "Tyrkisk lira"
+},
+"TWD": {
+"format": "{symbol} {amount}",
+"name": "Taiwansk dollar"
+},
+"USD": {
+"format": "{symbol} {amount}",
+"name": "Amerikansk dollar"
+},
+"UYU": {
+"format": "{symbol} {amount}",
+"name": "Uruguayansk peso"
+},
+"VEF": {
+"format": "{symbol} {amount}",
+"name": "Venezuelansk bolívar"
+},
+"VND": {
+"format": "{symbol} {amount}",
+"name": "Vietnamesisk dong"
+},
+"ZAR": {
+"format": "{symbol} {amount}",
+"name": "Sørafrikansk rand"
+}
+}
