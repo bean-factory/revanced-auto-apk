@@ -468,7 +468,7 @@ build_messenger() {
 	messenger_args[app_name]="Messenger"
 	messenger_args[mode]="$MESSENGER_MODE"
 	messenger_args[pkg_name]="com.facebook.orca"
-	messenger_args[apkmirror_dlurl]="facebook-2/messenger/"
+	messenger_args[apkmirror_dlurl]="facebook-2/messenger"
 	messenger_args[regexp]='APK</span>[^@]*@\([^#]*\)'
 	
 	build_rv messenger_args
