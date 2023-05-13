@@ -1,0 +1,224 @@
+{
+"__signature": "@generated SignedSource<<3fb6e11de5f5a9f21af54762c277d3f6>>",
+"__generatedBy": "export-localized-js-module.php",
+"AED": {
+"format": "{symbol}{amount}",
+"name": "ดีแรห์ม (สหรัฐอาหรับเอมิเรตส์)"
+},
+"ARS": {
+"format": "{symbol}{amount}",
+"name": "เปโซ (อาร์เจนตินา)"
+},
+"AUD": {
+"format": "{symbol}{amount}",
+"name": "ดอลลาร์ (ออสเตรเลีย)"
+},
+"BDT": {
+"format": "{symbol}{amount}",
+"name": "ทากา บังคลาเทศ"
+},
+"BOB": {
+"format": "{symbol}{amount}",
+"name": "โบลิเวียโน (โบลิเวีย)"
+},
+"BRL": {
+"format": "{symbol}{amount}",
+"name": "เรอัล (บราซิล)"
+},
+"CAD": {
+"format": "{symbol}{amount}",
+"name": "ดอลลาร์ (แคนาดา)"
+},
+"CHF": {
+"format": "{symbol}{amount}",
+"name": "ฟรังก์ (สวิตเซอร์แลนด์)"
+},
+"CLP": {
+"format": "{symbol}{amount}",
+"name": "เปโซ (ชิลี)"
+},
+"CNY": {
+"format": "{symbol}{amount}",
+"name": "หยวน (จีน)"
+},
+"COP": {
+"format": "{symbol}{amount}",
+"name": "เปโซ (โคลอมเบีย)"
+},
+"CRC": {
+"format": "{symbol}{amount}",
+"name": "โกลอน (คอสตาริกา)"
+},
+"CZK": {
+"format": "{symbol}{amount}",
+"name": "โครูนา (เช็ก)"
+},
+"DKK": {
+"format": "{symbol}{amount}",
+"name": "โครน (เดนมาร์ก)"
+},
+"DZD": {
+"format": "{symbol}{amount}",
+"name": "ดีนาร์ (แอลจีเรีย)"
+},
+"EGP": {
+"format": "{symbol}{amount}",
+"name": "ปอนด์ (อียิปต์)"
+},
+"EUR": {
+"format": "{symbol}{amount}",
+"name": "ยูโร"
+},
+"GBP": {
+"format": "{symbol}{amount}",
+"name": "ปอนด์ (อังกฤษ)"
+},
+"GTQ": {
+"format": "{symbol}{amount}",
+"name": "เกวตซัล (กัวเตมาลา)"
+},
+"HKD": {
+"format": "{symbol}{amount}",
+"name": "ดอลลาร์ (ฮ่องกง)"
+},
+"HNL": {
+"format": "{symbol}{amount}",
+"name": "เลมพิรา (ฮอนดูรัส)"
+},
+"HUF": {
+"format": "{symbol}{amount}",
+"name": "โฟรินต์ (ฮังการี)"
+},
+"IDR": {
+"format": "{symbol}{amount}",
+"name": "รูเปียห์ (อินโดนีเซีย)"
+},
+"ILS": {
+"format": "{symbol}{amount}",
+"name": "เชเกลใหม่ (อิสราเอล)"
+},
+"INR": {
+"format": "{symbol}{amount}",
+"name": "รูปี (อินเดีย)"
+},
+"ISK": {
+"format": "{symbol}{amount}",
+"name": "โครนา (ไอซ์แลนด์)"
+},
+"JPY": {
+"format": "{symbol}{amount}",
+"name": "เยน (ญี่ปุ่น)"
+},
+"KES": {
+"format": "{symbol}{amount}",
+"name": "ชิลลิง เคนยา"
+},
+"KRW": {
+"format": "{symbol}{amount}",
+"name": "วอน (เกาหลี)"
+},
+"MOP": {
+"format": "{symbol}{amount}",
+"name": "ปาตากา (มาเก๊า)"
+},
+"MXN": {
+"format": "{symbol}{amount}",
+"name": "เปโซ (เม็กซิโก)"
+},
+"MYR": {
+"format": "{symbol}{amount}",
+"name": "ริงกิต (มาเลเซีย)"
+},
+"NGN": {
+"format": "{symbol}{amount}",
+"name": "ไนรา ไนจีเรีย"
+},
+"NIO": {
+"format": "{symbol}{amount}",
+"name": "กอร์โดบา (นิการากัว)"
+},
+"NOK": {
+"format": "{symbol}{amount}",
+"name": "โครน (นอร์เวย์)"
+},
+"NZD": {
+"format": "{symbol}{amount}",
+"name": "ดอลลาร์ (นิวซีแลนด์)"
+},
+"PEN": {
+"format": "{symbol}{amount}",
+"name": "นวยโบซอล (เปรู)"
+},
+"PHP": {
+"format": "{symbol}{amount}",
+"name": "เปโซ (ฟิลิปปินส์)"
+},
+"PKR": {
+"format": "{symbol}{amount}",
+"name": "รูปี ปากีสถาน"
+},
+"PLN": {
+"format": "{symbol}{amount}",
+"name": "ซลอตี (โปแลนด์)"
+},
+"PYG": {
+"format": "{symbol}{amount}",
+"name": "กวารานี (ปารากวัย)"
+},
+"QAR": {
+"format": "{symbol}{amount}",
+"name": "เรียล (กาตาร์)"
+},
+"RON": {
+"format": "{symbol}{amount}",
+"name": "เลอู (โรมาเนีย)"
+},
+"RUB": {
+"format": "{symbol}{amount}",
+"name": "รูเบิล (รัสเซีย)"
+},
+"SAR": {
+"format": "{symbol}{amount}",
+"name": "ริยาล (ซาอุดีอาระเบีย)"
+},
+"SEK": {
+"format": "{symbol}{amount}",
+"name": "โครนา (สวีเดน)"
+},
+"SGD": {
+"format": "{symbol}{amount}",
+"name": "ดอลลาร์ (สิงคโปร์)"
+},
+"THB": {
+"format": "{symbol}{amount}",
+"name": "บาท (ไทย)"
+},
+"TRY": {
+"format": "{symbol}{amount}",
+"name": "ไลรา (ตุรกี)"
+},
+"TWD": {
+"format": "{symbol}{amount}",
+"name": "ดอลลาร์ (ไต้หวัน)"
+},
+"USD": {
+"format": "{symbol}{amount}",
+"name": "ดอลลาร์ (สหรัฐ)"
+},
+"UYU": {
+"format": "{symbol}{amount}",
+"name": "เปโซ (อุรุกวัย)"
+},
+"VEF": {
+"format": "{symbol}{amount}",
+"name": "โบลิวาร์ (เวเนซูเอลา)"
+},
+"VND": {
+"format": "{symbol}{amount}",
+"name": "ด็อง (เวียดนาม)"
+},
+"ZAR": {
+"format": "{symbol}{amount}",
+"name": "แรนด์ (แอฟริกาใต้)"
+}
+}
