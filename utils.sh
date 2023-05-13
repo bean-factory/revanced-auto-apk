@@ -463,6 +463,17 @@ build_nova() {
 	build_rv nova_args
 }
 
+build_messenger() {
+	declare -A messenger_args
+	messenger_args[app_name]="Messenger"
+	messenger_args[mode]="$MESSENGER_MODE"
+	messenger_args[pkg_name]="com.facebook.orca"
+	messenger_args[apkmirror_dlurl]="facebook-2/messenger/"
+	messenger_args[regexp]='APK</span>[^@]*@\([^#]*\)'
+	
+	build_rv messenger_args
+}
+
 hash_gen() {
 	log "\n**App Hashes:**"
 	log "\`\`\`"

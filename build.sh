@@ -25,6 +25,7 @@ build_tasker &
 build_citra &
 build_instagram &
 build_nova &
+build_messenger &
 wait
 hash_gen
 echo "Done"
