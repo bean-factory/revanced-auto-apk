@@ -1,0 +1,311 @@
+{
+  "supportedRes": [
+
+
+    {
+      "inputX": 512,
+      "inputY": 288
+    },
+
+    {
+      "inputX": 256,
+      "inputY": 144
+    },
+
+    {
+      "inputX": 704,
+      "inputY": 396
+    }
+
+  ],
+  "400_qcom": [
+
+    {
+      "fpvalue": "true",
+      "filename": "amazon_prime_gpu_704x396_g1_v1_0_0.mye",
+      "version": "1.0.0",
+      "outputLayer": "espcn/prediction",
+      "outputNode": "espcn/prediction:0",
+      "inputX": 704,
+      "inputY": 396,
+      "scaleFactor": 2.0,
+      "runtime": "tflite_gpu"
+    },
+    {
+      "fpvalue": "true",
+      "filename": "amazon_prime_gpu_512x288_g1_v1_0_0.mye",
+      "version": "1.0.0",
+      "outputLayer": "espcn/prediction",
+      "outputNode": "espcn/prediction:0",
+      "inputX": 512,
+      "inputY": 288,
+      "scaleFactor": 2.0,
+      "runtime": "tflite_gpu"
+    },
+    {
+      "fpvalue": "true",
+      "filename": "amazon_prime_gpu_256x144_g1_v1_0_0.mye",
+      "version": "1.0.0",
+      "outputLayer": "espcn/prediction",
+      "outputNode": "espcn/prediction:0",
+      "inputX": 256,
+      "inputY": 144,
+      "scaleFactor": 3.0,
+      "runtime": "tflite_gpu"
+    }
+
+
+  ],
+  "356_qcom": [
+
+    {
+      "fpvalue": "true",
+      "filename": "amazon_prime_gpu_704x396_g1_v1_0_0.mye",
+      "version": "1.0.0",
+      "outputLayer": "espcn/prediction",
+      "outputNode": "espcn/prediction:0",
+      "inputX": 704,
+      "inputY": 396,
+      "scaleFactor": 2.0,
+      "runtime": "tflite_gpu"
+    },
+    {
+      "fpvalue": "true",
+      "filename": "amazon_prime_gpu_512x288_g1_v1_0_0.mye",
+      "version": "1.0.0",
+      "outputLayer": "espcn/prediction",
+      "outputNode": "espcn/prediction:0",
+      "inputX": 512,
+      "inputY": 288,
+      "scaleFactor": 2.0,
+      "runtime": "tflite_gpu"
+    },
+    {
+      "fpvalue": "true",
+      "filename": "amazon_prime_gpu_256x144_g1_v1_0_0.mye",
+      "version": "1.0.0",
+      "outputLayer": "espcn/prediction",
+      "outputNode": "espcn/prediction:0",
+      "inputX": 256,
+      "inputY": 144,
+      "scaleFactor": 3.0,
+      "runtime": "tflite_gpu"
+    }
+  ],
+  "321_qcom": [
+
+    {
+      "fpvalue": "true",
+      "filename": "amazon_prime_gpu_704x396_g1_v1_0_0.mye",
+      "version": "1.0.0",
+      "outputLayer": "espcn/prediction",
+      "outputNode": "espcn/prediction:0",
+      "inputX": 704,
+      "inputY": 396,
+      "scaleFactor": 2.0,
+      "runtime": "tflite_gpu"
+    },
+    {
+      "fpvalue": "true",
+      "filename": "amazon_prime_gpu_512x288_g1_v1_0_0.mye",
+      "version": "1.0.0",
+      "outputLayer": "espcn/prediction",
+      "outputNode": "espcn/prediction:0",
+      "inputX": 512,
+      "inputY": 288,
+      "scaleFactor": 2.0,
+      "runtime": "tflite_gpu"
+    },
+    {
+      "fpvalue": "true",
+      "filename": "amazon_prime_gpu_256x144_g1_v1_0_0.mye",
+      "version": "1.0.0",
+      "outputLayer": "espcn/prediction",
+      "outputNode": "espcn/prediction:0",
+      "inputX": 256,
+      "inputY": 144,
+      "scaleFactor": 3.0,
+      "runtime": "tflite_gpu"
+    }
+  ],
+  "339_qcom": [
+
+    {
+      "fpvalue": "true",
+      "filename": "amazon_prime_gpu_704x396_g1_v1_0_0.mye",
+      "version": "1.0.0",
+      "outputLayer": "espcn/prediction",
+      "outputNode": "espcn/prediction:0",
+      "inputX": 704,
+      "inputY": 396,
+      "scaleFactor": 2.0,
+      "runtime": "tflite_gpu"
+    },
+    {
+      "fpvalue": "true",
+      "filename": "amazon_prime_gpu_512x288_g1_v1_0_0.mye",
+      "version": "1.0.0",
+      "outputLayer": "espcn/prediction",
+      "outputNode": "espcn/prediction:0",
+      "inputX": 512,
+      "inputY": 288,
+      "scaleFactor": 2.0,
+      "runtime": "tflite_gpu"
+    },
+    {
+      "fpvalue": "true",
+      "filename": "amazon_prime_gpu_256x144_g1_v1_0_0.mye",
+      "version": "1.0.0",
+      "outputLayer": "espcn/prediction",
+      "outputNode": "espcn/prediction:0",
+      "inputX": 256,
+      "inputY": 144,
+      "scaleFactor": 3.0,
+      "runtime": "tflite_gpu"
+    }
+  ],
+  "365_qcom": [
+
+    {
+      "fpvalue": "true",
+      "filename": "amazon_pime_gpu_704x396_g2_v1_0_0.mye",
+      "version": "1.0.0",
+      "outputLayer": "espcn/prediction",
+      "outputNode": "espcn/prediction:0",
+      "inputX": 704,
+      "inputY": 396,
+      "scaleFactor": 2.0,
+      "runtime": "tflite_gpu"
+    },
+    {
+      "fpvalue": "true",
+      "filename": "amazon_prime_gpu_512x288_g2_v1_0_0.mye",
+      "version": "1.0.0",
+      "outputLayer": "espcn/prediction",
+      "outputNode": "espcn/prediction:0",
+      "inputX": 512,
+      "inputY": 288,
+      "scaleFactor": 2.0,
+      "runtime": "tflite_gpu"
+    },
+    {
+      "fpvalue": "true",
+      "filename": "amazon_prime_gpu_256x144_g2_v1_0_0.mye",
+      "version": "1.0.0",
+      "outputLayer": "espcn/prediction",
+      "outputNode": "espcn/prediction:0",
+      "inputX": 256,
+      "inputY": 144,
+      "scaleFactor": 3.0,
+      "runtime": "tflite_gpu"
+    }
+  ],
+  "443_qcom": [
+
+    {
+      "fpvalue": "true",
+      "filename": "amazon_pime_gpu_704x396_g2_v1_0_0.mye",
+      "version": "1.0.0",
+      "outputLayer": "espcn/prediction",
+      "outputNode": "espcn/prediction:0",
+      "inputX": 704,
+      "inputY": 396,
+      "scaleFactor": 2.0,
+      "runtime": "tflite_gpu"
+    },
+    {
+      "fpvalue": "true",
+      "filename": "amazon_prime_gpu_512x288_g2_v1_0_0.mye",
+      "version": "1.0.0",
+      "outputLayer": "espcn/prediction",
+      "outputNode": "espcn/prediction:0",
+      "inputX": 512,
+      "inputY": 288,
+      "scaleFactor": 2.0,
+      "runtime": "tflite_gpu"
+    },
+    {
+      "fpvalue": "true",
+      "filename": "amazon_prime_gpu_256x144_g2_v1_0_0.mye",
+      "version": "1.0.0",
+      "outputLayer": "espcn/prediction",
+      "outputNode": "espcn/prediction:0",
+      "inputX": 256,
+      "inputY": 144,
+      "scaleFactor": 3.0,
+      "runtime": "tflite_gpu"
+    }
+  ],
+  "355_qcom": [
+
+    {
+      "fpvalue": "true",
+      "filename": "amazon_prime_gpu_704x396_g3_v1_0_0.mye",
+      "version": "1.0.0",
+      "outputLayer": "espcn/prediction",
+      "outputNode": "espcn/prediction:0",
+      "inputX": 704,
+      "inputY": 396,
+      "scaleFactor": 1.5,
+      "runtime": "tflite_gpu"
+    },
+    {
+      "fpvalue": "true",
+      "filename": "amazon_prime_gpu_512x288_g3_v1_0_0.mye",
+      "version": "1.0.0",
+      "outputLayer": "espcn/prediction",
+      "outputNode": "espcn/prediction:0",
+      "inputX": 512,
+      "inputY": 288,
+      "scaleFactor": 2.0,
+      "runtime": "tflite_gpu"
+    },
+    {
+      "fpvalue": "true",
+      "filename": "amazon_prime_gpu_256x144_g3_v1_0_0.mye",
+      "version": "1.0.0",
+      "outputLayer": "espcn/prediction",
+      "outputNode": "espcn/prediction:0",
+      "inputX": 256,
+      "inputY": 144,
+      "scaleFactor": 3.0,
+      "runtime": "tflite_gpu"
+    }
+  ],
+  "393_qcom": [
+
+    {
+      "fpvalue": "true",
+      "filename": "amazon_prime_gpu_704x396_g3_v1_0_0.mye",
+      "version": "1.0.0",
+      "outputLayer": "espcn/prediction",
+      "outputNode": "espcn/prediction:0",
+      "inputX": 704,
+      "inputY": 396,
+      "scaleFactor": 1.5,
+      "runtime": "tflite_gpu"
+    },
+    {
+      "fpvalue": "true",
+      "filename": "amazon_prime_gpu_512x288_g3_v1_0_0.mye",
+      "version": "1.0.0",
+      "outputLayer": "espcn/prediction",
+      "outputNode": "espcn/prediction:0",
+      "inputX": 512,
+      "inputY": 288,
+      "scaleFactor": 2.0,
+      "runtime": "tflite_gpu"
+    },
+    {
+      "fpvalue": "true",
+      "filename": "amazon_prime_gpu_256x144_g3_v1_0_0.mye",
+      "version": "1.0.0",
+      "outputLayer": "espcn/prediction",
+      "outputNode": "espcn/prediction:0",
+      "inputX": 256,
+      "inputY": 144,
+      "scaleFactor": 3.0,
+      "runtime": "tflite_gpu"
+    }
+  ]
+}

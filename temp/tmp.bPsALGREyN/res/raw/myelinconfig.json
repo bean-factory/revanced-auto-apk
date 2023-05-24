@@ -1,0 +1,75 @@
+{
+"config":"TRUE",
+
+
+   "supportedDevices":[
+      {
+         "socidVR":"417_qcom",
+         "runtime": "qcom_dsp",
+         "domain": "v66"
+      },
+      {
+         "socidVR":"443_qcom",
+         "runtime": "qcom_dsp",
+         "domain": "v66"
+      },
+      {
+         "socidVR":"356_qcom",
+         "runtime": "qcom_dsp",
+         "domain": "v66"
+      },
+      {
+         "socidVR":"355_qcom",
+         "runtime": "qcom_dsp",
+         "domain": "v66"
+      },
+
+      {
+         "socidVR":"339_qcom",
+         "runtime": "qcom_dsp",
+         "domain": "v66"
+      },
+      {
+         "socidVR":"321_qcom",
+         "runtime": "qcom_dsp",
+         "domain": "v65"
+      },
+      {
+         "socidVR":"365_qcom",
+         "runtime": "qcom_dsp",
+         "domain": "v65"
+      },
+      {
+         "socidVR":"393_qcom",
+         "runtime": "qcom_dsp",
+         "domain": "v65"
+      },
+      {
+         "socidVR":"394_qcom",
+         "runtime": "qcom_dsp",
+         "domain": "v66"
+      },
+      {
+         "socidVR":"444_qcom",
+         "runtime": "qcom_dsp",
+         "domain": "v66"
+      },
+      {
+         "socidVR":"407_qcom",
+         "runtime": "qcom_dsp",
+         "domain": "v66"
+      },
+      {
+         "socidVR":"246_qcom",
+         "runtime": "qcom_dsp",
+         "domain": "null"
+      },
+      {
+         "socidVR":"292_qcom",
+         "runtime": "qcom_dsp",
+         "domain": "v60"
+      }
+   ]
+}
+   
+  

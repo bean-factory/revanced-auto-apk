@@ -1,0 +1,368 @@
+{
+    "supportedRes": [
+        {
+            "inputX": 704,
+            "inputY": 396
+        },
+        {
+            "inputX": 512,
+            "inputY": 288
+        },
+        {
+            "inputX": 256,
+            "inputY": 144
+        }
+    ],
+    "417_qcom": [
+        {
+            "filename": "amazon_prime_dsp_704x396_g2_v3_0_0.mye",
+            "version": "2.0.0",
+            "outputLayer": "espcn/prediction",
+            "outputNode": "espcn/prediction:0",
+            "inputX": 704,
+            "inputY": 396,
+            "scaleFactor": 2,
+            "runtime": "qcom_dsp"
+        },
+        {
+            "filename": "amazon_prime_dsp_512x288_v3_0_0.mye",
+            "version": "2.0.0",
+            "outputLayer": "espcn/prediction",
+            "outputNode": "espcn/prediction:0",
+            "inputX": 512,
+            "inputY": 288,
+            "scaleFactor": 2,
+            "runtime": "qcom_dsp"
+        },
+        {
+            "filename": "amazon_prime_dsp_256x144_v1_0_1.mye",
+            "version": "1.0.1",
+            "outputLayer": "espcn/prediction",
+            "outputNode": "espcn/prediction:0",
+            "inputX": 256,
+            "inputY": 144,
+            "scaleFactor": 4,
+            "runtime": "qcom_dsp"
+        }
+    ],
+    "355_qcom": [
+        {
+            "filename": "amazon_prime_dsp_704x396_g1_v2_0_0.mye",
+            "version": "2.0.0",
+            "outputLayer": "espcn/prediction",
+            "outputNode": "espcn/prediction:0",
+            "inputX": 704,
+            "inputY": 396,
+            "scaleFactor": 2,
+            "runtime": "qcom_dsp"
+        },
+        {
+            "filename": "amazon_prime_dsp_512x288_v3_0_0.mye",
+            "version": "2.0.0",
+            "outputLayer": "espcn/prediction",
+            "outputNode": "espcn/prediction:0",
+            "inputX": 512,
+            "inputY": 288,
+            "scaleFactor": 2,
+            "runtime": "qcom_dsp"
+        },
+        {
+            "filename": "amazon_prime_dsp_256x144_v1_0_1.mye",
+            "version": "1.0.1",
+            "outputLayer": "espcn/prediction",
+            "outputNode": "espcn/prediction:0",
+            "inputX": 256,
+            "inputY": 144,
+            "scaleFactor": 4,
+            "runtime": "qcom_dsp"
+        }
+    ],
+    "443_qcom": [
+        {
+            "filename": "amazon_prime_dsp_704x396_g2_v3_0_0.mye",
+            "version": "2.0.0",
+            "outputLayer": "espcn/prediction",
+            "outputNode": "espcn/prediction:0",
+            "inputX": 704,
+            "inputY": 396,
+            "scaleFactor": 2,
+            "runtime": "qcom_dsp"
+        },
+        {
+            "filename": "amazon_prime_dsp_512x288_v3_0_0.mye",
+            "version": "2.0.0",
+            "outputLayer": "espcn/prediction",
+            "outputNode": "espcn/prediction:0",
+            "inputX": 512,
+            "inputY": 288,
+            "scaleFactor": 2,
+            "runtime": "qcom_dsp"
+        },
+        {
+            "filename": "amazon_prime_dsp_256x144_v1_0_1.mye",
+            "version": "1.0.1",
+            "outputLayer": "espcn/prediction",
+            "outputNode": "espcn/prediction:0",
+            "inputX": 256,
+            "inputY": 144,
+            "scaleFactor": 4,
+            "runtime": "qcom_dsp"
+        }
+    ],
+    "339_qcom": [
+        {
+            "filename": "amazon_prime_dsp_704x396_g1_v2_0_0.mye",
+            "version": "2.0.0",
+            "outputLayer": "espcn/prediction",
+            "outputNode": "espcn/prediction:0",
+            "inputX": 704,
+            "inputY": 396,
+            "scaleFactor": 2,
+            "runtime": "qcom_dsp"
+        },
+        {
+            "filename": "amazon_prime_dsp_512x288_v3_0_0.mye",
+            "version": "2.0.0",
+            "outputLayer": "espcn/prediction",
+            "outputNode": "espcn/prediction:0",
+            "inputX": 512,
+            "inputY": 288,
+            "scaleFactor": 2,
+            "runtime": "qcom_dsp"
+        },
+        {
+            "filename": "amazon_prime_dsp_256x144_v1_0_1.mye",
+            "version": "1.0.1",
+            "outputLayer": "espcn/prediction",
+            "outputNode": "espcn/prediction:0",
+            "inputX": 256,
+            "inputY": 144,
+            "scaleFactor": 4,
+            "runtime": "qcom_dsp"
+        }
+    ],
+    "393_qcom": [
+        {
+            "filename": "amazon_prime_dsp_704x396_g1_v2_0_0.mye",
+            "version": "2.0.0",
+            "outputLayer": "espcn/prediction",
+            "outputNode": "espcn/prediction:0",
+            "inputX": 704,
+            "inputY": 396,
+            "scaleFactor": 2,
+            "runtime": "qcom_dsp"
+        },
+        {
+            "filename": "amazon_prime_dsp_512x288_v3_0_0.mye",
+            "version": "2.0.0",
+            "outputLayer": "espcn/prediction",
+            "outputNode": "espcn/prediction:0",
+            "inputX": 512,
+            "inputY": 288,
+            "scaleFactor": 2,
+            "runtime": "qcom_dsp"
+        },
+        {
+            "filename": "amazon_prime_dsp_256x144_v1_0_1.mye",
+            "version": "1.0.1",
+            "outputLayer": "espcn/prediction",
+            "outputNode": "espcn/prediction:0",
+            "inputX": 256,
+            "inputY": 144,
+            "scaleFactor": 4,
+            "runtime": "qcom_dsp"
+        }
+    ],
+    "321_qcom": [
+        {
+            "filename": "amazon_prime_dsp_704x396_g1_v2_0_0.mye",
+            "version": "2.0.0",
+            "outputLayer": "espcn/prediction",
+            "outputNode": "espcn/prediction:0",
+            "inputX": 704,
+            "inputY": 396,
+            "scaleFactor": 2,
+            "runtime": "qcom_dsp"
+        },
+        {
+            "filename": "amazon_prime_dsp_512x288_v3_0_0.mye",
+            "version": "2.0.0",
+            "outputLayer": "espcn/prediction",
+            "outputNode": "espcn/prediction:0",
+            "inputX": 512,
+            "inputY": 288,
+            "scaleFactor": 2,
+            "runtime": "qcom_dsp"
+        },
+        {
+            "filename": "amazon_prime_dsp_256x144_v1_0_1.mye",
+            "version": "1.0.1",
+            "outputLayer": "espcn/prediction",
+            "outputNode": "espcn/prediction:0",
+            "inputX": 256,
+            "inputY": 144,
+            "scaleFactor": 4,
+            "runtime": "qcom_dsp"
+        }
+    ],
+    "365_qcom": [
+        {
+            "filename": "amazon_prime_dsp_704x396_g2_v3_0_0.mye",
+            "version": "2.0.0",
+            "outputLayer": "espcn/prediction",
+            "outputNode": "espcn/prediction:0",
+            "inputX": 704,
+            "inputY": 396,
+            "scaleFactor": 2,
+            "runtime": "qcom_dsp"
+        },
+        {
+            "filename": "amazon_prime_dsp_512x288_v3_0_0.mye",
+            "version": "2.0.0",
+            "outputLayer": "espcn/prediction",
+            "outputNode": "espcn/prediction:0",
+            "inputX": 512,
+            "inputY": 288,
+            "scaleFactor": 2,
+            "runtime": "qcom_dsp"
+        },
+        {
+            "filename": "amazon_prime_dsp_256x144_v1_0_1.mye",
+            "version": "1.0.1",
+            "outputLayer": "espcn/prediction",
+            "outputNode": "espcn/prediction:0",
+            "inputX": 256,
+            "inputY": 144,
+            "scaleFactor": 4,
+            "runtime": "qcom_dsp"
+        }
+    ],
+    "394_qcom": [
+        {
+            "filename": "amazon_prime_dsp_704x396_g2_v3_0_0.mye",
+            "version": "2.0.0",
+            "outputLayer": "espcn/prediction",
+            "outputNode": "espcn/prediction:0",
+            "inputX": 704,
+            "inputY": 396,
+            "scaleFactor": 2,
+            "runtime": "qcom_dsp"
+        },
+        {
+            "filename": "amazon_prime_dsp_512x288_v3_0_0.mye",
+            "version": "2.0.0",
+            "outputLayer": "espcn/prediction",
+            "outputNode": "espcn/prediction:0",
+            "inputX": 512,
+            "inputY": 288,
+            "scaleFactor": 2,
+            "runtime": "qcom_dsp"
+        },
+        {
+            "filename": "amazon_prime_dsp_256x144_v1_0_1.mye",
+            "version": "1.0.1",
+            "outputLayer": "espcn/prediction",
+            "outputNode": "espcn/prediction:0",
+            "inputX": 256,
+            "inputY": 144,
+            "scaleFactor": 4,
+            "runtime": "qcom_dsp"
+        }
+    ],
+    "407_qcom": [
+        {
+            "filename": "amazon_prime_dsp_704x396_g2_v3_0_0.mye",
+            "version": "2.0.0",
+            "outputLayer": "espcn/prediction",
+            "outputNode": "espcn/prediction:0",
+            "inputX": 704,
+            "inputY": 396,
+            "scaleFactor": 2,
+            "runtime": "qcom_dsp"
+        },
+        {
+            "filename": "amazon_prime_dsp_512x288_v3_0_0.mye",
+            "version": "2.0.0",
+            "outputLayer": "espcn/prediction",
+            "outputNode": "espcn/prediction:0",
+            "inputX": 512,
+            "inputY": 288,
+            "scaleFactor": 2,
+            "runtime": "qcom_dsp"
+        },
+        {
+            "filename": "amazon_prime_dsp_256x144_v1_0_1.mye",
+            "version": "1.0.1",
+            "outputLayer": "espcn/prediction",
+            "outputNode": "espcn/prediction:0",
+            "inputX": 256,
+            "inputY": 144,
+            "scaleFactor": 4,
+            "runtime": "qcom_dsp"
+        }
+    ],
+    "400_qcom": [
+        {
+            "filename": "amazon_prime_dsp_704x396_g1_v2_0_0.mye",
+            "version": "2.0.0",
+            "outputLayer": "espcn/prediction",
+            "outputNode": "espcn/prediction:0",
+            "inputX": 704,
+            "inputY": 396,
+            "scaleFactor": 2,
+            "runtime": "qcom_dsp"
+        },
+        {
+            "filename": "amazon_prime_dsp_512x288_v3_0_0.mye",
+            "version": "2.0.0",
+            "outputLayer": "espcn/prediction",
+            "outputNode": "espcn/prediction:0",
+            "inputX": 512,
+            "inputY": 288,
+            "scaleFactor": 2,
+            "runtime": "qcom_dsp"
+        },
+        {
+            "filename": "amazon_prime_dsp_256x144_v1_0_1.mye",
+            "version": "1.0.1",
+            "outputLayer": "espcn/prediction",
+            "outputNode": "espcn/prediction:0",
+            "inputX": 256,
+            "inputY": 144,
+            "scaleFactor": 4,
+            "runtime": "qcom_dsp"
+        }
+    ],
+    "356_qcom": [
+        {
+            "filename": "amazon_prime_dsp_704x396_g1_v2_0_0.mye",
+            "version": "2.0.0",
+            "outputLayer": "espcn/prediction",
+            "outputNode": "espcn/prediction:0",
+            "inputX": 704,
+            "inputY": 396,
+            "scaleFactor": 2,
+            "runtime": "qcom_dsp"
+        },
+        {
+            "filename": "amazon_prime_dsp_512x288_v3_0_0.mye",
+            "version": "2.0.0",
+            "outputLayer": "espcn/prediction",
+            "outputNode": "espcn/prediction:0",
+            "inputX": 512,
+            "inputY": 288,
+            "scaleFactor": 2,
+            "runtime": "qcom_dsp"
+        },
+        {
+            "filename": "amazon_prime_dsp_256x144_v1_0_1.mye",
+            "version": "1.0.1",
+            "outputLayer": "espcn/prediction",
+            "outputNode": "espcn/prediction:0",
+            "inputX": 256,
+            "inputY": 144,
+            "scaleFactor": 4,
+            "runtime": "qcom_dsp"
+        }
+    ]
+}

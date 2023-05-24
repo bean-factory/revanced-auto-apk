@@ -1,9 +1,9 @@
 **ReVanced Versions:**  
 CLI: [revanced-cli-2.22.0-all.jar](https://github.com/j-hc/revanced-cli/releases/tag/v2.22.0)  
 Integrations (Extended): [revanced-integrations-0.107.10.apk](https://github.com/inotia00/revanced-integrations/releases/tag/v0.107.10)  
-Integrations: [revanced-integrations-0.107.0.apk](https://github.com/revanced/revanced-integrations/releases/tag/v0.107.0)  
+Integrations: [revanced-integrations-0.108.0.apk](https://github.com/revanced/revanced-integrations/releases/tag/v0.108.0)  
 Patches (Extended): [revanced-patches-2.173.10.jar](https://github.com/inotia00/revanced-patches/releases/tag/v2.173.10)  
-Patches: [revanced-patches-2.173.0.jar](https://github.com/revanced/revanced-patches/releases/tag/v2.173.0)  
+Patches: [revanced-patches-2.174.0.jar](https://github.com/revanced/revanced-patches/releases/tag/v2.174.0)  
 
 **Patches Changelog**:   
 ReVanced Extended Patches:  
@@ -12,17 +12,16 @@ Chinese SimplifiedGreekIndonesianItalianJapaneseRussianSpanishVietnameseChinese 
   
 ReVanced Patches:   
 
-navigation-buttons18.16.3718.16.37
+CONSTFlexVervideo-speedsclient-spoofthemehide-load-more-buttonunlock-proREADMEdisable-switching-emoji-to-sticker-in-message-input-fielddisable-typing-indicatorsanitize-sharing-linksdisable-adsunlock-pro
   
 **App Versions:**  
-Messenger: 409.0.0.0.1  
+Messenger: 410.0.0.17.85  
+YouTube-Music (arm64-v8a): 6.03.51  
 Twitch: 14.6.1  
-YouTube-Music (arm64-v8a): 6.01.55  
 YouTube: 18.17.43  
-Reddit: 2023.12.0  
-Instagram: 284.0.0.0.15  
-Twitter: 9.88.0-release.0  
-YouTube-Music (arm-v7a): 6.01.55  
+Twitter: 9.90.0-release.0  
+Instagram: 285.0.0.0.51  
+YouTube-Music (arm-v7a): 6.03.51  
 
 **App Hashes:**  
   

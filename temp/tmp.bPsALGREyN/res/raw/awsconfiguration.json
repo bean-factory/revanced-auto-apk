@@ -1,0 +1,39 @@
+{
+  "Version": "1.0",
+  "CredentialsProvider": {
+    "CognitoIdentity": {
+      "Default": {
+        "PoolId": "us-east-1:71604650-14d8-4bbd-8bc5-b0ee50d45407",
+        "Region": "us-east-1"
+      },
+      "Test": {
+        "PoolId": "us-east-1:5104fc27-b968-436c-89ed-763916cdcbb3",
+        "Region": "us-east-1"
+      }
+    }
+  },
+  "IdentityManager": {
+    "Default": {
+    },
+    "Test": {
+    }
+  },
+  "PinpointAnalytics": {
+    "Default": {
+      "AppId": "1d1642ae099948bf926c8c62b4b81cbe",
+      "Region": "us-east-1"
+    },
+    "Test": {
+      "AppId": "5335df42f62246c39d776b5d0c88b149",
+      "Region": "us-east-1"
+    }
+  },
+  "PinpointTargeting": {
+    "Default": {
+      "Region": "us-east-1"
+    },
+    "Test": {
+      "Region": "us-east-1"
+    }
+  }
+}
