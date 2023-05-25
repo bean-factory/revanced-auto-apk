@@ -12,15 +12,15 @@ Chinese SimplifiedGreekIndonesianItalianJapaneseRussianSpanishVietnameseChinese 
   
 ReVanced Patches:   
 
-CONSTFlexVervideo-speedsclient-spoofthemehide-load-more-buttonunlock-proREADMEdisable-switching-emoji-to-sticker-in-message-input-fielddisable-typing-indicatorsanitize-sharing-linksdisable-adsunlock-pro
+FlexVerclient-spoofunlock-proREADMEdisable-switching-emoji-to-sticker-in-message-input-fielddisable-typing-indicatorsanitize-sharing-linksdisable-adsunlock-proauto-claim-channel-pointsunlock-proPreferenceScreenhide-load-more-buttonhide-filter-barhide-shorts-componentsVideo18.19.35
   
 **App Versions:**  
 Messenger: 410.0.0.17.85  
-YouTube-Music (arm64-v8a): 6.03.51  
 Twitch: 14.6.1  
+YouTube-Music (arm64-v8a): 6.03.51  
 YouTube: 18.17.43  
+Instagram: 285.0.0.0.56  
 Twitter: 9.90.0-release.0  
-Instagram: 285.0.0.0.51  
 YouTube-Music (arm-v7a): 6.03.51  
 
 **App Hashes:**  
