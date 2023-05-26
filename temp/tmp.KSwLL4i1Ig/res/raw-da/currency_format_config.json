@@ -1,0 +1,224 @@
+{
+"__signature": "@generated SignedSource<<acad1ca4f783497c50b95ff33c55e626>>",
+"__generatedBy": "export-localized-js-module.php",
+"AED": {
+"format": "{amount} {symbol}",
+"name": "Forenede Arabiske Emirater, dirham"
+},
+"ARS": {
+"format": "{amount} {symbol}",
+"name": "Argentina, peso"
+},
+"AUD": {
+"format": "{amount} {symbol}",
+"name": "Australien, dollar"
+},
+"BDT": {
+"format": "{amount} {symbol}",
+"name": "Bangladesh, taka"
+},
+"BOB": {
+"format": "{amount} {symbol}",
+"name": "Bolivia, boliviano"
+},
+"BRL": {
+"format": "{amount} {symbol}",
+"name": "Brasilien, real"
+},
+"CAD": {
+"format": "{amount} {symbol}",
+"name": "Canada, dollar"
+},
+"CHF": {
+"format": "{amount} {symbol}",
+"name": "Schweiz, franc"
+},
+"CLP": {
+"format": "{amount} {symbol}",
+"name": "Chile, peso"
+},
+"CNY": {
+"format": "{amount} {symbol}",
+"name": "Kina, yuan"
+},
+"COP": {
+"format": "{amount} {symbol}",
+"name": "Columbia, peso"
+},
+"CRC": {
+"format": "{amount} {symbol}",
+"name": "Costa Rica, colon"
+},
+"CZK": {
+"format": "{amount} {symbol}",
+"name": "Tjekkiet, koruna"
+},
+"DKK": {
+"format": "{amount} {symbol}",
+"name": "Danmark, krone"
+},
+"DZD": {
+"format": "{amount} {symbol}",
+"name": "Algeriet, dinar"
+},
+"EGP": {
+"format": "{amount} {symbol}",
+"name": "Ægypten, pund"
+},
+"EUR": {
+"format": "{amount} {symbol}",
+"name": "Euro"
+},
+"GBP": {
+"format": "{amount} {symbol}",
+"name": "Storbritannien, pund"
+},
+"GTQ": {
+"format": "{amount} {symbol}",
+"name": "Guatemala, quetzal"
+},
+"HKD": {
+"format": "{amount} {symbol}",
+"name": "Hongkong, dollar"
+},
+"HNL": {
+"format": "{amount} {symbol}",
+"name": "Honduras, lempira"
+},
+"HUF": {
+"format": "{amount} {symbol}",
+"name": "Ungarn, forint"
+},
+"IDR": {
+"format": "{amount} {symbol}",
+"name": "Indonesien, rupiah"
+},
+"ILS": {
+"format": "{amount} {symbol}",
+"name": "Israel, ny shekel"
+},
+"INR": {
+"format": "{amount} {symbol}",
+"name": "Indien, rupee"
+},
+"ISK": {
+"format": "{amount} {symbol}",
+"name": "Island, krone"
+},
+"JPY": {
+"format": "{amount} {symbol}",
+"name": "Japan, yen"
+},
+"KES": {
+"format": "{amount} {symbol}",
+"name": "Kenya, shilling"
+},
+"KRW": {
+"format": "{amount} {symbol}",
+"name": "Korea, won"
+},
+"MOP": {
+"format": "{amount} {symbol}",
+"name": "Macau, patacas"
+},
+"MXN": {
+"format": "{amount} {symbol}",
+"name": "Mexico, peso"
+},
+"MYR": {
+"format": "{amount} {symbol}",
+"name": "Malaysia, ringgit"
+},
+"NGN": {
+"format": "{amount} {symbol}",
+"name": "Nigeria, naira"
+},
+"NIO": {
+"format": "{amount} {symbol}",
+"name": "Nicaragua, cordoba"
+},
+"NOK": {
+"format": "{amount} {symbol}",
+"name": "Norge, krone"
+},
+"NZD": {
+"format": "{amount} {symbol}",
+"name": "New Zealand, dollar"
+},
+"PEN": {
+"format": "{amount} {symbol}",
+"name": "Peru, nuevo sol"
+},
+"PHP": {
+"format": "{amount} {symbol}",
+"name": "Filippinerne, peso"
+},
+"PKR": {
+"format": "{amount} {symbol}",
+"name": "Pakistan, rupee"
+},
+"PLN": {
+"format": "{amount} {symbol}",
+"name": "Polen, zloty"
+},
+"PYG": {
+"format": "{amount} {symbol}",
+"name": "Paraguay, guarani"
+},
+"QAR": {
+"format": "{amount} {symbol}",
+"name": "Qatar, rials"
+},
+"RON": {
+"format": "{amount} {symbol}",
+"name": "Rumænien, leu"
+},
+"RUB": {
+"format": "{amount} {symbol}",
+"name": "Rusland, rubel"
+},
+"SAR": {
+"format": "{amount} {symbol}",
+"name": "Saudi-Arabien, riyal"
+},
+"SEK": {
+"format": "{amount} {symbol}",
+"name": "Sverige, krone"
+},
+"SGD": {
+"format": "{amount} {symbol}",
+"name": "Singapore, dollar"
+},
+"THB": {
+"format": "{amount} {symbol}",
+"name": "Thailand, baht"
+},
+"TRY": {
+"format": "{amount} {symbol}",
+"name": "Tykiet, lira"
+},
+"TWD": {
+"format": "{amount} {symbol}",
+"name": "Taiwan, dollar"
+},
+"USD": {
+"format": "{amount} {symbol}",
+"name": "USA, dollar"
+},
+"UYU": {
+"format": "{amount} {symbol}",
+"name": "Uruguay, peso"
+},
+"VEF": {
+"format": "{amount} {symbol}",
+"name": "Venezuela, bolivar"
+},
+"VND": {
+"format": "{amount} {symbol}",
+"name": "Vietnam, dong"
+},
+"ZAR": {
+"format": "{amount} {symbol}",
+"name": "Sydafrika, rand"
+}
+}
