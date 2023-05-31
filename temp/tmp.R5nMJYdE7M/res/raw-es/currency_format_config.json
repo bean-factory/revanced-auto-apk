@@ -1,0 +1,224 @@
+{
+"__signature": "@generated SignedSource<<0b08fae26cb8c102828f4541f234fb9c>>",
+"__generatedBy": "export-localized-js-module.php",
+"AED": {
+"format": "{symbol}{amount}",
+"name": "Dírham de EAU"
+},
+"ARS": {
+"format": "{symbol}{amount}",
+"name": "Peso argentino"
+},
+"AUD": {
+"format": "{symbol}{amount}",
+"name": "Dólar australiano"
+},
+"BDT": {
+"format": "{symbol}{amount}",
+"name": "Taka bangladesí"
+},
+"BOB": {
+"format": "{symbol}{amount}",
+"name": "Bolívar boliviano"
+},
+"BRL": {
+"format": "{symbol}{amount}",
+"name": "Real brasileño"
+},
+"CAD": {
+"format": "{symbol}{amount}",
+"name": "Dólar canadiense"
+},
+"CHF": {
+"format": "{symbol}{amount}",
+"name": "Franco suizo"
+},
+"CLP": {
+"format": "{symbol}{amount}",
+"name": "Peso chileno"
+},
+"CNY": {
+"format": "{symbol}{amount}",
+"name": "Yuan chino"
+},
+"COP": {
+"format": "{symbol}{amount}",
+"name": "Peso colombiano"
+},
+"CRC": {
+"format": "{symbol}{amount}",
+"name": "Colón costarricense"
+},
+"CZK": {
+"format": "{symbol}{amount}",
+"name": "Corona checa"
+},
+"DKK": {
+"format": "{symbol}{amount}",
+"name": "Corona danesa"
+},
+"DZD": {
+"format": "{symbol}{amount}",
+"name": "Dinar argelino"
+},
+"EGP": {
+"format": "{symbol}{amount}",
+"name": "Libra egipcia"
+},
+"EUR": {
+"format": "{symbol}{amount}",
+"name": "Euro"
+},
+"GBP": {
+"format": "{symbol}{amount}",
+"name": "Libra esterlina"
+},
+"GTQ": {
+"format": "{symbol}{amount}",
+"name": "Quetzal guatemalteco"
+},
+"HKD": {
+"format": "{symbol}{amount}",
+"name": "Dólar de Hong Kong"
+},
+"HNL": {
+"format": "{symbol}{amount}",
+"name": "Lempira hondureña"
+},
+"HUF": {
+"format": "{symbol}{amount}",
+"name": "Florín húngaro"
+},
+"IDR": {
+"format": "{symbol}{amount}",
+"name": "Rupia indonesa"
+},
+"ILS": {
+"format": "{symbol}{amount}",
+"name": "Nuevo sheckel israelí"
+},
+"INR": {
+"format": "{symbol}{amount}",
+"name": "Rupia india"
+},
+"ISK": {
+"format": "{symbol}{amount}",
+"name": "Corona islandesa"
+},
+"JPY": {
+"format": "{symbol}{amount}",
+"name": "Yen japonés"
+},
+"KES": {
+"format": "{symbol}{amount}",
+"name": "Chelín keniano"
+},
+"KRW": {
+"format": "{symbol}{amount}",
+"name": "Won coreano"
+},
+"MOP": {
+"format": "{symbol}{amount}",
+"name": "Patacas de Macao"
+},
+"MXN": {
+"format": "{symbol}{amount}",
+"name": "Peso mexicano"
+},
+"MYR": {
+"format": "{symbol}{amount}",
+"name": "Ringgit malayo"
+},
+"NGN": {
+"format": "{symbol}{amount}",
+"name": "Naira nigeriano"
+},
+"NIO": {
+"format": "{symbol}{amount}",
+"name": "Córdoba nicaragüense"
+},
+"NOK": {
+"format": "{symbol}{amount}",
+"name": "Corona noruega"
+},
+"NZD": {
+"format": "{symbol}{amount}",
+"name": "Dólar neozelandés"
+},
+"PEN": {
+"format": "{symbol}{amount}",
+"name": "Nuevo sol peruano"
+},
+"PHP": {
+"format": "{symbol}{amount}",
+"name": "Peso filipino"
+},
+"PKR": {
+"format": "{symbol}{amount}",
+"name": "Rupia pakistaní"
+},
+"PLN": {
+"format": "{symbol}{amount}",
+"name": "Esloti polaco"
+},
+"PYG": {
+"format": "{symbol}{amount}",
+"name": "Guaraní paraguayo"
+},
+"QAR": {
+"format": "{symbol}{amount}",
+"name": "Riyal qatarí"
+},
+"RON": {
+"format": "{symbol}{amount}",
+"name": "Leu rumano"
+},
+"RUB": {
+"format": "{symbol}{amount}",
+"name": "Rublo ruso"
+},
+"SAR": {
+"format": "{symbol}{amount}",
+"name": "Riyal saudí"
+},
+"SEK": {
+"format": "{symbol}{amount}",
+"name": "Corona sueca"
+},
+"SGD": {
+"format": "{symbol}{amount}",
+"name": "Dólar singapurense"
+},
+"THB": {
+"format": "{symbol}{amount}",
+"name": "Baht tailandés"
+},
+"TRY": {
+"format": "{symbol}{amount}",
+"name": "Lira turca"
+},
+"TWD": {
+"format": "{symbol}{amount}",
+"name": "Dólar taiwanés"
+},
+"USD": {
+"format": "{symbol}{amount}",
+"name": "Dólares estadounidenses"
+},
+"UYU": {
+"format": "{symbol}{amount}",
+"name": "Peso uruguayo"
+},
+"VEF": {
+"format": "{symbol}{amount}",
+"name": "Bolívar venezolano"
+},
+"VND": {
+"format": "{symbol}{amount}",
+"name": "Dong vietnamita"
+},
+"ZAR": {
+"format": "{symbol}{amount}",
+"name": "Rand sudafricano"
+}
+}
