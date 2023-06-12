@@ -12,12 +12,12 @@ json_get() {
 }
 get_prebuilts() {
 	echo "Getting prebuilts"
-	RV_CLI=$(gh_req https://api.github.com/repos/j-hc/revanced-cli/releases/latest - )
+	RV_CLI=$(gh_req https://api.github.com/repos/revanced/revanced-cli/releases/latest - )
 	RV_CLI_URL=$(echo "$RV_CLI" | json_get 'browser_download_url')
 	RV_CLI_JAR="${TEMP_DIR}/${RV_CLI_URL##*/}"
 	RV_CLI_TAG=$(echo "$RV_CLI" | json_get 'tag_name')
 	log "**ReVanced Versions:**"
-	log "CLI: [${RV_CLI_URL##*/}](https://github.com/j-hc/revanced-cli/releases/tag/$RV_CLI_TAG)"
+	log "CLI: [${RV_CLI_URL##*/}](https://github.com/revanced/revanced-cli/releases/tag/$RV_CLI_TAG)"
 	
 	RVE_INTEGRATIONS=$(gh_req https://api.github.com/repos/inotia00/revanced-integrations/releases/latest -)
 	RVE_INTEGRATIONS_URL=$(echo "$RVE_INTEGRATIONS" | json_get 'browser_download_url')
