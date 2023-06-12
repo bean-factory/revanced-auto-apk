@@ -15,12 +15,12 @@ ReVanced Patches:
 
   
 **App Versions:**  
-Twitter: 9.92.0-release.0  
 Twitch: 14.6.1  
+YouTube-Music (arm64-v8a): 5.47.53  
+Twitter: 9.71.0-release.0  
 YouTube: 18.17.43  
-YouTube-Music (arm64-v8a): 6.05.51  
-Instagram: 288.0.0.0.27  
-YouTube-Music (arm-v7a): 6.05.51  
+Instagram: 275.0.0.27.98  
+YouTube-Music (arm-v7a): 5.47.53  
 
 **App Hashes:**  
   

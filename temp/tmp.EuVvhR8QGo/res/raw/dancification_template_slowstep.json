@@ -1,0 +1,60 @@
+{
+  "detectors": [
+    {
+      "type": "detector_rms",
+      "params" : {}
+    },
+    {
+      "type": "detector_beatroot",
+      "params" : {}
+    },
+    {
+      "type": "detector_visual_beat",
+      "params" : {}
+    }
+  ],
+  "audio_beat_detector": {
+    "params": {
+      "onsets": true,
+      "peak_detect_method": 1
+    },
+    "type": "beat_tracker"
+  },
+  "audio_offset": 0,
+  "output_duration": 30,
+  "optical_flow_detector": {
+    "params": {},
+    "type": "gpu_dense_flow"
+  },
+  "treatments": [
+    {
+      "params": {
+        "amount": 0.01,
+        "duration": 0.50,
+        "duration_units": "proportion",
+        "curve": "TRIANGLE",
+        "filter": "onsetfill"
+      },
+      "type": "zoom"
+    },
+    {
+      "params": {
+        "alignmentStrategy": "EasyBeat",
+        "curve": "Step",
+        "curveArg": 0.33,
+        "filter": "onsetfill"
+      },
+      "type": "retiming"
+    }
+  ],
+  "video_offset": 0,
+  "visual_beat_detector": {
+    "params": {
+      "debug_mode": false,
+      "input_duration": 30,
+      "optical_flow_resolution": 360,
+      "video_offset": 0
+    },
+    "type": "visual_beat"
+  }
+}
