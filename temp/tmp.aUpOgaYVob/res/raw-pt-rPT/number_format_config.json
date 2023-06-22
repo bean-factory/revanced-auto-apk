@@ -1,0 +1,7 @@
+{
+"__signature": "@generated SignedSource<<c55b9736b547bc8fecb94dc17ed7d141>>",
+"__generatedBy": "export-localized-js-module.php",
+"decimalSeparator": ",",
+"numberDelimiter": ".",
+"minDigitsForThousandsSeparator": 5
+}
