@@ -113,14 +113,19 @@ semver_validate() {
 	[ ${#ac} = 0 ]
 }
 get_patch_last_supported_ver() {
-	if [ ${1} == "com.google.android.youtube" ] || [ ${1} == "com.google.android.apps.youtube.music" ];then
-		jq -r ".[] | select(.compatiblePackages[].name==\"${1}\" and .excluded==false) | .compatiblePackages[].versions" "$RVE_PATCHES_JSON" |
-		tr -d ' ,\t[]"' | sort -u | grep -v '^$' | get_largest_ver || return 1
-	else
-		jq -r ".[] | select(.compatiblePackages[].name==\"${1}\" and .excluded==false) | .compatiblePackages[].versions" "$RV_PATCHES_JSON" |
-		tr -d ' ,\t[]"' | sort -u | grep -v '^$' | get_largest_ver || return 1
+	local inc_sel exc_sel vs
+	inc_sel=$(list_args "$2" | sed 's/.*/\.name == &/' | paste -sd '~' | sed 's/~/ or /g' || :)
+	exc_sel=$(list_args "$3" | sed 's/.*/\.name != &/' | paste -sd '~' | sed 's/~/ and /g' || :)
+	inc_sel=${inc_sel:-false}
+	if [ "$4" = false ]; then inc_sel="${inc_sel} or .use==true"; fi
+	if ! vs=$(jq -r ".[]
+			| select(.compatiblePackages // [] | .[] | .name==\"${1}\")
+			| select(${inc_sel})
+			| select(${exc_sel:-true})
+			| .compatiblePackages[].versions // []" "$5"); then
+		abort "error in jq query"
 	fi
-
+	tr -d ' ,\t[]"' <<<"$vs" | sort -u | grep -v '^$' | get_largest_ver || :
 }
 
 dl_if_dne() {
@@ -157,7 +162,7 @@ dl_uptodown() {
 patch_apk() {
 	local stock_input=$1 patched_apk=$2 patcher_args=$3
 	declare -r tdir=$(mktemp -d -p $TEMP_DIR)
-	local cmd="java -jar $RV_CLI_JAR --temp-dir=$tdir -c -a $stock_input -o $patched_apk -b $RV_PATCHES_JAR --keystore=ks.keystore -i predictive-back-gesture $patcher_args --options=./options.json"
+	local cmd="java -jar $RV_CLI_JAR patch --temp-dir=$tdir -c -a $stock_input -o $patched_apk -b $RV_PATCHES_JAR --keystore=ks.keystore -i predictive-back-gesture $patcher_args --options=./options.json"
 	echo "$cmd"
 	eval "$cmd"
 }
